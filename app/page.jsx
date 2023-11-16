@@ -1,8 +1,14 @@
 import Header from '@components/Header.js';
+import About from '@components/About.js';
+import Demos from '@components/Demos.js';
 
 const Home = () => {
     return (
-        <Header />
+        <div>
+            <Header />
+            <About />
+            <Demos />
+        </div>
     )
 }
 

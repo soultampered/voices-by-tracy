@@ -1,5 +1,6 @@
+"use client"
 import React from "react";
-import DemoPlayer from "./DemoPlayer";
+import DemoPlayer from '@components/DemoPlayer.js';
 
 const Demos = () => {
     return (
