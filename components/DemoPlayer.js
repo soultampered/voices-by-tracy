@@ -1,11 +1,12 @@
-import React, {useState, useRef} from 'react';
-import '../../../../Desktop/old project/src/AudioPlayer.css';
+import React, {useState, useRef, useEffect} from 'react';
+import styles from "../styles/AudioPlayer.module.css";
+
 import {BsArrowLeftShort} from "react-icons/bs";
 import {BsArrowRightShort} from "react-icons/bs";
 import {FaPlay} from "react-icons/fa";
 import {FaPause} from "react-icons/fa";
 
-const DemoPlayer = () => {
+const DemoPlayer = ({audioSample}) => {
 
     // State
     const [isPlaying, setIsPlaying] = useState(false);
@@ -17,12 +18,11 @@ const DemoPlayer = () => {
     const progressBar = useRef(); //reference to progress bar
     const animationRef = useRef(); //reference for animations
 
-
-    const onLoadedMetadata = () => {
+    useEffect(() => {
         const seconds = Math.floor(audioPlayer.current.duration);
         setDuration(seconds);
         progressBar.current.max = seconds;
-    }
+    }, [audioPlayer?.current?.loadedetadata, audioPlayer?.current?.readyState]);
 
     const calculateTime = (secs) => {
         const minutes = Math.floor(secs / 60);
@@ -73,24 +73,27 @@ const DemoPlayer = () => {
     }
 
     return (
-        <div className='audioPlayer'>
-            <audio ref={audioPlayer} src="/resources/audio/FightingMyself.m4a" preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
-            <button className='forwardBackward' onClick={backThirty}><BsArrowLeftShort />30</button>
-            <button onClick={togglePlayPause} className='playPause'>
-                {isPlaying ? <FaPause /> : <FaPlay className='play' />}
+        <div className={styles.audioPlayer}>
+            <audio ref={audioPlayer} src={audioSample} preload="metadata"></audio>
+            <button className={styles.forwardBackward} onClick={backThirty}><BsArrowLeftShort />30</button>
+
+            <button onClick={togglePlayPause} className={styles.playPause}>
+                {isPlaying ? <FaPause /> : <FaPlay/>}
             </button>
-            <button className='forwardBackward' onClick={forwardThirty}>30<BsArrowRightShort /></button>
 
-            {/* current time */}
-            <div className='currentTime'>{calculateTime(currentTime)}</div>
+            <button className={styles.forwardBackward} onClick={forwardThirty}><BsArrowRightShort />30</button>
 
-            {/* progress bar */}
+            {/*current time*/}
+            <div className={styles.currentTime}>{calculateTime(currentTime)}</div>
+
+            {/*progress bar*/}
             <div>
-                <input type="range" className='progressBar' defaultValue='0' ref={progressBar} onChange={changeRange} step='0.05'/>
+                <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar} onChange={changeRange}/>
             </div>
 
-            {/* duration */}
-            <div className='duration'>{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
+            {/*duration*/}
+            <div className={styles.duration}>{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
+
         </div>
         )
 }

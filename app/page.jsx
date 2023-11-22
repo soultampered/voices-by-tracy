@@ -4,10 +4,11 @@ import Demos from '@components/Demos.js';
 
 const Home = () => {
     return (
-        <div>
-            <Header />
-            <About />
-            <Demos />
+        <div className="background">
+            <div className="bodyContainer">
+                <About />
+                <Demos />
+            </div>
         </div>
     )
 }
