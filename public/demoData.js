@@ -1,4 +1,4 @@
-export const data = [
+export const audioSample = [
     {
         id: '1',
         path: '/resources/audio/Lost.m4a',

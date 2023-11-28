@@ -6,7 +6,7 @@ import {BsArrowRightShort} from "react-icons/bs";
 import {FaPlay} from "react-icons/fa";
 import {FaPause} from "react-icons/fa";
 
-const DemoPlayer = ({audioSample}) => {
+const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
 
     // State
     const [isPlaying, setIsPlaying] = useState(false);
@@ -19,10 +19,21 @@ const DemoPlayer = ({audioSample}) => {
     const animationRef = useRef(); //reference for animations
 
     useEffect(() => {
+        onLoadedMetadata();
+    }, [audioPlayer?.current?.readyState]);
+
+    useEffect(() => {
+            setFilterState(() => {
+                return false;
+            });
+    }, [filterState, setFilterState]);
+
+    const onLoadedMetadata = () => {
+        console.log('Metadata loaded');
         const seconds = Math.floor(audioPlayer.current.duration);
         setDuration(seconds);
         progressBar.current.max = seconds;
-    }, [audioPlayer?.current?.loadedetadata, audioPlayer?.current?.readyState]);
+    };
 
     const calculateTime = (secs) => {
         const minutes = Math.floor(secs / 60);
@@ -74,7 +85,7 @@ const DemoPlayer = ({audioSample}) => {
 
     return (
         <div className={styles.audioPlayer}>
-            <audio ref={audioPlayer} src={audioSample} preload="metadata"></audio>
+            <audio ref={audioPlayer} src={audioSample} preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
             <button className={styles.forwardBackward} onClick={backThirty}><BsArrowLeftShort />30</button>
 
             <button onClick={togglePlayPause} className={styles.playPause}>

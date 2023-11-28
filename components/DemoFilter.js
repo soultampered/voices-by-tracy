@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/DemoFilter.module.css";
-import { data } from '@public/demoData.js'
+import { audioSample } from '@public/demoData.js'
 import DemoPlayer from '@components/DemoPlayer.js';
 
 const DemoFilter = () => {
 
     //State
-    const[selectedFilters, setSelectedFilters] = useState([]);
-    const [filteredItems, setFilteredItems] = useState(data);
+    const [selectedFilters, setSelectedFilters] = useState([]);
+    const [filteredItems, setFilteredItems] = useState(audioSample);
+    const [filterState, setFilterState] = useState(false);
     let filters = ['En', 'Fr'];
+
+    useEffect(() => {
+        filterItems();
+    }, [selectedFilters]);
 
     const handleFilterButtonClick = (selectedLang) => {
         if (selectedFilters.includes(selectedLang)) {
@@ -19,19 +24,26 @@ const DemoFilter = () => {
         }
     };
 
-    useEffect(() => {
-        filterItems();
-    }, [selectedFilters]);
+    const handleFilterState = () => {
+            setFilterState(prevFilterState => !prevFilterState);
+    };
 
-    const filterItems = () => {
+    const filterStateManager = (lang) => {
+        handleFilterButtonClick(lang);
+        handleFilterState();
+    };
+
+    const filterItems = async () => {
         if (selectedFilters.length > 0) {
-            let tempItems = selectedFilters.map((selectedLang) => {
-                let temp = data.filter((data) => data.lang === selectedLang);
-                return temp;
-            });
+            let tempItems = await Promise.all(
+                selectedFilters.map((selectedLang) => {
+                    let temp = audioSample.filter((audioSample) => audioSample.lang === selectedLang);
+                    return temp;
+                })
+            );
             setFilteredItems(tempItems.flat());
         } else {
-            setFilteredItems([...data]);
+            setFilteredItems([...audioSample]);
         }
     };
 
@@ -39,7 +51,7 @@ const DemoFilter = () => {
         <div>
             <div className="buttons-container">
                 {filters.map((lang, id) => (
-                    <button onClick={() => handleFilterButtonClick(lang)}
+                    <button onClick={() => filterStateManager(lang)}
                             className={`button ${
                                 selectedFilters?.includes(lang) ? 'active' : ''}`}
                             key={`filters-${id}`}>
@@ -49,10 +61,10 @@ const DemoFilter = () => {
             </div>
 
             <div className='items-container'>
-                {filteredItems.map((data, id) => (
+                {filteredItems.map((audioSample, id) => (
                     <div key={`lang-${id}`} className='item'>
-                        <p>{data.title}</p>
-                        <DemoPlayer key={data.id} audioSample={data.path} />
+                        <p>{audioSample.title}</p>
+                        <DemoPlayer key={audioSample.id} audioSample={audioSample.path} filterState={filterState} setFilterState={setFilterState}/>
                     </div>
                 ))}
             </div>
