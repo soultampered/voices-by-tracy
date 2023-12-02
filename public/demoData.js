@@ -1,3 +1,5 @@
+import React from "react";
+
 export const audioSample = [
     {
         id: '1',
@@ -41,5 +43,25 @@ export const audioSample = [
         title: 'Resolution',
         lang: 'Fr'
     }
+
+]
+
+export const carouselData = [
+    {
+        id: '1',
+        url: "https://source.unsplash.com/78A265wPiO4",
+        alt: 'Nature Image #1'
+    },
+    {
+        id: '2',
+        url: "https://source.unsplash.com/eOpewngf68w",
+        alt: 'Nature Image #2'
+    },
+    {
+        id: '3',
+        url: "https://source.unsplash.com/ndN00KmbJ1c",
+        alt: 'Nature Image #3'
+    }
+
 
 ]
