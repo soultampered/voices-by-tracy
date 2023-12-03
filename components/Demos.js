@@ -1,9 +1,6 @@
 "use client"
-import React, { useEffect, useState } from "react";
+import React from "react";
 import DemoFilter from '@components/DemoFilter.js';
-import Carousel from '@components/Carousel.js';
-import { carouselData } from '@public/demoData.js'
-
 
 const Demos = () => {
     return (
@@ -15,7 +12,6 @@ const Demos = () => {
                     <DemoFilter />
                     <div id="demoImages"></div>
                 </div>
-                <Carousel carouselData={carouselData} />
             </div>
         </section>
     );
