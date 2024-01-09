@@ -5,13 +5,11 @@ export const metadata = {
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }
 
-const Rootlayout = ({children}) => {
+const RootLayout = ({ children }) => {
     return (
         <html lang="en">
             <body>
                 <div className="main">
-                    <div className="gradient" />
-
                     <main className="app">
                         {children}
                     </main>
@@ -21,4 +19,4 @@ const Rootlayout = ({children}) => {
     )
 }
 
-export default Rootlayout
+export default RootLayout
