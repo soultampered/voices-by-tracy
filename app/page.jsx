@@ -8,14 +8,14 @@ import Footer from '@components/Footer.js';
 const Home = () => {
     return (
         <div className="background">
+            <Header />
             <div className="bodyContainer">
-                <Header />
                 {/*<About />*/}
                 {/*<Demos />*/}
                 {/*<Clients />*/}
                 {/*<Testimonials />*/}
-                {/*<Footer />*/}
             </div>
+            {/*<Footer />*/}
         </div>
     )
 }

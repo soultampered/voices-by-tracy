@@ -85,9 +85,9 @@ ul {
     list-style-type: none;
 }
 
-/*.background {*/
-/*    background: #000000;*/
-/*}*/
+.background {
+    background: #000000;
+}
 
 .bodyContainer {
     min-height: 100vh;
@@ -139,7 +139,7 @@ ul {
         font-Poppins
         text-center
         font-bold
-        mx-8
+        mx-6
         hover:bg-fuchsia-800
         hover:text-gray-400
     }

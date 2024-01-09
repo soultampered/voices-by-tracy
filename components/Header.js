@@ -2,12 +2,12 @@ import React from "react";
 
 const Header = () => {
     return (
-        <header>
+        <header className="bg-slate-100">
             <div className="inline">
                 <div className="logo">
                     <img src="/resources/images/VbT_Logo.svg" alt="siteLogo"/>
                 </div>
-                <nav>
+                <nav className="mr-8">
                     <ul className="flex justify-end">
                         <li className="headerBtn"><a href="@/components/Header#about">About</a></li>
                         <li className="headerBtn"><a href="@/components/Header#demos">Demos</a></li>
