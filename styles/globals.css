@@ -133,33 +133,22 @@ ul {
     .headerBtn {
         @apply
         w-36
+        text-black
         bg-fuchsia-400
-        text-2xl
+        text-xl
         font-Poppins
         text-center
+        font-bold
         mx-8
+        hover:bg-fuchsia-800
+        hover:text-gray-400
     }
-}
-header {
 
-}
-
-.logo img {
-    width: 350px;
-    height: 183px;
-}
-
-.navList {
-
-}
-.navList li {
-
-}
-
-.navList li a {
-    color: #000;
-    text-decoration: none;
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    .logo {
+        @apply
+        w-80
+        h-44
+    }
 }
 
 .navList li a:hover {
