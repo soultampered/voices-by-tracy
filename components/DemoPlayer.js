@@ -66,7 +66,7 @@ const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
     }
 
     const changePlayerCurrentTime = () => {
-        progressBar.current.style.setProperty('--seek-before-width',`${progressBar.current.value / duration * 100}%`);
+        progressBar.current.style.setProperty('seek-before-width',`${progressBar.current.value / duration * 100}%`);
         setCurrentTime(progressBar.current.value);
     }
 

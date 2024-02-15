@@ -11,11 +11,14 @@ module.exports = {
     extend: {
         width: {
             '700':'700px',
-            '75':'75px'
+            '75':'75px',
+            '15':'15px',
+            'seek-before-width': 0
         },
         height: {
             '75': '75px',
-            '11': '11px'
+            '11': '11px',
+            '15': '15px'
         },
         colors: {
             primary: '#f40082',
@@ -26,10 +29,11 @@ module.exports = {
             selectedKnobby: '#26c9c3'
         },
         margin: {
-            '25': '25px'
+            '25': '25px',
+            '2px': '2px'
         },
         borderRadius: {
-            'lg10': '10px'
+            '10': '10px',
         }
     },
   },
