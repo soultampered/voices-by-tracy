@@ -48,7 +48,7 @@ const DemoFilter = () => {
     };
 
     return (
-        <div>
+        <div className='w-1/3 bg-indigo-500'>
             <div className="buttons-container">
                 {filters.map((lang, id) => (
                     <button onClick={() => filterStateManager(lang)}
@@ -68,8 +68,6 @@ const DemoFilter = () => {
                     </div>
                 ))}
             </div>
-
-
         </div>
     );
 }

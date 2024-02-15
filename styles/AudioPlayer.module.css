@@ -1,65 +1,83 @@
-.audioPlayer {
-    --primary: #f40082;
-    --secondary: #ffd200;
+@tailwind components;
+@tailwind utilities;
 
+@layer components{
+    .audioPlayer {
+        @apply
+        items-center
+        flex
+        w-700
+    }
 
-    align-items: center;
-    display: flex;
-    width: 700px;
+    .forwardBackward {
+        @apply
+        bg-none
+        border-none
+        flex
+        items-center
+        font-Poppins
+        text-base
+        cursor-pointer
+    }
+
+    .forwardBackward {
+        @apply
+        hover:text-primary
+    }
+
+    .playPause {
+        @apply
+        bg-primary
+        border-none
+        rounded-full
+        w-75
+        h-75
+        text-3xl
+        text-secondary
+        flex
+        justify-center
+        items-center
+        z-10
+    }
+
+    .play {
+        @apply
+        relative
+        left-3
+    }
+
+    .currentTime,
+    .duration {
+        @apply
+        font-Poppins
+        text-base
+    }
+
+    .currentTime {
+        @apply
+        ml-25;
+    }
+
+    .progressBar {
+        @apply
+        appearance-none
+        bg-bar_bg
+        rounded-lg10
+        relative
+        w-full
+        h-11
+        outline-none
+    }
+
 }
 
-.forwardBackward {
-    background: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    font-family: monospace;
-    font-size: 16px;
-    cursor: pointer;
-}
 
-.forwardBackward.hover {
-    color: var(--primary);
-}
 
-.playPause {
-    background: var(--primary);
-    border: none;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    font-size: 32px;
-    color: var(--secondary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
 
-.play {
-    position: relative;
-    left: 3px;
-}
-
-.currentTime,
-.duration {
-    font-family: monospace;
-    font-size: 16px;
-}
-
-.currentTime {
-    margin-left: 25px;
-}
 
 .progressBar {
-    --bar-bg: #ffe3d4;
-    --seek-before-width: 0;
-    --seek-before-color: #ffc2a1;
-    --knobby: #3452a5;
-    --selectedKnobby: #26c9c3;
-
     appearance: none;
-    background: var(--bar-bg);
+    background: var(--bar_bg);
     border-radius: 10px;
     position: relative;
     width: 100%;
@@ -69,7 +87,7 @@
 
 /*progress bar - safari*/
 .progressBar::-webkit-slider-runnable-track {
-    background: var(--bar-bg);
+    background: var(--bar_bg);
     border-radius: 10px;
     position: relative;
     width: 100%;
@@ -79,7 +97,7 @@
 
 /*progress bar - firefox*/
 .progressBar::-moz-range-track {
-    background: var(--bar-bg);
+    background: var(--bar_bg);
     border-radius: 10px;
     position: relative;
     width: 100%;
@@ -96,7 +114,7 @@
     content: '';
     height: 11px;
     width: var(--seek-before-width);
-    color: var(--seek-before-color);
+    color: var(--seek_before_color);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     position: absolute;
@@ -108,7 +126,7 @@
 
 /*progress bar - firefox*/
 .progressBar::-moz-range-progress {
-    background-color: var(--seek-before-color);
+    background-color: var(--seek_before_color);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     height: 11px;
