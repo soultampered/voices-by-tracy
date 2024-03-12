@@ -30,15 +30,6 @@ const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
         progressBar.current.max = seconds;
     };
 
-    const calculateTime = (secs) => {
-        const minutes = Math.floor(secs / 60);
-        const returnedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
-        const seconds = Math.floor(secs % 60);
-        const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
-
-        return `${returnedMinutes}:${returnedSeconds}`
-    }
-
     const togglePlayPause = () => {
         const prevValue = isPlaying;
 
@@ -73,20 +64,11 @@ const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
             <audio ref={audioPlayer} src={audioSample} preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
 
             {/*progress bar*/}
-            <div>
-                <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar} onChange={changeRange}/>
-            </div>
-
             <div className='flex items-center'>
                 <button onClick={togglePlayPause} className={styles.playPause}>
                     {isPlaying ? <FaPause /> : <FaPlay/>}
                 </button>
-
-                {/*current time*/}
-                <div className={styles.currentTime}>{calculateTime(currentTime)}</div>
-
-                {/*duration*/}
-                <div className={styles.duration}>{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
+                <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar} onChange={changeRange}/>
             </div>
         </div>
         )
