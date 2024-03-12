@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import styles from "../styles/DemoFilter.module.css";
 import { audioSample } from '@public/demoData.js'
 import DemoPlayer from '@components/DemoPlayer.js';
+import styles from "../styles/AudioPlayer.module.css";
 
 const DemoFilter = () => {
 
@@ -48,12 +48,12 @@ const DemoFilter = () => {
     };
 
     return (
-        <div className='w-1/3 bg-indigo-500'>
+        <div className='w-1/3'>
             <div className="buttons-container">
                 {filters.map((lang, id) => (
                     <button onClick={() => filterStateManager(lang)}
                             className={`button ${
-                                selectedFilters?.includes(lang) ? 'active' : ''}`}
+                                selectedFilters?.includes(lang) ? 'active' : ''} ${styles.langToggle}`}
                             key={`filters-${id}`}>
                         {lang}
                     </button>
@@ -62,7 +62,7 @@ const DemoFilter = () => {
 
             <div className='items-container'>
                 {filteredItems.map((audioSample, id) => (
-                    <div key={`lang-${id}`} className='item'>
+                    <div key={`lang-${id}`} className={styles.playerCard}>
                         <p>{audioSample.title}</p>
                         <DemoPlayer key={audioSample.id} audioSample={audioSample.path} filterState={filterState} setFilterState={setFilterState}/>
                     </div>

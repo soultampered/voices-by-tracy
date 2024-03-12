@@ -3,9 +3,9 @@
 
 @layer components{
     .audioPlayer {
-        @apply
-        items-center
-        flex
+        /*@apply*/
+        /*items-center*/
+        /*flex*/
     }
 
     .forwardBackward {
@@ -26,12 +26,12 @@
 
     .playPause {
         @apply
-        bg-primary
+        /*bg-primary*/
         border-none
         rounded-full
         w-75
         h-75
-        text-3xl
+        text-base
         text-secondary
         flex
         justify-center
@@ -149,6 +149,25 @@
         z-30
         box-border
     }
+
+    /*Demo Filter Styles */
+    .langToggle {
+        @apply
+        bg-pink-300
+        text-2xl
+        m-8
+        font-Poppins
+        z-10
+    }
+
+    .playerCard {
+        @apply
+        bg-violet-500/50
+        rounded
+        m-5
+        h-36
+    }
+
 }
 
 /*knobby while dragging - chrome and safari*/

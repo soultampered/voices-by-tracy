@@ -1,7 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react';
 import styles from "../styles/AudioPlayer.module.css";
-
-import {BsArrowLeftShort,BsArrowRightShort} from "react-icons/bs";
 import {FaPlay,FaPause} from "react-icons/fa";
 
 const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
@@ -70,38 +68,26 @@ const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
         setCurrentTime(progressBar.current.value);
     }
 
-    const backThirty = () => {
-        progressBar.current.value = Number(progressBar.current.value) - 30;
-        changeRange();
-    }
-
-    const forwardThirty = () => {
-        progressBar.current.value = Number(progressBar.current.value) + 30;
-        changeRange();
-    }
-
     return (
         <div className={styles.audioPlayer}>
             <audio ref={audioPlayer} src={audioSample} preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
-            <button className={styles.forwardBackward} onClick={backThirty}><BsArrowLeftShort />30</button>
-
-            <button onClick={togglePlayPause} className={styles.playPause}>
-                {isPlaying ? <FaPause /> : <FaPlay/>}
-            </button>
-
-            <button className={styles.forwardBackward} onClick={forwardThirty}><BsArrowRightShort />30</button>
-
-            {/*current time*/}
-            <div className={styles.currentTime}>{calculateTime(currentTime)}</div>
 
             {/*progress bar*/}
             <div>
                 <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar} onChange={changeRange}/>
             </div>
 
-            {/*duration*/}
-            <div className={styles.duration}>{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
+            <div className='flex items-center'>
+                <button onClick={togglePlayPause} className={styles.playPause}>
+                    {isPlaying ? <FaPause /> : <FaPlay/>}
+                </button>
 
+                {/*current time*/}
+                <div className={styles.currentTime}>{calculateTime(currentTime)}</div>
+
+                {/*duration*/}
+                <div className={styles.duration}>{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
+            </div>
         </div>
         )
 }
