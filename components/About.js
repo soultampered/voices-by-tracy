@@ -5,7 +5,10 @@ const About = () => {
         <section className="relative">
             <div className='flex h-full items-center absolute z-10 px-5'>
                 <div className='w-2/4 pr-5'>
-                    <h1>Lorem ipsum dolor</h1>
+                    <div className='titleContainer'>
+                        <h1>Tracy-Ann Leith</h1>
+                    </div>
+
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

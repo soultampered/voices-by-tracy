@@ -62,10 +62,8 @@ h6 {
 p {
     color: white;
     font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    line-height: 1.6;
+    /*font-size: 18px;*/
+    /*line-height: 1.6;*/
 }
 
 ul {
@@ -107,9 +105,9 @@ ul {
     display: block;
 }
 
-/*Header Styles*/
 
 @layer components {
+    /*Header Styles*/
     .headerBtn {
         @apply
         w-36
@@ -158,8 +156,26 @@ ul {
         border-blue-700
         rounded
     }
+
+    /*Section Title styles*/
+    #demoTitle {
+        @apply
+        text-4xl
+        font-bold
+        text-white
+        leading-tight
+        mb-2
+        border-t-4
+        border-b-4
+        border-purple-600
+        py-4
+    }
+
+    .titleContainer {
+        @apply
+        max-w-3xl
+        mr-auto
+        /*text-center*/
+        my-4
+    }
 }
-
-/*About.js Styles*/
-
-/*Demo Reel Styles*/

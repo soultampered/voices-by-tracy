@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { audioSample } from '@public/demoData.js'
 import DemoPlayer from '@components/DemoPlayer.js';
-import styles from "../styles/AudioPlayer.module.css";
+import styles from "../styles/DemoFilter.module.css";
 
 const DemoFilter = () => {
 
@@ -48,7 +48,7 @@ const DemoFilter = () => {
     };
 
     return (
-        <div className='w-1/3'>
+        <div className='w-1/3 bg-cream rounded p-2'>
             <div className="buttons-container">
                 {filters.map((lang, id) => (
                     <button onClick={() => filterStateManager(lang)}
@@ -63,8 +63,10 @@ const DemoFilter = () => {
             <div className='items-container'>
                 {filteredItems.map((audioSample, id) => (
                     <div key={`lang-${id}`} className={styles.playerCard}>
-                        <p>{audioSample.title}</p>
-                        <DemoPlayer key={audioSample.id} audioSample={audioSample.path} filterState={filterState} setFilterState={setFilterState}/>
+                        <div className='box-border h-full'>
+                            <p>{audioSample.title}</p>
+                            <DemoPlayer key={audioSample.id} audioSample={audioSample.path} filterState={filterState} setFilterState={setFilterState}/>
+                        </div>
                     </div>
                 ))}
             </div>

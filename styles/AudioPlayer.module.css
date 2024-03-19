@@ -3,25 +3,9 @@
 
 @layer components{
     .audioPlayer {
-        /*@apply*/
+        @apply
         /*items-center*/
-        /*flex*/
-    }
-
-    .forwardBackward {
-        @apply
-        bg-none
-        border-none
         flex
-        items-center
-        font-Poppins
-        text-base
-        cursor-pointer
-    }
-
-    .forwardBackward {
-        @apply
-        hover:text-primary
     }
 
     .playPause {
@@ -30,12 +14,10 @@
         border-none
         rounded-full
         w-75
-        h-75
         text-base
         text-secondary
         flex
         justify-center
-        items-center
         z-10
     }
 
@@ -45,18 +27,6 @@
         left-3
     }
 
-    .currentTime,
-    .duration {
-        @apply
-        font-Poppins
-        text-base
-    }
-
-    .currentTime {
-        @apply
-        ml-25;
-    }
-
     .progressBar {
         @apply
         appearance-none
@@ -64,7 +34,7 @@
         rounded-10
         relative
         w-full
-        h-11
+        h-4
         outline-none
     }
 
@@ -75,7 +45,7 @@
         rounded-10
         relative
         w-full
-        h-11
+        h-4
         outline-none
     }
 
@@ -86,7 +56,7 @@
         rounded-10
         relative
         w-full
-        h-11
+        h-4
         outline-none
     }
 
@@ -99,7 +69,7 @@
     .progressBar::before {
         @apply
         content-none
-        h-11
+        h-4
         w-seek-before-width
         text-seek_before_color
         rounded-tl-10
@@ -117,21 +87,21 @@
         text-seek_before_color
         rounded-tl-10
         rounded-bl-10
-        h-11
+        h-4
     }
 
     /*knobby - chrome and safari*/
     .progressBar::-webkit-slider-thumb {
         @apply
         appearance-none
-        h-15
-        w-15
+        h-18
+        w-18
         rounded-full
         border-0
         bg-knobby
         cursor-pointer
         relative
-        -mt-2px
+        -mt-1px
         z-30
         box-border
     }
@@ -139,8 +109,8 @@
     /*knobby - firefox*/
     .progressBar::-moz-range-thumb {
         @apply
-        h-15
-        w-15
+        h-18
+        w-18
         rounded-full
         border-transparent
         bg-knobby
@@ -149,25 +119,6 @@
         z-30
         box-border
     }
-
-    /*Demo Filter Styles */
-    .langToggle {
-        @apply
-        bg-pink-300
-        text-2xl
-        m-8
-        font-Poppins
-        z-10
-    }
-
-    .playerCard {
-        @apply
-        bg-violet-500/50
-        rounded
-        m-5
-        h-36
-    }
-
 }
 
 /*knobby while dragging - chrome and safari*/

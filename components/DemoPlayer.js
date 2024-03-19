@@ -62,14 +62,10 @@ const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
     return (
         <div className={styles.audioPlayer}>
             <audio ref={audioPlayer} src={audioSample} preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
-
-            {/*progress bar*/}
-            <div className='flex items-center'>
-                <button onClick={togglePlayPause} className={styles.playPause}>
-                    {isPlaying ? <FaPause /> : <FaPlay/>}
-                </button>
-                <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar} onChange={changeRange}/>
-            </div>
+            <button onClick={togglePlayPause} className={styles.playPause}>
+                {isPlaying ? <FaPause /> : <FaPlay/>}
+            </button>
+            <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar} onChange={changeRange}/>
         </div>
         )
 }
