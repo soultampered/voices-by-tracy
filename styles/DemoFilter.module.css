@@ -28,5 +28,7 @@
         p-3
         h-20
         box-border
+        transform hover:scale-105
+        transition-transform duration-100
     }
 }

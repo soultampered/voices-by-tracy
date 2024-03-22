@@ -26,10 +26,6 @@ const Demos = () => {
                     width: 1520,
                     height: 1059
                 }}/>
-                <img src="/resources/images/Background.jpg" alt="About Background" style={{
-                    width: 1520,
-                    height: 1059
-                }}/>
             </div>
         </section>
     );
