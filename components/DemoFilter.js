@@ -48,7 +48,7 @@ const DemoFilter = () => {
     };
 
     return (
-        <div className='w-1/2 bg-cream rounded p-2'>
+        <div className='w-1/3 rounded p-2 h-720'>
             <div className="buttons-container">
                 {filters.map((lang, id) => (
                     <button onClick={() => filterStateManager(lang)}
@@ -64,7 +64,7 @@ const DemoFilter = () => {
                 {filteredItems.map((audioSample, id) => (
                     <div key={`lang-${id}`} className={styles.playerCard}>
                         <div className='box-border h-full'>
-                            <p>{audioSample.title}</p>
+                            <p className='mt-1 text-gray-500 font-bold'>{audioSample.title}</p>
                             <DemoPlayer key={audioSample.id} audioSample={audioSample.path} filterState={filterState} setFilterState={setFilterState}/>
                         </div>
                     </div>

@@ -24,8 +24,8 @@ module.exports = {
         },
         colors: {
             primary: '#f40082',
-            secondary:'#ffd200',
-            bar_bg: '#ffe3d4',
+            secondary:'#ffffff',
+            bar_bg: '#9CA3AF',
             seek_before_color: '#ffc2a1',
             knobby: '#3452a5',
             selectedKnobby: '#26c9c3',
