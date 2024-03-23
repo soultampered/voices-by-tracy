@@ -1,7 +1,7 @@
 import Header from '@components/Header.js';
 import About from '@components/About.js';
+import WhyChoose from '@components/WhyChoose.js';
 import Demos from '@components/Demos.js';
-import Clients from '@components/Clients.js';
 import Testimonials from "@components/Testimonials";
 import Footer from '@components/Footer.js';
 
@@ -11,13 +11,13 @@ const Home = () => {
             <Header />
             <div className="bodyContainer">
                 <About />
+                <WhyChoose />
                 <Demos />
-                {/*<Clients />*/}
-                {/*<Testimonials />*/}
+                <Testimonials />
             </div>
-            {/*<Footer />*/}
+            <Footer />
         </div>
     )
 }
 
-export default Home
+export default Home;

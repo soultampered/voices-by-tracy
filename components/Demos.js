@@ -6,8 +6,8 @@ import DemoVideo from '@components/DemoVideo.js';
 
 const Demos = () => {
     return (
-        <section className="relative">
-            <div className='flex h-full absolute z-10 px-5 w-full'>
+        <section className="relative bg-blue-200">
+            <div className='flex h-full px-5 '>
                 <div className="w-full">
                     {/*<button id="demoBook" className="bookAudition">Book an Audition</button>*/}
                     <div className='titleContainer'>
@@ -15,17 +15,12 @@ const Demos = () => {
                     </div>
                     <div className='flex'>
                         <DemoFilter />
-                        <ClientGrid />
+                        <div></div>
                     </div>
+
+                    <ClientGrid />
                     <DemoVideo />
                 </div>
-            </div>
-            <div className="aboutBackground">
-                <div className="gradient"></div>
-                <img src="/resources/images/Background.jpg" alt="About Background" style={{
-                    width: 1520,
-                    height: 1059
-                }}/>
             </div>
         </section>
     );

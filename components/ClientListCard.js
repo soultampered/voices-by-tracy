@@ -3,9 +3,9 @@ import React from "react";
 
 const ClientListCard = () => {
     return (
-        <div className='grid grid-cols-4 grid-rows-2 grid-flow-row gap-2'>
+        <div className='flex'>
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
+            <div className="m-2 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
                 <div className="flex justify-end px-4 pt-4">
                 </div>
                 <div className="flex flex-col items-center pb-10">
@@ -16,7 +16,7 @@ const ClientListCard = () => {
                 </div>
             </div>
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
+            <div className="m-2 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
                 <div className="flex justify-end px-4 pt-4">
                 </div>
                 <div className="flex flex-col items-center pb-10">
@@ -27,7 +27,7 @@ const ClientListCard = () => {
                 </div>
             </div>
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
+            <div className="m-2 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
                 <div className="flex justify-end px-4 pt-4">
                 </div>
                 <div className="flex flex-col items-center pb-10">
@@ -38,7 +38,7 @@ const ClientListCard = () => {
                 </div>
             </div>
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
+            <div className="m-2 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
                 <div className="flex justify-end px-4 pt-4">
                 </div>
                 <div className="flex flex-col items-center pb-10">
@@ -49,7 +49,7 @@ const ClientListCard = () => {
                 </div>
             </div>
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
+            <div className="m-2 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
                 <div className="flex justify-end px-4 pt-4">
                 </div>
                 <div className="flex flex-col items-center pb-10">
@@ -60,7 +60,7 @@ const ClientListCard = () => {
                 </div>
             </div>
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
+            <div className="m-2 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
                 <div className="flex justify-end px-4 pt-4">
                 </div>
                 <div className="flex flex-col items-center pb-10">
@@ -71,7 +71,7 @@ const ClientListCard = () => {
                 </div>
             </div>
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
+            <div className="m-2 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
                 <div className="flex justify-end px-4 pt-4">
                 </div>
                 <div className="flex flex-col items-center pb-10">
@@ -82,7 +82,7 @@ const ClientListCard = () => {
                 </div>
             </div>
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
+            <div className="m-2 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
                 <div className="flex justify-end px-4 pt-4">
                 </div>
                 <div className="flex flex-col items-center pb-10">

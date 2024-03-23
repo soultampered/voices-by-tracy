@@ -20,7 +20,7 @@ const About = () => {
                     <button className="bookAudition">Book an Audition</button>
                 </div>
                 <div className='w-2/4'>
-                    <img src="/resources/images/leithBust.jpg" alt="Tracy Photo"/>
+                    <img className='rounded-3xl' src="/resources/images/leithBust.jpg" alt="Tracy Photo"/>
                 </div>
             </div>
             <div className="aboutBackground">

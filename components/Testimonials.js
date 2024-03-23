@@ -6,9 +6,9 @@ import { carouselData } from '@public/demoData.js'
 
 const Testimonials = () => {
     return (
-        <section className="section">
-            <div className="boxMain">
-                <div className="card">
+        <section className="relative bg-yellow-500">
+            <div >
+                <div >
                     <button id="demoBook" className="bookAudition">Book an Audition</button>
                     <h2 id="demoTitle">Testimonials</h2>
                     <div id="demoImages"></div>

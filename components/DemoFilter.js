@@ -48,7 +48,7 @@ const DemoFilter = () => {
     };
 
     return (
-        <div className='w-1/3 bg-cream rounded p-2'>
+        <div className='w-1/2 bg-cream rounded p-2'>
             <div className="buttons-container">
                 {filters.map((lang, id) => (
                     <button onClick={() => filterStateManager(lang)}
