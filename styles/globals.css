@@ -92,7 +92,7 @@ ul {
 
 .gradient {
     height: 100%;
-    width: 100%;
+    width: 82%;
     position: absolute;
     background-image: linear-gradient(to right top, black 42%, transparent);
     opacity: 0.9;

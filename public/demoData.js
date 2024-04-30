@@ -49,18 +49,21 @@ export const audioSample = [
 export const carouselData = [
     {
         id: '1',
-        url: "https://source.unsplash.com/78A265wPiO4",
-        alt: 'Nature Image #1'
+        Comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil',
+        Name: 'Adam Bossman',
+        Title: 'CEO of boss company'
     },
     {
         id: '2',
-        url: "https://source.unsplash.com/eOpewngf68w",
-        alt: 'Nature Image #2'
+        Comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+        Name: 'Laura Bosslady',
+        Title: 'Tech Lead at Tech Company'
     },
     {
         id: '3',
-        url: "https://source.unsplash.com/ndN00KmbJ1c",
-        alt: 'Nature Image #3'
+        Comment: 'Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil',
+        Name: 'Alex Dudebro',
+        Title: 'Open Source Enthusiast'
     }
 
 

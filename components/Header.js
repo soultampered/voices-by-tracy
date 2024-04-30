@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
     return (
         <>
-            <header className="text-gray-600 body-font bg-purple-300">
+            <header className="text-gray-600 body-font bg-gray-100">
                 <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
                     <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                         <img src="/resources/images/VbT_Logo.svg" alt="siteLogo" className="h-32" />
