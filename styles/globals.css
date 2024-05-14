@@ -82,6 +82,8 @@ ul {
     max-width: 1059px;
     width: 96%;
     margin: auto;
+    background-image: url("../public/resources/images/aurora2.jpg");
+    background-size: 100% 100%
 }
 
 .aboutBackground {

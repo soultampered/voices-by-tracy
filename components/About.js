@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
     return (
-        <section className="relative">
+        <section className="relative block ">
             <div className='flex h-full items-center absolute z-10 px-5'>
                 <div className='w-2/4 pr-5'>
                     <div className='titleContainer'>
@@ -24,11 +24,11 @@ const About = () => {
                 </div>
             </div>
             <div className="aboutBackground">
-                <div className="gradient"></div>
-                <img src="/resources/images/Background.jpg" alt="About Background" style={{
-                    width: 1520,
-                    height: 1059
-                }}/>
+                {/*<div className="gradient"></div>*/}
+                {/*<img src="/resources/images/Background.jpg" alt="About Background" style={{*/}
+                {/*    width: 1520,*/}
+                {/*    height: 1059*/}
+                {/*}}/>*/}
             </div>
         </section>
     );

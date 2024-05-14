@@ -4,8 +4,8 @@ import ClientListCard from '@components/ClientListCard.js';
 
 const ClientGrid = () => {
     return (
-        <div className=' bg-green-700 rounded box-border inline-block p-2 mt-2'>
-            <h3>Clients Portfolio</h3>
+        <div className='rounded box-border inline-block p-2 mt-2'>
+            <h3 className='hidden'>Clients</h3>
             <ClientListCard />
         </div>
     );

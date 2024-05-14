@@ -49,21 +49,21 @@ export const audioSample = [
 export const carouselData = [
     {
         id: '1',
-        Comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil',
-        Name: 'Adam Bossman',
-        Title: 'CEO of boss company'
+        comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil',
+        name: 'Adam Bossman',
+        title: 'CEO of boss company'
     },
     {
         id: '2',
-        Comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-        Name: 'Laura Bosslady',
-        Title: 'Tech Lead at Tech Company'
+        comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+        name: 'Laura Bosslady',
+        title: 'Tech Lead at Tech Company'
     },
     {
         id: '3',
-        Comment: 'Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil',
-        Name: 'Alex Dudebro',
-        Title: 'Open Source Enthusiast'
+        comment: 'Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil',
+        name: 'Alex Dudebro',
+        title: 'Open Source Enthusiast'
     }
 
 
