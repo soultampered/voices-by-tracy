@@ -82,7 +82,13 @@ ul {
     max-width: 1059px;
     width: 96%;
     margin: auto;
-    background-image: url("../public/resources/images/aurora2.jpg");
+    /*background-image: url("../public/resources/images/aurora2.jpg");*/
+    /*background-size: 100% 100%*/
+    background-color: rgb(24 24 27);
+}
+
+.auroraBackground {
+    background-image: url("../public/resources/images/aurora4.jpg");
     background-size: 100% 100%
 }
 

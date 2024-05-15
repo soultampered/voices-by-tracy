@@ -35,3 +35,19 @@
         transition-transform duration-100
     }
 }
+
+/*custom styles for scroller*/
+.scroller[data-animated='true'] {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-direction='right'] {
+    --_animation-direction: reverse;
+}
+
+.scroller[data-speed='fast'] {
+    --_animation-duration: 20s
+}

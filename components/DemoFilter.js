@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { audioSample } from '@public/demoData.js'
+import { audioSample } from '@public/demoData.js';
 import DemoPlayer from '@components/DemoPlayer.js';
 import styles from "../styles/DemoFilter.module.css";
 
