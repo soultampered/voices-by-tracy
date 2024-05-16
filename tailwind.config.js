@@ -39,16 +39,14 @@ module.exports = {
         borderRadius: {
             '10': '10px',
         },
-        keyframes: {
-          scroll: {
-              to: { transform: 'translate(calc(-50% - 0.5rem))'},
-          },
-        },
         animation: {
-            scroll: 'scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite',
+            'loop-scroll': 'loop-scroll 40s linear infinite',
         },
-        maskImage: {
-            'gradient-mask': 'linear-gradient(90deg, transparent, white 20%, white 80%, transparent)'
+        keyframes: {
+            'loop-scroll': {
+                from: { transform: 'translateX(0)'},
+                to: { transform: 'translateX(-100%)' },
+            },
         },
     },
   },

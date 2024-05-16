@@ -37,17 +37,23 @@
 }
 
 /*custom styles for scroller*/
+.scroller__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
 .scroller[data-animated='true'] {
-    overflow: hidden;
     -webkit-mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
     mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-direction='right'] {
-    --_animation-direction: reverse;
+    --animation-direction: reverse;
+    animation-direction: var(--animation-direction);
 }
 
 .scroller[data-speed='fast'] {
-    --_animation-duration: 20s
+    --animation-duration: 40s;
+    animation-duration: var(--animation-duration);
 }

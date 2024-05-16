@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import { audioSample } from '@public/demoData.js';
 import DemoPlayer from '@components/DemoPlayer.js';
