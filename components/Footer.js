@@ -1,7 +1,7 @@
 import React from "react";
 import {FaLinkedin, FaFacebook, FaInstagram} from 'react-icons/fa';
 
-const Footer = () => {
+const Footer = ({auditionBtn}) => {
 
     const currentYear = new Date().getFullYear();
 
@@ -42,7 +42,11 @@ const Footer = () => {
                         <div className="text-sm uppercase text-white font-bold">Contact Me</div>
                         <ul>
                             <li className="my-2"><a className="hover:text-indigo-600" href="mailto:voicesbytracy@gmail.com?subject=Request for Quote">voicesbytracy@gmail.com</a></li>
-                            <li><button id="demoBook" className="bookAudition">Book an Audition</button></li>
+                            <li>{auditionBtn && (
+                                <button key={auditionBtn.id} className={auditionBtn.className}>
+                                    {auditionBtn.text}
+                                </button>
+                            )}</li>
                         </ul>
                     </div>
                 </div>

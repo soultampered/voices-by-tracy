@@ -116,20 +116,6 @@ ul {
 
 @layer components {
     /*Header Styles*/
-    .headerBtn {
-        @apply
-        w-36
-        text-black
-        bg-fuchsia-400
-        text-xl
-        font-Poppins
-        text-center
-        font-bold
-        mx-6
-        hover:bg-fuchsia-800
-        hover:text-gray-400
-    }
-
     .logo {
         @apply
         w-80
@@ -152,7 +138,7 @@ ul {
         mr-10
     }
 
-    .bookAudition {
+    .blueBtn {
         @apply
         bg-blue-500
         hover:bg-blue-700

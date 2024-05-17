@@ -203,3 +203,24 @@ export const clientList = [
     },
 
 ]
+
+export const buttonList = [
+    {
+        id: '1',
+        text: 'Book an Audition',
+        className: 'blueBtn',
+        type:''
+    },
+    {
+        id: '2',
+        text: 'Contact Me',
+        className: 'contactMe',
+        type:''
+    },
+    {
+        id: '3',
+        text: 'Send Message',
+        className: 'blueBtn',
+        type:'submit'
+    },
+]
