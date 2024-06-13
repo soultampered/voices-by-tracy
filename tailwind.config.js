@@ -13,7 +13,14 @@ module.exports = {
             '700':'700px',
             '75':'75px',
             '18':'18px',
-            'seek-before-width': 0
+            'seek-before-width': 0,
+            '96':'96%'
+        },
+        minWidth: {
+            '1059':'1059px'
+        },
+        maxWidth: {
+          '1520':'1520px'
         },
         height: {
             '75': '75px',

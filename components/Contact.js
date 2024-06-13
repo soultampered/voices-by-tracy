@@ -1,9 +1,19 @@
 import React from 'react';
 
-const Contact = ({submitBtn}) => {
+const Contact = ({submitBtn, closeBtn, onData}) => {
+    const sendState = () => {
+        const state = false;
+        onData(state);
+    }
+
     return (
         <section className="bg-white dark:bg-gray-900">
-            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            {closeBtn && (
+                <button onClick={sendState} key={closeBtn.id} className={closeBtn.className}>
+                    {closeBtn.text}
+                </button>
+            )}
+            <div className="py-8 lg:py-16 px-4 mx-auto ">
                 <h2 className="mb-4 text-4xl tracking-tight text-center text-gray-900 dark:text-white">Contact Me</h2>
                 <p className="mb-8 lg:mb-16 text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
                 <form action="#" className="space-y-8">

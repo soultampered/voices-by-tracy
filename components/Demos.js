@@ -5,6 +5,9 @@ import styles from "@styles/DemoFilter.module.css";
 import {clientList} from "@public/demoData";
 
 const Demos = ({auditionBtn}) => {
+
+    // var copy = document.querySelector(".logos-slide").cloneNode(true);
+    // document.querySelector(".logos").appendChild(copy);
     return (
         <section className="relative">
             <div className='flex h-full px-5'>
@@ -24,15 +27,15 @@ const Demos = ({auditionBtn}) => {
                     <div className='flex pb-4'>
                         <DemoFilter />
                     </div>
-                    <div className='rounded box-border inline-block p-2 mt-2'>
+                    <div className='rounded box-border flex p-2 mt-2 w-auto'>
                         <h3 className='hidden'>Clients</h3>
                         <div
-                            className={`max-w-[1480px] border-lime-400 border-4 ${styles.scroller}`}
+                            className={`max-w-full border-lime-400 border-4 ${styles.scroller}`}
                             data-animated='true'
                             data-direction='right'
                             data-speed='fast'>
 
-                            <div className={`animate-loop-scroll pb-2 h-32 ${styles.scroller__inner}`}>
+                            <div className={`animate-loop-scroll h-32 ${styles.scroller__inner}`}>
                                 {clientList.map((client) => (
                                     <div key={client.id}
                                          className="m-2 max-w-s rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">

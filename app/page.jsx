@@ -10,17 +10,18 @@ import {buttonList} from "@public/demoData.js";
 const Home = () => {
     const auditionBtn = buttonList.find(button => button.id === '1');
     const submitBtn = buttonList.find((button) => button.id === '3');
+    const closeBtn = buttonList.find((button) => button.id === '4');
 
     return (
-        <div className="background">
+        <div>
             <Header />
-            <div className="bodyContainer">
-                <About auditionBtn={auditionBtn} />
+            <div className="bodyContainer" style={{
+                backgroundImage: `url('/resources/images/aurora2.jpg')`
+            }}>
+                <About auditionBtn={auditionBtn} closeBtn={closeBtn} submitBtn={submitBtn}/>
                 <WhyChoose />
                 <Demos auditionBtn={auditionBtn} />
                 <Testimonials />
-
-                <Contact submitBtn={submitBtn}/>
             </div>
             <Footer auditionBtn={auditionBtn} />
         </div>

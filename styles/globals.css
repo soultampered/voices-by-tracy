@@ -10,6 +10,18 @@
     box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+    height: 0;
+}
+
+* {
+    scrollbar-width: none; /* Hide the scrollbar in Firefox */
+}
+
+* {
+    -ms-overflow-style: none; /* Hide the scrollbar in IE and Edge */
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
@@ -74,19 +86,6 @@ ul {
     background: #000000;
 }
 
-.bodyContainer {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    min-width: 1520px;
-    max-width: 1059px;
-    width: 96%;
-    margin: auto;
-    /*background-image: url("../public/resources/images/aurora2.jpg");*/
-    /*background-size: 100% 100%*/
-    background-color: rgb(24 24 27);
-}
-
 .auroraBackground {
     background-image: url("../public/resources/images/aurora4.jpg");
     background-size: 100% 100%
@@ -98,13 +97,13 @@ ul {
     position: relative;
 }
 
-.gradient {
-    height: 100%;
-    width: 82%;
-    position: absolute;
-    background-image: linear-gradient(to right top, black 42%, transparent);
-    opacity: 0.9;
-}
+/*.gradient {*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    background-image: linear-gradient(to right top, black 10%, transparent);*/
+/*    opacity: 0.9;*/
+/*}*/
 
 .container > img {
     height: 100%;
@@ -151,6 +150,21 @@ ul {
         rounded
     }
 
+    .bodyContainer {
+        @apply
+        min-h-screen
+        flex
+        flex-col
+        min-w-1059
+        max-w-1520
+        w-96
+        m-auto
+        bg-fixed
+        bg-center
+        bg-cover
+        relative
+    }
+
     /*Section Title styles*/
     #demoTitle {
         @apply
@@ -171,5 +185,14 @@ ul {
         mr-auto
         /*text-center*/
         my-4
+    }
+
+    .modal-overlay {
+        @apply
+        fixed
+        inset-0
+        bg-black
+        bg-opacity-50
+        z-40
     }
 }

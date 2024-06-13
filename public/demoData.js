@@ -223,4 +223,10 @@ export const buttonList = [
         className: 'blueBtn',
         type:'submit'
     },
+    {
+        id: '4',
+        text: 'Close',
+        className: 'blueBtn',
+        type:''
+    },
 ]
