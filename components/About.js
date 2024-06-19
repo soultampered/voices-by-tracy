@@ -30,7 +30,7 @@ const About = ({auditionBtn, closeBtn, submitBtn}) => {
                             id est laborum.
                         </p>
                         {auditionBtn && (
-                            <button onClick={() => setIsOpen(true)} key={auditionBtn.id} className={auditionBtn.className}>
+                            <button onClick={() => setIsOpen(true)} key={auditionBtn.id} className='blueBtn'>
                                 {auditionBtn.text}
                             </button>
                         )}

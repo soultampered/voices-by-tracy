@@ -7,7 +7,7 @@ const Footer = ({auditionBtn}) => {
 
     return (
         <footer>
-            <div className="auroraBackground">
+            <div className='bg-zinc-900'>
                 <div className="max-w-screen-lg py-10 px-4 sm:px-6 text-white sm:flex justify-between mx-auto">
                     <div className="p-5 sm:w-3/12 border-r">
                         <div className="text-sm uppercase text-white font-bold">Menu</div>
@@ -31,7 +31,7 @@ const Footer = ({auditionBtn}) => {
                         <p className="text-gray-500 text-sm">Lorem Ipsum is simply dummy text of the printing and
                             typesetting
                             industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <img src='/resources/images/VbT_Logo_Mark.svg' alt="Voices by Tracy logo Mark"
+                        <img src='/resources/images/VbT_Logo_Mark_Inverted.svg' alt="Voices by Tracy logo Mark"
                              style={{
                                  width: 150,
                                  height: 150,
@@ -43,7 +43,7 @@ const Footer = ({auditionBtn}) => {
                         <ul>
                             <li className="my-2"><a className="hover:text-indigo-600" href="mailto:voicesbytracy@gmail.com?subject=Request for Quote">voicesbytracy@gmail.com</a></li>
                             <li>{auditionBtn && (
-                                <button key={auditionBtn.id} className={auditionBtn.className}>
+                                <button key={auditionBtn.id} className='blueBtn'>
                                     {auditionBtn.text}
                                 </button>
                             )}</li>

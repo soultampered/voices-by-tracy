@@ -208,7 +208,6 @@ export const buttonList = [
     {
         id: '1',
         text: 'Book an Audition',
-        className: 'blueBtn',
         type:''
     },
     {
@@ -220,13 +219,11 @@ export const buttonList = [
     {
         id: '3',
         text: 'Send Message',
-        className: 'blueBtn',
         type:'submit'
     },
     {
         id: '4',
         text: 'Close',
-        className: 'blueBtn',
         type:''
     },
 ]

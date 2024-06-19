@@ -13,7 +13,7 @@ const Demos = ({auditionBtn}) => {
             <div className='flex h-full px-5'>
                 <div className="w-full">
                     {auditionBtn && (
-                        <button key={auditionBtn.id} className={auditionBtn.className}>
+                        <button key={auditionBtn.id} className='blueBtn'>
                             {auditionBtn.text}
                         </button>
                     )}
