@@ -1,4 +1,5 @@
 import '@styles/globals.css';
+import {ModalProvider} from "@app/context/ModalContext";
 
 export const metadata = {
     title: "Voices by Tracy",
@@ -11,7 +12,9 @@ const RootLayout = ({ children }) => {
             <body className="background">
                 <div className="main">
                     <main className="app">
-                        {children}
+                        <ModalProvider>
+                            {children}
+                        </ModalProvider>
                     </main>
                 </div>
             </body>

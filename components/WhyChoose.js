@@ -15,7 +15,7 @@ const WhyChoose = () => {
                         <div className="relative mx-auto max-w-5xl text-center">
 
                             {/*little blurb about what you do*/}
-                            <h2 className="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
+                            <h2 id="serviceSection" className="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
                                 Why Choose section
                             </h2>
                             <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
@@ -94,7 +94,7 @@ const WhyChoose = () => {
                                 </div>
                                 <h3 className="mt-6 text-gray-400">Customizable</h3>
                                 <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">Tailor
-                                    your landing page's
+                                    your landing page&apos;s
                                     look
                                     and feel, from the color scheme to the font size, to the design of the page.
                                 </p>

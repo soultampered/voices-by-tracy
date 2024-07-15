@@ -10,14 +10,15 @@ const Header = () => {
                     </a>
                     <nav
                         className="md:ml-auto md:mr-4 md:py-1 md:pl-4 flex flex-wrap items-center text-base justify-center">
-                        <a className="mr-5 hover:text-gray-400 cursor-pointer">About</a>
-                        <a className="mr-5 hover:text-gray-400 cursor-pointer">Demos</a>
-                        <a className="mr-5 hover:text-gray-400 cursor-pointer">Clients</a>
-                        <a className="mr-5 hover:text-gray-400 cursor-pointer">Contact</a>
+                        <a className="mr-5 hover:text-gray-400 cursor-pointer" href="#aboutSection">About</a>
+                        <a className="mr-5 hover:text-gray-400 cursor-pointer" href="#demosSection">Demos</a>
+                        <a className="mr-5 hover:text-gray-400 cursor-pointer" href="#serviceSection">Services</a>
+                        <a className="mr-5 hover:text-gray-400 cursor-pointer" href="#clientSection">Clients</a>
+                        <a className="mr-5 hover:text-gray-400 cursor-pointer" href="/site/contact">Contact</a>
                     </nav>
                     <button
                         className="frenchBtn">
-                        Français
+                    Français
                     </button>
                 </div>
             </header>

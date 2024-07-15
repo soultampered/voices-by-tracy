@@ -1,9 +1,18 @@
+'use client'
 import React from "react";
 import {FaLinkedin, FaFacebook, FaInstagram} from 'react-icons/fa';
+import { useModal } from '/app/context/ModalContext.js';
+import Contact from "@components/Contact";
 
 const Footer = ({auditionBtn}) => {
 
     const currentYear = new Date().getFullYear();
+    const { openModal } = useModal();
+    const handleOpenModal = () => {
+        openModal(
+            <Contact />
+        );
+    };
 
     return (
         <footer>
@@ -13,24 +22,22 @@ const Footer = ({auditionBtn}) => {
                         <div className="text-sm uppercase text-white font-bold">Menu</div>
                         <ul>
                             <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#">About</a>
+                                <a className="hover:text-indigo-600" href="#aboutSection">About</a>
                             </li>
                             <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#">Services</a>
+                                <a className="hover:text-indigo-600" href="#serviceSection">Services</a>
                             </li>
                             <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#">Demos</a>
+                                <a className="hover:text-indigo-600" href="#demosSection">Demos</a>
                             </li>
                             <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#">Clients</a>
+                                <a className="hover:text-indigo-600" href="#clientSection">Clients</a>
                             </li>
                         </ul>
                     </div>
                     <div className="p-5 sm:w-7/12 border-r text-center">
                         <h3 className="font-bold text-xl text-white mb-4">Lorem Ipsum</h3>
-                        <p className="text-gray-500 text-sm">Lorem Ipsum is simply dummy text of the printing and
-                            typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p className="text-gray-500 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.</p>
                         <img src='/resources/images/VbT_Logo_Mark_Inverted.svg' alt="Voices by Tracy logo Mark"
                              style={{
                                  width: 150,
@@ -43,7 +50,7 @@ const Footer = ({auditionBtn}) => {
                         <ul>
                             <li className="my-2"><a className="hover:text-indigo-600" href="mailto:voicesbytracy@gmail.com?subject=Request for Quote">voicesbytracy@gmail.com</a></li>
                             <li>{auditionBtn && (
-                                <button key={auditionBtn.id} className='blueBtn'>
+                                <button onClick={handleOpenModal} key={auditionBtn.id} className='blueBtn'>
                                     {auditionBtn.text}
                                 </button>
                             )}</li>

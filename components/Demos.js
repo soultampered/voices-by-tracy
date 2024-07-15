@@ -9,7 +9,7 @@ const Demos = ({auditionBtn}) => {
     // var copy = document.querySelector(".logos-slide").cloneNode(true);
     // document.querySelector(".logos").appendChild(copy);
     return (
-        <section className="relative">
+        <section id="demosSection" className="relative">
             <div className='flex h-full px-5'>
                 <div className="w-full">
                     {auditionBtn && (
@@ -31,6 +31,7 @@ const Demos = ({auditionBtn}) => {
                         <h3 className='hidden'>Clients</h3>
                         <div
                             className={`max-w-full border-lime-400 border-4 ${styles.scroller}`}
+                            id="clientSection"
                             data-animated='true'
                             data-direction='right'
                             data-speed='fast'>
