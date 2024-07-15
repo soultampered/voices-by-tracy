@@ -1,4 +1,8 @@
-import React from "react";
+export const aboutInfo = {
+        catchPhrase: 'Your story, my voice — let\'s create magic.',
+        bioEN: 'Bilingual voice actor with over 15 years of experience, providing narration services (French and English) for all your corporate and commercial projects, specialized in governmental organizations, hospitals and/or financial institutions, private health-care network and more.',
+        bioFR: 'Narratrice de voix hors-champs bilingue (français et anglais), avec plus de 15 ans d\'expérience, offrant des services de narrations, spécialisant en divers projets commerciaux (radio, télé et web) ainsi que pour tous vos projets de narration corporatifs; de vidéos promotionnelles dans le réseau de la santé, agence gouvernementale, institutions financiers, et plus encore.'
+    }
 
 export const audioSample = [
     {
@@ -49,22 +53,22 @@ export const audioSample = [
 export const carouselData = [
     {
         id: '1',
-        comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil',
-        name: 'Adam Bossman',
-        title: 'CEO of boss company'
+        comment: 'Tracy is the best! Her voice talent is top-notch and she\'s an absolute pleasure to work with. Hiring her is a slam dunk - amazing skills paired with an awesome, down-to-earth personality. Can\'t recommend her enough!',
+        name: 'Mike Hachey',
+        title: 'Executive Producer, InsidersContent'
     },
-    {
-        id: '2',
-        comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-        name: 'Laura Bosslady',
-        title: 'Tech Lead at Tech Company'
-    },
-    {
-        id: '3',
-        comment: 'Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil',
-        name: 'Alex Dudebro',
-        title: 'Open Source Enthusiast'
-    }
+    // {
+    //     id: '2',
+    //     comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    //     name: 'Laura Bosslady',
+    //     title: 'Tech Lead at Tech Company'
+    // },
+    // {
+    //     id: '3',
+    //     comment: 'Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil',
+    //     name: 'Alex Dudebro',
+    //     title: 'Open Source Enthusiast'
+    // }
 
 ]
 

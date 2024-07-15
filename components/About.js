@@ -1,6 +1,7 @@
 'use client'
-import React, {useState} from "react";
-import { useModal } from '/app/context/ModalContext.js';
+import React from "react";
+import { aboutInfo } from "@public/demoData";
+import { useModal } from "@app/context/ModalContext";
 import Contact from "@components/Contact.js";
 
 const About = ({auditionBtn}) => {
@@ -20,17 +21,8 @@ const About = ({auditionBtn}) => {
                             <h1>Tracy-Ann Leith</h1>
                         </div>
 
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                            id est laborum.
-                        </p>
+                        <h2>{ aboutInfo.catchPhrase }</h2>
+                        <p>{ aboutInfo.bioEN }</p>
                         {auditionBtn && (
                             <button onClick={handleOpenModal} key={auditionBtn.id} className='blueBtn'>
                                 {auditionBtn.text}
@@ -41,13 +33,7 @@ const About = ({auditionBtn}) => {
                         <img className='rounded-3xl' src="/resources/images/leithBust.jpg" alt="Tracy Photo"/>
                     </div>
                 </div>
-                <div className="aboutBackground">
-                    {/*<div className="gradient"></div>*/}
-                    {/*<img src="/resources/images/aurora2.jpg" alt="About Background" style={{*/}
-                    {/*    width: 1520,*/}
-                    {/*    height: 1059*/}
-                    {/*}}/>*/}
-                </div>
+                <div className="aboutBackground"></div>
             </section>
     );
 }

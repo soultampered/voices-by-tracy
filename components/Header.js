@@ -5,7 +5,7 @@ const Header = () => {
         <>
             <header className="bg-zinc-900 text-white body-font">
                 <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
-                    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/site">
                         <img src="/resources/images/VbT_Logo_Inverted.svg" alt="siteLogo" className="h-24"/>
                     </a>
                     <nav
