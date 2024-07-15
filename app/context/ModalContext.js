@@ -10,15 +10,9 @@ export const ModalProvider = ({ children }) => {
     const [modalContent, setModalContent] = useState(null);
 
     useEffect(() => {
-        if (typeof document !== 'undefined') {
-            const appElement = document.querySelector('#__next');
-            if (appElement) {
-                Modal.setAppElement(appElement);
-            } else {
-                console.error("App element '#__next' not found");
-            }
-        }
+        Modal.setAppElement(document.body);
     }, []);
+
 
     const openModal = (content) => {
         setModalContent(content);
