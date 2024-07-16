@@ -1,8 +1,8 @@
 
-const RootLayout = ({ children }) => {
+const ContactLayout = ({ children }) => {
     return (
         <section>{children}</section>
     )
 }
 
-export default RootLayout
+export default ContactLayout;

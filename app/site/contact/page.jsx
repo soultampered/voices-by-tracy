@@ -3,7 +3,7 @@ import Contact from '@components/Contact.js';
 import Footer from '@components/Footer.js';
 import {buttonList} from "@public/demoData.js";
 
-const Home = () => {
+const ContactPage = () => {
     const auditionBtn = buttonList.find(button => button.id === '1');
     const submitBtn = buttonList.find((button) => button.id === '3');
     const closeBtn = buttonList.find((button) => button.id === '4');
@@ -19,4 +19,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default ContactPage;

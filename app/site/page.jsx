@@ -3,7 +3,7 @@ import About from '@components/About.js';
 import WhyChoose from '@components/WhyChoose.js';
 import Demos from '@components/Demos.js';
 import Testimonials from "@components/Testimonials";
-import Contact from "@components/Contact.js"
+import Portfolio from "@components/Portfolio";
 import Footer from '@components/Footer.js';
 import {buttonList} from "@public/demoData.js";
 
@@ -15,8 +15,9 @@ const Home = () => {
     return (
         <div>
             <Header />
+            <Portfolio />
             <div className="bodyContainer" style={{
-                backgroundImage: `url('/resources/images/aurora.jpg')`
+                // backgroundImage: `url('/resources/images/aurora.jpg')`
             }}>
                 <About auditionBtn={auditionBtn} closeBtn={closeBtn} submitBtn={submitBtn}/>
                 <WhyChoose />

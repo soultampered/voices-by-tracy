@@ -5,4 +5,4 @@ const SiteLayout = ({ children }) => {
     )
 }
 
-export default SiteLayout
+export default SiteLayout;
