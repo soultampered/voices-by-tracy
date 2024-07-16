@@ -76,13 +76,13 @@ export const clientList = [
     {
         id: '1',
         name: 'Raymond James',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/Raymond_James.png',
         alt: 'Raymond James Logo'
     },
     {
         id: '2',
         name: 'Intact Insurance',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/Intact_Insurance.png',
         alt: 'Intact Insurance Logo'
     },
     {
