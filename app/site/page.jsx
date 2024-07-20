@@ -17,7 +17,7 @@ const Home = () => {
             <Header />
             <Portfolio />
             <div className="bodyContainer" style={{
-                // backgroundImage: `url('/resources/images/aurora.jpg')`
+                backgroundImage: `url('/resources/images/aurora.jpg')`
             }}>
                 <About auditionBtn={auditionBtn} closeBtn={closeBtn} submitBtn={submitBtn}/>
                 <WhyChoose />

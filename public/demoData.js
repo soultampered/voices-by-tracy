@@ -1,8 +1,19 @@
 export const aboutInfo = {
-        catchPhrase: 'Your story, my voice — let\'s create magic.',
-        bioEN: 'Bilingual voice actor with over 15 years of experience, providing narration services (French and English) for all your corporate and commercial projects, specialized in governmental organizations, hospitals and/or financial institutions, private health-care network and more.',
-        bioFR: 'Narratrice de voix hors-champs bilingue (français et anglais), avec plus de 15 ans d\'expérience, offrant des services de narrations, spécialisant en divers projets commerciaux (radio, télé et web) ainsi que pour tous vos projets de narration corporatifs; de vidéos promotionnelles dans le réseau de la santé, agence gouvernementale, institutions financiers, et plus encore.'
-    }
+        catchPhraseEN: 'English, French - Best of both worlds! ',
+        catchPhraseFR: 'francais, anglais - le meilleure de deux monde! ',
+        bioEN: 'Bilingual voiceover talent, fluent in both English and French, boasts over 15 years of experience. Specialized in corporate and commercial narration, Interactive Voice Response (IVR), online learning, corporate explainers, Public Service Announcements (PSAs) for government agencies, educational and medical narration, promotional videos for financial institutions, live announcing, Automated Dialogue Replacement (ADR), animation, and more!',
+        bioFR: 'Narratrice de voix hors-champs parfaitement bilingue (français et anglais), possédant plus de 15 ans d\'expérience, spécialisée dans des projets commerciaux (radio, télé et Web), réponse vocale interactive (RVI), en téléphonie, apprentissage en ligne, narration de vidéos promotionnelles pour le réseau de la santé, les agences gouvernementales et institutions financières, doublages, animation, et plus encore !',
+        bioExpandedEN: 'For over 15 years, Tracy has been the go-to expert for female voice-overs in all your projects, providing you with a comprehensive, turnkey service for all of your corporate videos, advertisements (TV, radio, or web), and public service announcements.\n' +
+            '\n' +
+            'This bilingual voice-over narrator is adept in both French and English, offering a cost-effective and time-saving solution.\n' +
+            '\n' +
+            'Whether you\'re in search of a soothing and composed voice or require a more lighthearted approach, she has the expertise to capture the essence of your projects, elevating them to new heights!\n',
+        // bioExpandedFR: 'Depuis plus de 15 ans, Tracy est votre voix hors-champs féminine de choix, vous fournissant un service clé en main pour toutes vos vidéos d\'entreprise, publicités (télé, radio ou Web), ou messages d\'intérêt public. \n' +
+        //     '\n' +
+        //     'Cette narratrice de voix hors-champs bilingue œuvre à la fois en français et en anglais, ce qui vous permettra de gagner du temps et de l\'argent.\n' +
+        //     '\n' +
+        //     'Que vous soyez à la recherche d\'une voix apaisante et composée ou que vous demandiez une approche plus légère, elle possède l\'expertise pour capturer l\'essence de vos projets pour les propulser vers de nouveaux sommets !\n'
+}
 
 export const audioSample = [
     {

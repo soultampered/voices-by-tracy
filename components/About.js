@@ -17,12 +17,12 @@ const About = ({auditionBtn}) => {
             <section id='aboutSection' className="relative block">
                 <div className='flex h-full items-center absolute z-50 px-5'>
                     <div className='w-2/4 pr-5'>
-                        <div className='titleContainer'>
-                            <h1>Tracy-Ann Leith</h1>
-                        </div>
+                        {/*<div className='titleContainer'>*/}
+                        {/*    <h1>Tracy-Ann Leith</h1>*/}
+                        {/*</div>*/}
 
-                        <h2>{ aboutInfo.catchPhrase }</h2>
-                        <p>{ aboutInfo.bioEN }</p>
+                        <h2>{ aboutInfo.catchPhraseEN }</h2>
+                        <p>{ aboutInfo.bioExpandedEN }</p>
                         {auditionBtn && (
                             <button onClick={handleOpenModal} key={auditionBtn.id} className='blueBtn'>
                                 {auditionBtn.text}
