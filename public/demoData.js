@@ -99,121 +99,124 @@ export const clientList = [
     {
         id: '3',
         name: 'Splenda',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/Splenda_Logo.jpg',
         alt: 'Splenda Logo'
     },
     {
         id: '4',
         name: 'Arm & Hammer',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/arm_hammer_logo.png',
         alt: 'Arm & Hammer Logo'
     },
     {
         id: '5',
         name: 'Jack Daniels',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/JackDaniels_logo.png',
         alt: 'Jack Daniels Logo'
     },
     {
         id: '6',
         name: 'ProLite',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/prolite.png',
         alt: 'ProLite Logo'
     },
     {
         id: '7',
         name: 'Canadel Furniture',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/canadel.png',
         alt: 'Canadel Furniture Logo'
     },
     {
         id: '8',
         name: 'Desjardins',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/desjardins_logo.png',
         alt: 'Desjardins Logo'
     },
     {
         id: '9',
         name: 'UNI Financial',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/UNI_Financial.png',
         alt: 'UNI Financial Logo'
     },
     {
         id: '10',
         name: 'Asmodee',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/asmodee.png',
         alt: 'Asmodee Logo'
     },
     {
         id: '11',
         name: 'Audi Lauzon',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/audi.png',
         alt: 'Audi Lauzon Logo'
     },
     {
         id: '12',
+
         name: 'Air Canada',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/Air_Canada.png',
         alt: 'Air Canada Logo'
     },
     {
         id: '13',
         name: 'CAE',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/CAE.png',
+
+
         alt: 'CAE Logo'
     },
     {
         id: '14',
         name: 'Historica Canada',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/HistoricaCanada.png',
         alt: 'Historica Canada Logo'
     },
     {
         id: '15',
         name: 'McGill',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/McGill.png',
         alt: 'McGill Logo'
     },
     {
         id: '16',
-        name: 'Vetroquinol',
-        source: '/resources/images/leithBust.jpg',
+        name: 'Vetoquinol',
+        source: '/resources/images/clients/vetoquinol.png',
         alt: 'Vetroquinol Logo'
     },
     {
         id: '17',
         name: 'Bio-K-Plus',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/Bio-k.png',
         alt: 'Bio-K-Plus Logo'
     },
     {
         id: '18',
         name: 'SNC Lavalin',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/SNC-Lavalin.png',
         alt: 'SNC Lavalin Logo'
     },
     {
         id: '19',
         name: 'Radio CINA',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/RadioCINA.png',
         alt: 'Radio CINA Logo'
     },
     {
         id: '20',
         name: 'General Mills',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/General_Mills.png',
         alt: 'General Mills Logo'
     },
     {
         id: '21',
         name: 'Hockey Canada',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/HockeyCanada.png',
         alt: 'Hockey Canada Logo'
     },
     {
         id: '22',
         name: 'Ubisoft',
-        source: '/resources/images/leithBust.jpg',
+        source: '/resources/images/clients/Ubisoft_logo.png',
         alt: 'Ubisoft Logo'
     },
 
