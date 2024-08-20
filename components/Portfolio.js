@@ -1,5 +1,5 @@
 import React from "react";
-import DemosPage from "@app/site/demos/page";
+// import DemosPage from "@app/site/demos/page";
 import { aboutInfo} from "@public/demoData";
 import about from "@components/About";
 

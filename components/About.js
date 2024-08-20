@@ -1,17 +1,17 @@
 'use client'
 import React from "react";
 import { aboutInfo } from "@public/demoData";
-import { useModal } from "@app/context/ModalContext";
+/*import { useModal } from "@app/context/ModalContext";*/
 import Contact from "@components/Contact.js";
 
 const About = ({auditionBtn}) => {
 
-    const { openModal } = useModal();
-    const handleOpenModal = () => {
-        openModal(
-            <Contact />
-        );
-    };
+    // const { openModal } = useModal();
+    // const handleOpenModal = () => {
+    //     openModal(
+    //         <Contact />
+    //     );
+    // };
 
     return (
             <section id='aboutSection' className="relative block">
@@ -23,11 +23,11 @@ const About = ({auditionBtn}) => {
 
                         <h2>{ aboutInfo.catchPhraseEN }</h2>
                         <p>{ aboutInfo.bioExpandedEN }</p>
-                        {auditionBtn && (
-                            <button onClick={handleOpenModal} key={auditionBtn.id} className='blueBtn'>
-                                {auditionBtn.text}
-                            </button>
-                        )}
+                        {/*{auditionBtn && (*/}
+                        {/*    <button onClick={handleOpenModal} key={auditionBtn.id} className='blueBtn'>*/}
+                        {/*        {auditionBtn.text}*/}
+                        {/*    </button>*/}
+                        {/*)}*/}
                     </div>
                     <div className='w-2/4'>
                         <img className='rounded-3xl' src="/resources/images/leithBust.jpg" alt="Tracy Photo"/>

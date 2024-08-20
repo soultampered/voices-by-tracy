@@ -1,18 +1,18 @@
 'use client'
 import React from "react";
 import {FaLinkedin, FaFacebook, FaInstagram} from 'react-icons/fa';
-import { useModal } from '/app/context/ModalContext.js';
+// import { useModal } from '/app/context/ModalContext.js';
 import Contact from "@components/Contact";
 
 const Footer = ({auditionBtn}) => {
 
     const currentYear = new Date().getFullYear();
-    const { openModal } = useModal();
-    const handleOpenModal = () => {
-        openModal(
-            <Contact />
-        );
-    };
+    // const { openModal } = useModal();
+    // const handleOpenModal = () => {
+    //     openModal(
+    //         <Contact />
+    //     );
+    // };
 
     return (
         <footer>
@@ -49,11 +49,11 @@ const Footer = ({auditionBtn}) => {
                         <div className="text-sm uppercase text-white font-bold">Contact Me</div>
                         <ul>
                             <li className="my-2"><a className="hover:text-indigo-600" href="mailto:voicesbytracy@gmail.com?subject=Request for Quote">voicesbytracy@gmail.com</a></li>
-                            <li>{auditionBtn && (
-                                <button onClick={handleOpenModal} key={auditionBtn.id} className='blueBtn'>
-                                    {auditionBtn.text}
-                                </button>
-                            )}</li>
+                            {/*<li>{auditionBtn && (*/}
+                            {/*    <button onClick={handleOpenModal} key={auditionBtn.id} className='blueBtn'>*/}
+                            {/*        {auditionBtn.text}*/}
+                            {/*    </button>*/}
+                            {/*)}</li>*/}
                         </ul>
                     </div>
                 </div>
