@@ -6,7 +6,7 @@ const Header = () => {
             <header className="bg-white text-black body-font">
                 <div className="h-32 lg:px-16 xs:px-4 px-8 h-full flex xs:flex-col sm:flex-row sm:items-center xs:mt-10 sm:mt-0">
                     <a className="flex title-font font-medium items-center mb-4 md:mb-0" href="/site">
-                        <img src="/resources/images/VbT_Logo_Inverted.svg" alt="siteLogo" className="h-32"/>
+                        <img src="/resources/images/VbT_Logo.svg" alt="siteLogo" className="h-32"/>
                     </a>
                     <nav
                         className="md:ml-auto md:mr-4 md:py-1 md:pl-4 flex flex-wrap items-center text-base justify-center">

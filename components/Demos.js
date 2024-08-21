@@ -26,6 +26,7 @@ const Demos = ({auditionBtn}) => {
 
                     <div className='flex pb-4'>
                         <DemoFilter />
+                        <DemoVideo />
                     </div>
                     <div className='rounded box-border flex p-2 mt-2 w-auto'>
                         <h3 className='hidden'>Clients</h3>
@@ -50,7 +51,6 @@ const Demos = ({auditionBtn}) => {
                             </div>
                         </div>
                     </div>
-                    {/*<DemoVideo />*/}
                 </div>
             </div>
         </section>

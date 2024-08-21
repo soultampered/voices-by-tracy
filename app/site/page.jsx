@@ -16,11 +16,11 @@ const Home = () => {
         <div>
             <Header />
             <Portfolio />
-            <div className="bodyContainer" style={{
-                backgroundImage: `url('/resources/images/aurora.jpg')`
-            }}>
+            <div className="bodyContainer">
+            {/*<div className="bodyContainer" style={{*/}
+            {/*    backgroundImage: `url('/resources/images/aurora.jpg')`*/}
+            {/*}}>*/}
                 <About auditionBtn={auditionBtn} closeBtn={closeBtn} submitBtn={submitBtn}/>
-                <WhyChoose />
                 <Demos auditionBtn={auditionBtn} />
                 <Testimonials />
             </div>
