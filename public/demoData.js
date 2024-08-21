@@ -18,47 +18,46 @@ export const aboutInfo = {
 export const audioSample = [
     {
         id: '1',
-        path: '/resources/audio/Lost.m4a',
-        title: 'Lost',
-        lang: 'En'
+        path: '/resources/audio/Commercial_demo_EN_Long.mp3',
+        title: 'Commercial Demo - Long',
+        lang: 'En',
+        domain: 'Commercial'
     },
     {
         id: '2',
-        path: '/resources/audio/FightingMyself.m4a',
-        title: 'Fighting Myself',
-        lang: 'En'
+        path: '/resources/audio/Commercial_demo_EN_Short.mp3',
+        title: 'Commercial Demo - Short',
+        lang: 'En',
+        domain: 'Commercial'
     },
     {
         id: '3',
-        path: '/resources/audio/MoreTheVictim.m4a',
-        title: 'More the Victim',
-        lang: 'En'
+        path: '/resources/audio/Corporate_demo_EN_Long.mp3',
+        title: 'Corporate Demo - Long',
+        lang: 'En',
+        domain: 'Corporate'
     },
     {
         id: '4',
-        path: '/resources/audio/Massive.m4a',
-        title: 'Massive',
-        lang: 'Fr'
+        path: '/resources/audio/Démo_commercial_FR_Court.mp3',
+        title: 'Démo commercial - court',
+        lang: 'Fr',
+        domain: 'Commercial'
     },
     {
         id: '5',
-        path: '/resources/audio/HealingFoot.m4a',
-        title: 'Healing Foot',
-        lang: 'Fr'
+        path: '/resources/audio/Démo_commercial_FR_Long.mp3',
+        title: 'Démo commercial - long',
+        lang: 'Fr',
+        domain: 'Commercial'
     },
     {
         id: '6',
-        path: '/resources/audio/Wesside.m4a',
-        title: 'Wesside',
-        lang: 'Fr'
+        path: '/resources/audio/Démo_corporatif_FR_Long.mp3',
+        title: 'Démo corporatif - long',
+        lang: 'Fr',
+        domain: 'Corporate'
     },
-    {
-        id: '7',
-        path: '/resources/audio/Resolution.m4a',
-        title: 'Resolution',
-        lang: 'Fr'
-    }
-
 ]
 
 export const carouselData = [
@@ -68,19 +67,12 @@ export const carouselData = [
         name: 'Mike Hachey',
         title: 'Executive Producer, InsidersContent'
     },
-    // {
-    //     id: '2',
-    //     comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-    //     name: 'Laura Bosslady',
-    //     title: 'Tech Lead at Tech Company'
-    // },
-    // {
-    //     id: '3',
-    //     comment: 'Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil',
-    //     name: 'Alex Dudebro',
-    //     title: 'Open Source Enthusiast'
-    // }
-
+    {
+        id: '2',
+        comment: 'Tracy is a skilled and talented voice over professional who makes content come to life.',
+        name: 'Merika Ramundo',
+        title: 'McGill University Library'
+    },
 ]
 
 export const clientList = [
@@ -244,4 +236,45 @@ export const buttonList = [
         text: 'Close',
         type:''
     },
+]
+
+export const whyChooseData = [
+    {
+        reason: [
+            {
+                id: '1',
+                title: 'Reason #1',
+                desc: "Some reason why 1 might be what you are looking for"
+            },
+            {
+                id: '2',
+                title: 'Reason #1',
+                desc: "Some reason why 2 might be what you are looking for"
+            },
+            {
+                id: '3',
+                title: 'Reason #1',
+                desc: "Some reason why 3 might be what you are looking for"
+            },
+            {
+                id: '4',
+                title: 'Reason #1',
+                desc: "Some reason why 4 might be what you are looking for"
+            }
+
+        ],
+        feature: [
+            {
+                id: '1',
+                title: 'Customizable',
+                desc: 'Tailor your landing page&apos;s look and feel, from the color scheme to the font size, to the design of the page.'
+            },
+            {
+                id: '2',
+                title: 'Fast Performance',
+                desc: 'We build our templates for speed in mind, for super-fast load times so your customers never waver.'
+            }
+        ]
+    }
+
 ]
