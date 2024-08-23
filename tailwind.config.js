@@ -30,6 +30,9 @@ module.exports = {
             '850':  '850px',
             '1059' : '1059px'
         },
+        padding: {
+          '22': '88px'
+        },
         colors: {
             primary: '#f40082',
             secondary:'#ffffff',

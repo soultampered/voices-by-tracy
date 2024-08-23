@@ -1,6 +1,6 @@
 import React from "react";
 // import DemosPage from "@app/site/demos/page";
-import { aboutInfo} from "@public/demoData";
+import { aboutInfo } from "@public/demoData";
 import about from "@components/About";
 
 const Portfolio = () => {
@@ -19,6 +19,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="w-2/3 flex sm:flex-col xs:justify-center xs:mt-4 sm:mt-0 sm:gap-8 xs:gap-2 p-4 rounded-lg z-10">
+
                     <div className="flex flex-col sm:items-end xs:items-center">
                         <div className="inline-flex gap-1 items-center">
                             <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">15</h2>
@@ -26,16 +27,19 @@ const Portfolio = () => {
                         </div>
                         <h4 className="xs:text-sm sm:text-lg xl:text-xl xs:text-center">Years of Experience</h4>
                     </div>
+
                     <div className="flex flex-col sm:items-end xs:items-center">
                         <div className="inline-flex gap-1 items-center">
                             <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">Bilingual</h2>
                         </div>
                     </div>
+
                     <div className="flex flex-col sm:items-end xs:items-center">
                         <div className="inline-flex gap-1 items-center">
                             <h2 className="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">20</h2>
                             <h2 className="text-blue-500 xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">+</h2>
                         </div>
+                        <h4 className="xs:text-sm sm:text-lg xl:text-xl xs:text-center">Projects Launched</h4>
                     </div>
                 </div>
 
