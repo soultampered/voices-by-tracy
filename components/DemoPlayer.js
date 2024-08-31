@@ -1,3 +1,4 @@
+'use client'
 import React, {useState, useRef, useEffect} from 'react';
 import styles from "../styles/AudioPlayer.module.css";
 import {FaPlay,FaPause} from "react-icons/fa";

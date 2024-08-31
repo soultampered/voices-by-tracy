@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import DemoFilter from '@components/DemoFilter.js';
 import DemoVideo from '@components/DemoVideo.js';
