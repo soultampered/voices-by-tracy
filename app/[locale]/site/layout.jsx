@@ -1,4 +1,3 @@
-
 const SiteLayout = ({ children }) => {
     return (
         <section>{children}</section>
