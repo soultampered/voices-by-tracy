@@ -1,20 +1,3 @@
-export const aboutInfo = {
-        catchPhraseEN: 'English, French - Best of both worlds! ',
-        catchPhraseFR: 'francais, anglais - le meilleure de deux monde! ',
-        bioEN: 'Bilingual voiceover talent, fluent in both English and French, boasts over 15 years of experience. Specialized in corporate and commercial narration, Interactive Voice Response (IVR), online learning, corporate explainers, Public Service Announcements (PSAs) for government agencies, educational and medical narration, promotional videos for financial institutions, live announcing, Automated Dialogue Replacement (ADR), animation, and more!',
-        bioFR: 'Narratrice de voix hors-champs parfaitement bilingue (français et anglais), possédant plus de 15 ans d\'expérience, spécialisée dans des projets commerciaux (radio, télé et Web), réponse vocale interactive (RVI), en téléphonie, apprentissage en ligne, narration de vidéos promotionnelles pour le réseau de la santé, les agences gouvernementales et institutions financières, doublages, animation, et plus encore !',
-        bioExpandedEN: 'For over 15 years, Tracy has been the go-to expert for female voice-overs in all your projects, providing you with a comprehensive, turnkey service for all of your corporate videos, advertisements (TV, radio, or web), and public service announcements.\n' +
-            '\n' +
-            'This bilingual voice-over narrator is adept in both French and English, offering a cost-effective and time-saving solution.\n' +
-            '\n' +
-            'Whether you\'re in search of a soothing and composed voice or require a more lighthearted approach, she has the expertise to capture the essence of your projects, elevating them to new heights!\n',
-        // bioExpandedFR: 'Depuis plus de 15 ans, Tracy est votre voix hors-champs féminine de choix, vous fournissant un service clé en main pour toutes vos vidéos d\'entreprise, publicités (télé, radio ou Web), ou messages d\'intérêt public. \n' +
-        //     '\n' +
-        //     'Cette narratrice de voix hors-champs bilingue œuvre à la fois en français et en anglais, ce qui vous permettra de gagner du temps et de l\'argent.\n' +
-        //     '\n' +
-        //     'Que vous soyez à la recherche d\'une voix apaisante et composée ou que vous demandiez une approche plus légère, elle possède l\'expertise pour capturer l\'essence de vos projets pour les propulser vers de nouveaux sommets !\n'
-}
-
 export const audioSample = [
     {
         id: '1',
@@ -57,6 +40,37 @@ export const audioSample = [
         title: 'Démo corporatif - long',
         lang: 'Fr',
         domain: 'Corporate'
+    },
+]
+
+export const videoSample = [
+    {
+        id: '1',
+        path: 'https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com',
+        title: 'demo data 1',
+        lang: 'En',
+        domain: 'Corporate',
+    },
+    {
+        id: '2',
+        path: 'https://www.youtube.com/embed/mY2OCsei3-c?si=OCaZ8u8xi9LbKpG0',
+        title: 'demo data 2',
+        lang: 'En',
+        domain: 'Corporate',
+    },
+    {
+        id: '3',
+        path: 'https://www.youtube.com/embed/qPBDdN55SIM?si=fyb3jBsgfF5hB4H1',
+        title: 'demo data 3',
+        lang: 'En',
+        domain: 'Commercial',
+    },
+    {
+        id: '4',
+        path: 'https://www.youtube.com/embed/-BSBtFikidA?si=zCqJ4RZ3_Z94Fhrj',
+        title: 'demo data 4',
+        lang: 'En',
+        domain: 'Commercial',
     },
 ]
 
@@ -277,4 +291,10 @@ export const whyChooseData = [
         ]
     }
 
+]
+
+export const footerData = [
+    {
+        seoText: 'Professional voice-over services, where talent meets precision. With a passion for storytelling and a voice that captivates, Tracy brings your projects to life with clarity and emotion. Whether you need a voice for commercials, narration, audio books, animations, or any other project, Tracy-Ann Leith delivers exceptional quality and professionalism.'
+    }
 ]
