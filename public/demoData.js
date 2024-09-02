@@ -231,23 +231,23 @@ export const clientList = [
 export const buttonList = [
     {
         id: '1',
-        text: 'Book an Audition',
+        text: 'button-Audition',
         type:''
     },
     {
         id: '2',
-        text: 'Contact Me',
+        text: 'button-Contact',
         className: 'contactMe',
         type:''
     },
     {
         id: '3',
-        text: 'Send Message',
+        text: 'button-Send',
         type:'submit'
     },
     {
         id: '4',
-        text: 'Close',
+        text: 'button-Close',
         type:''
     },
 ]
@@ -257,44 +257,38 @@ export const whyChooseData = [
         reason: [
             {
                 id: '1',
-                title: 'Reason #1',
-                desc: "Some reason why 1 might be what you are looking for"
+                title: 'services-Reason1',
+                desc: "services-Description1"
             },
             {
                 id: '2',
-                title: 'Reason #1',
-                desc: "Some reason why 2 might be what you are looking for"
+                title: 'services-Reason2',
+                desc: "services-Description2"
             },
             {
                 id: '3',
-                title: 'Reason #1',
-                desc: "Some reason why 3 might be what you are looking for"
+                title: 'services-Reason3',
+                desc: "services-Description3"
             },
             {
                 id: '4',
-                title: 'Reason #1',
-                desc: "Some reason why 4 might be what you are looking for"
+                title: 'services-Reason4',
+                desc: "services-Description4"
             }
 
         ],
         feature: [
             {
                 id: '1',
-                title: 'Customizable',
-                desc: 'Tailor your landing page&apos;s look and feel, from the color scheme to the font size, to the design of the page.'
+                title: 'features-title1',
+                desc: 'features-Description1'
             },
             {
                 id: '2',
-                title: 'Fast Performance',
-                desc: 'We build our templates for speed in mind, for super-fast load times so your customers never waver.'
+                title: 'features-title2',
+                desc: 'features-Description2'
             }
         ]
     }
 
-]
-
-export const footerData = [
-    {
-        seoText: 'Professional voice-over services, where talent meets precision. With a passion for storytelling and a voice that captivates, Tracy brings your projects to life with clarity and emotion. Whether you need a voice for commercials, narration, audio books, animations, or any other project, Tracy-Ann Leith delivers exceptional quality and professionalism.'
-    }
 ]

@@ -1,11 +1,13 @@
 'use client'
 import React from "react";
 import {FaLinkedin, FaFacebook, FaInstagram} from 'react-icons/fa';
+import { footerData } from "@public/demoData";
 // import { useModal } from '/app/context/ModalContext.js';
 import Contact from "@components/Contact";
+import {useTranslation} from "react-i18next";
 
 const Footer = ({auditionBtn}) => {
-
+    const { t } = useTranslation();
     const currentYear = new Date().getFullYear();
     // const { openModal } = useModal();
     // const handleOpenModal = () => {
@@ -22,22 +24,22 @@ const Footer = ({auditionBtn}) => {
                         <div className="text-sm uppercase text-white font-bold">Menu</div>
                         <ul>
                             <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#aboutSection">About</a>
+                                <a className="hover:text-indigo-600" href="#aboutSection">{t('buttons:menu-About')}</a>
                             </li>
                             <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#serviceSection">Services</a>
+                                <a className="hover:text-indigo-600" href="#serviceSection">{t('buttons:menu-Services')}</a>
                             </li>
                             <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#demosSection">Demos</a>
+                                <a className="hover:text-indigo-600" href="#demosSection">{t('buttons:menu-Demos')}</a>
                             </li>
                             <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#clientSection">Clients</a>
+                                <a className="hover:text-indigo-600" href="#clientSection">{t('buttons:menu-Clients')}</a>
                             </li>
                         </ul>
                     </div>
                     <div className="p-5 sm:w-7/12 border-r text-center">
-                        <h3 className="font-bold text-xl text-white mb-4">Lorem Ipsum</h3>
-                        <p className="text-gray-500 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.</p>
+                        <h3 className="font-bold text-xl text-white mb-4">Tracy-Ann Leith</h3>
+                        <p className="text-gray-500 text-sm">{t('common:Footer-SEO')}</p>
                         <img src='/resources/images/VbT_Logo_Mark_Inverted.svg' alt="Voices by Tracy logo Mark"
                              style={{
                                  width: 150,
@@ -46,7 +48,7 @@ const Footer = ({auditionBtn}) => {
                              }}/>
                     </div>
                     <div className="p-5 sm:w-3/12">
-                        <div className="text-sm uppercase text-white font-bold">Contact Me</div>
+                        <div className="text-sm uppercase text-white font-bold">{t('buttons:button-Contact')}</div>
                         <ul>
                             <li className="my-2"><a className="hover:text-indigo-600" href="mailto:voicesbytracy@gmail.com?subject=Request for Quote">voicesbytracy@gmail.com</a></li>
                             {/*<li>{auditionBtn && (*/}

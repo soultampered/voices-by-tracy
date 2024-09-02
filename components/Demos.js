@@ -4,24 +4,24 @@ import DemoFilter from '@components/DemoFilter.js';
 import DemoVideo from '@components/DemoVideo.js';
 import styles from "@styles/DemoFilter.module.css";
 import {clientList} from "@public/demoData";
+import {useTranslation} from "react-i18next";
 
 const Demos = ({auditionBtn}) => {
+    const { t } = useTranslation();
 
-    // var copy = document.querySelector(".logos-slide").cloneNode(true);
-    // document.querySelector(".logos").appendChild(copy);
     return (
-        <section id="demosSection" className="relative">
-            <div className='flex h-full px-5'>
+        <section id="demosSection" className="flex relative block">
+            <div className='flex h-full w-full px-5'>
                 <div className="w-full">
                     {auditionBtn && (
                         <button key={auditionBtn.id} className='blueBtn'>
-                            {auditionBtn.text}
+                            {t(`buttons:${auditionBtn.text}`)}
                         </button>
                     )}
 
                     <div className="relative max-w-5xl titleContainer">
                         <h2 className="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
-                            Demo Reels
+                            {t('common:title-demo')}
                         </h2>
                     </div>
 
