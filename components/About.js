@@ -17,10 +17,10 @@ const About = ({auditionBtn}) => {
     return (
             <section id='aboutSection' className="relative block">
                 <div className='flex h-full items-center absolute z-50 px-5'>
-                    <div className='w-2/4 pr-5'>
+                    <div className='w-3/5 pr-5 h-full'>
                         <WhyChoose />
                     </div>
-                    <div className='w-2/4'>
+                    <div className='w-2/5'>
                         <img className='rounded-3xl' src="/resources/images/leithBust.jpg" alt="Tracy Photo"/>
                     </div>
                 </div>

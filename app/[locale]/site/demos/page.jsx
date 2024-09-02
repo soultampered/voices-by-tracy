@@ -4,7 +4,7 @@ import Footer from '@components/Footer.js';
 import {buttonList, clientList} from "@public/demoData.js";
 import DemoFilter from "@components/DemoFilter";
 import styles from "@styles/DemoFilter.module.css";
-import React from "@node_modules/react";
+import React from "react";
 import initTranslations from 'app/i18n';
 import TranslationsProvider from "@components/TranslationsProvider";
 
