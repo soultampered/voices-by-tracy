@@ -156,17 +156,19 @@ ul {
 
     .bodyContainer {
         @apply
-        min-h-screen
         flex
         flex-col
+        flex-grow
         min-w-1059
         max-w-1520
-        w-96
         m-auto
         bg-fixed
         bg-center
         bg-cover
         relative
+        px-4
+        sm:px-6
+        lg:px-8
     }
 
     /*Section Title styles*/
@@ -189,5 +191,14 @@ ul {
         mr-auto
         /*text-center*/
         my-4
+    }
+
+    .navMenuBtn {
+        @apply
+        mr-5
+        font-bold
+        font-Poppins
+        hover:text-gray-400
+        cursor-pointer
     }
 }
