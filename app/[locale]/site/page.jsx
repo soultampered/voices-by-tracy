@@ -24,9 +24,6 @@ export default async function Home({ params: { locale }}){
                 <Header/>
                 <Portfolio/>
                 <div className="bodyContainer">
-                    {/*<div className="bodyContainer" style={{*/}
-                    {/*    backgroundImage: `url('/resources/images/aurora.jpg')`*/}
-                    {/*}}>*/}
                     <About auditionBtn={auditionBtn} closeBtn={closeBtn} submitBtn={submitBtn}/>
                     <Demos auditionBtn={auditionBtn}/>
                     <Testimonials/>
