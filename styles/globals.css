@@ -159,8 +159,14 @@ ul {
         flex
         flex-col
         flex-grow
-        min-w-1059
-        max-w-1520
+        min-w-full
+        max-w-full
+        sm:min-w-[320px]
+        sm:max-w-[640px]
+        md:min-w-[768px]
+        md:max-w-[1024px]
+        lg:min-w-[1059px]
+        lg:max-w-[1520px]
         m-auto
         bg-fixed
         bg-center
@@ -170,6 +176,8 @@ ul {
         sm:px-6
         lg:px-8
     }
+
+
 
     /*Section Title styles*/
     #demoTitle {
