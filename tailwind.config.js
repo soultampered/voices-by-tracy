@@ -59,6 +59,9 @@ module.exports = {
                 to: { transform: 'translateX(-100%)' },
             },
         },
+        screens: {
+            '2sm': '430px'
+        }
     },
   },
   plugins: [],
