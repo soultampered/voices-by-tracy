@@ -24,10 +24,7 @@ const DemoVideo = () => {
                     ))}
                 </div>
             </div>
-
         </div>
-
-
     );
 }
 
