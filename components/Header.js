@@ -51,10 +51,10 @@ export default function Header(){
                     <GiHamburgerMenu className='h-8 w-8 cursor-pointer' onClick={toggleDropdown}/>
 
                     {isDropdownOpen && ReactDOM.createPortal(
-                        <div ref={dropdownRef} className="absolute text-bold text-black items-end p-1 flex flex-col space-y-2 z-50"
+                        <div ref={dropdownRef} className="absolute text-bold text-black bg-white items-end p-1 flex flex-col space-y-2 z-50"
                              style={{
                                  top: toggleRef.current ? `${toggleRef.current.offsetHeight + 50}px` : '100%',
-                                 right: 33
+                                 right: 0
                              }}>
                             <a className="navMenuBtn" href="#aboutSection">{t('buttons:menu-About')}</a>
                             <a className="navMenuBtn" href="#demosSection">{t('buttons:menu-Demos')}</a>
