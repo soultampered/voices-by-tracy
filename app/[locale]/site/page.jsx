@@ -10,7 +10,6 @@ import TranslationsProvider from "@components/TranslationsProvider";
 
 const i18nNamespaces = ['common','buttons','contact','services']
 
-
 export default async function Home({ params: { locale }}){
     const { t, resources } = await initTranslations(locale, i18nNamespaces);
 

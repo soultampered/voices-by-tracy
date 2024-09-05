@@ -1,4 +1,3 @@
-
 const ContactLayout = ({ children }) => {
     return (
         <section>{children}</section>

@@ -40,11 +40,11 @@ export default function Header(){
                     <img src="/resources/images/VbT_Logo.svg" alt="siteLogo" className="h-32"/>
                 </a>
                 <nav className="hidden md:flex md:flex-wrap md:items-center md:text-base md:justify-center md:ml-auto md:mr-4 md:py-1 md:pl-4">
-                    <a className="navMenuBtn" href="#aboutSection">{t('buttons:menu-About')}</a>
-                    <a className="navMenuBtn" href="#demosSection">{t('buttons:menu-Demos')}</a>
-                    <a className="navMenuBtn" href="#serviceSection">{t('buttons:menu-Services')}</a>
-                    <a className="navMenuBtn" href="#clientSection">{t('buttons:menu-Clients')}</a>
-                    <a className="navMenuBtn" href="/site/contact">{t('buttons:menu-Contact')}</a>
+                    <a className="navMenuBtn" href="/site/#aboutSection">{t('buttons:menu-About')}</a>
+                    <a className="navMenuBtn" href="/site/#demosSection">{t('buttons:menu-Demos')}</a>
+                    <a className="navMenuBtn" href="/site/#serviceSection">{t('buttons:menu-Services')}</a>
+                    <a className="navMenuBtn" href="/site/#clientSection">{t('buttons:menu-Clients')}</a>
+                    <a className="navMenuBtn" href="/contact/">{t('buttons:menu-Contact')}</a>
                     <LanguageChanger />
                 </nav>
                 <div ref={toggleRef} className='md:hidden relative ml-auto'>

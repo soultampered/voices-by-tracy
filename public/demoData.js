@@ -46,7 +46,7 @@ export const audioSample = [
 export const videoSample = [
     {
         id: '1',
-        path: 'https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com',
+        path: 'https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com&fs=1',
         title: 'demo data 1',
         lang: 'En',
         domain: 'Corporate',

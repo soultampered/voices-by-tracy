@@ -1,4 +1,5 @@
 import '@styles/globals.css';
+import React from "react";
 // import { ModalProvider } from "@app/context/ModalContext";
 
 export const metadata = {
@@ -8,17 +9,17 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
     return (
-        <html lang="en">
+            <html lang="en">
             <body className="background">
             {/*<ModalProvider>*/}
-                    <div className="main">
-                        <main className="app overflow-hidden">
-                            { children }
-                        </main>
-                    </div>
+            <div className="main">
+                <main className="app overflow-hidden">
+                    {children}
+                </main>
+            </div>
             {/*</ModalProvider>*/}
             </body>
-        </html>
+            </html>
     )
 }
 
