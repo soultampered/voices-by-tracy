@@ -42,10 +42,10 @@ const Portfolio = () => {
                         {t('common:bio-short')}
                     </p>
                     <div className="mb-4 flex flex-col 2sm:flex-row items-center 2sm:space-x-4 2sm:space-y-0 space-y-2 text-sm sm:text-base md:text-lg lg:flex-row lg:space-y-0 lg:space-x-4 lg:text-base">
-                        <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="site/demos">
+                        <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="#demosSection">
                             {t('buttons:menu-Demos')}
                         </a>
-                        <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="site/contact">
+                        <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="/contact">
                             {t('buttons:button-Contact')}
                         </a>
                     </div>
