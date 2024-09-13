@@ -78,8 +78,6 @@ h6 {
 p {
     color: white;
     font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
-    /*font-size: 18px;*/
-    /*line-height: 1.6;*/
 }
 
 ul {
@@ -100,14 +98,6 @@ ul {
     height: 1059px;
     position: relative;
 }
-
-/*.gradient {*/
-/*    height: 100%;*/
-/*    width: 100%;*/
-/*    position: absolute;*/
-/*    background-image: linear-gradient(to right top, black 10%, transparent);*/
-/*    opacity: 0.9;*/
-/*}*/
 
 .container > img {
     height: 100%;
@@ -177,8 +167,6 @@ ul {
         lg:px-8
     }
 
-
-
     /*Section Title styles*/
     #demoTitle {
         @apply
@@ -209,4 +197,20 @@ ul {
         hover:text-gray-400
         cursor-pointer
     }
+
+    /*Contact Form*/
+    .formInput {
+        @apply
+        my-2
+        py-2
+        px-4
+        rounded-md
+        bg-gray-900
+        text-gray-300
+        w-full
+        outline-none
+        focus:ring-2
+        focus:ring-blue-600
+    }
+
 }
