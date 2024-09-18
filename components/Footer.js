@@ -1,9 +1,7 @@
 'use client'
 import React from "react";
 import {FaLinkedin, FaFacebook, FaInstagram} from 'react-icons/fa';
-import { footerData } from "@public/demoData";
 // import { useModal } from '/app/context/ModalContext.js';
-import Contact from "@components/Contact";
 import {useTranslation} from "react-i18next";
 
 const Footer = ({auditionBtn}) => {
@@ -50,12 +48,10 @@ const Footer = ({auditionBtn}) => {
                     <div className="p-5 sm:w-3/12">
                         <div className="text-sm uppercase text-white font-bold">{t('buttons:button-Contact')}</div>
                         <ul>
-                            <li className="my-2"><a className="hover:text-indigo-600" href="mailto:voicesbytracy@gmail.com?subject=Request for Quote">voicesbytracy@gmail.com</a></li>
-                            {/*<li>{auditionBtn && (*/}
-                            {/*    <button onClick={handleOpenModal} key={auditionBtn.id} className='blueBtn'>*/}
-                            {/*        {auditionBtn.text}*/}
-                            {/*    </button>*/}
-                            {/*)}</li>*/}
+                            <li className="my-2"><p>voicesbytracy@gmail.com</p></li>
+                            <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="/contact">
+                                {t('buttons:button-Audition')}
+                            </a>
                         </ul>
                     </div>
                 </div>
