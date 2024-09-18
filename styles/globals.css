@@ -106,6 +106,10 @@ ul {
     display: block;
 }
 
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
 
 @layer components {
     /*Header Styles*/
