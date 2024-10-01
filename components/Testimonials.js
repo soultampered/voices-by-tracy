@@ -55,7 +55,7 @@ const Testimonials = () => {
         };
     }, [carouselData.length]);
     return (
-        <section className="relative block border-t border-b">
+        <section className="relative block border-b min-h-72 bg-gray-900">
             <div className=" flex justify-center items-center dark:bg-gray-700 group p-4">
                 <div>
                     <div className="bg-gray-50 dark:bg-gray-800 rounded h-full w-full">

@@ -65,7 +65,7 @@ const DemoFilter = () => {
                 {filteredItems.map((audioSample, id) => (
                     <div key={`lang-${id}`} className={styles.playerCard}>
                         <div className='box-border h-full'>
-                            <p className='mt-1 text-gray-500 font-bold'>{audioSample.title}</p>
+                            <p className='mt-1 font-bold'>{audioSample.title}</p>
                             <DemoPlayer key={audioSample.id} audioSample={audioSample.path} filterState={filterState} setFilterState={setFilterState}/>
                         </div>
                     </div>

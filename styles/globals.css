@@ -84,10 +84,6 @@ ul {
     list-style-type: none;
 }
 
-.background {
-    background: #000000;
-}
-
 .auroraBackground {
     background-image: url("../public/resources/images/aurora4.jpg");
     background-size: 100% 100%

@@ -10,7 +10,7 @@ const Demos = ({auditionBtn}) => {
     const { t } = useTranslation();
 
     return (
-        <section id="demosSection" className="flex flex-col lg:flex-row relative block">
+        <section id="demosSection" className="flex flex-col lg:flex-row relative block bg-gray-900">
             <div className='flex flex-col lg:flex-row h-full w-full px-4 md:px-5'>
                 <div className="w-full">
                     {auditionBtn && (
@@ -20,7 +20,7 @@ const Demos = ({auditionBtn}) => {
                     )}
 
                     <div className="relative max-w-2xl md:max-w-3xl lg:max-w-5xl titleContainer">
-                        <h2 className="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-2xl sm:text-3xl md:text-4xl">
+                        <h2 className="block w-full font-bold text-2xl sm:text-3xl md:text-4xl">
                             {t('common:title-demo')}
                         </h2>
                     </div>
