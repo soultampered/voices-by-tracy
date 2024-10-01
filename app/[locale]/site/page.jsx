@@ -19,7 +19,7 @@ export default async function Home({ params: { locale }}){
 
     return (
         <TranslationsProvider resources={resources} locale={locale} namespaces={i18nNamespaces}>
-            <div className='bg-gradient'>
+            <div className='background'>
                 <Header/>
                 <Portfolio/>
                 <div className="bodyContainer">
@@ -27,8 +27,8 @@ export default async function Home({ params: { locale }}){
                     <Demos auditionBtn={auditionBtn}/>
                     <Testimonials/>
                 </div>
-                <Footer auditionBtn={auditionBtn}/>
             </div>
+            <Footer auditionBtn={auditionBtn}/>
         </TranslationsProvider>
     );
 }

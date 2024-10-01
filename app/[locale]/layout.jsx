@@ -4,7 +4,10 @@ import React from "react";
 
 export const metadata = {
     title: "Voices by Tracy",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    icons: {
+        icon: '/favicon.ico',
+    }
 }
 
 const RootLayout = ({ children }) => {
