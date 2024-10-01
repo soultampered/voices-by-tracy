@@ -14,7 +14,7 @@ const About = ({auditionBtn}) => {
     // };
 
     return (
-        <section id="aboutSection" className="py-6 lg:px-8">
+        <section id="aboutSection" className="rounded-t-3xl lg:py-6 lg:px-8 bg-gray-900">
             <div className="flex flex-col-reverse lg:flex-row h-full w-full items-center">
                 <div className='w-full md:w-3/5 pr-0 md:pr-5'>
                     <div className="lg:px-8">
@@ -30,9 +30,9 @@ const About = ({auditionBtn}) => {
                             </div>
 
                             <div className="max-w-4xl mx-auto px-5 mt-16">
-                                <div className="grid md:grid-cols-2 gap-6 md:gap-10 mt-10">
+                                <div className="grid md:grid-cols-2 gap-6 md:gap-8 mt-8">
                                     {whyChooseData[0].reason.map((reason) => (
-                                        <div key={reason.id} className="flex gap-4 items-start">
+                                        <div key={reason.id} className="flex gap-4 items-start rounded-md border border-neutral-800 bg-neutral-900/50 p-3 shadow">
                                             <span className="text-violet-600 bg-violet-500/10 p-3 rounded-full">
                                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ const About = ({auditionBtn}) => {
                                                   clipRule="evenodd"></path></svg></span>
                                             <div>
                                                 <h3 className="font-semibold text-xl">{t(`services:${reason.title}`)}</h3>
-                                                <p className="mt-1 text-gray-500 text-sm sm:text-base">{t(`services:${reason.desc}`)}</p>
+                                                <p className="mt-1 text-slate-400 text-sm sm:text-base">{t(`services:${reason.desc}`)}</p>
                                             </div>
                                         </div>
                                     ))}
@@ -72,8 +72,8 @@ const About = ({auditionBtn}) => {
                                                 <line x1="16" y1="17" x2="14.5" y2="18.5"></line>
                                             </svg>
                                         </div>
-                                        <h3 className="mt-6 text-gray-400">{t(`services:${feature.title}`)}</h3>
-                                        <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">{t(`services:${feature.desc}`)}</p>
+                                        <h3 className="mt-6">{t(`services:${feature.title}`)}</h3>
+                                        <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-slate-200">{t(`services:${feature.desc}`)}</p>
                                     </div>
                                 ))}
                             </div>

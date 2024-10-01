@@ -40,7 +40,7 @@ module.exports = {
             seek_before_color: '#ffc2a1',
             knobby: '#3452a5',
             selectedKnobby: '#26c9c3',
-            cream: '#c0c0c0'
+            cream: '#c0c0c0',
         },
         margin: {
             '25': '25px',
@@ -61,9 +61,23 @@ module.exports = {
         },
         screens: {
             '2sm': '430px'
-        }
-    },
-  },
-  plugins: [],
-}
-
+        },
+        backgroundImage: {
+            'gradient': 'linear-gradient(to right, ' +
+                '#22c55e 6%, ' + //green
+                '#3b82f6 16%, ' + //blue
+                '#6366f1 26%, ' + //indigo
+                '#8b5cf6 36%, ' + //violet
+                '#d946ef 46%, ' + //fuchsia
+                '#ec4899 56%, ' + // pink
+                '#8b5cf6 76%, ' + //violet
+                '#3b82f6 86% ' + //blue
+                ')',
+        },
+        boxShadow: {
+            'bottom': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        },
+        plugins: [],
+    }
+  }
+    }

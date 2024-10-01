@@ -34,7 +34,7 @@ export default function Header(){
     }, []);
 
     return (
-        <header className="bg-white text-black body-font">
+        <header className="bg-gradient text-white body-font">
             <div className="xs:px-4 px-8 h-full flex xs:flex-col sm:flex-row items-center xs:mt-10 sm:mt-0">
                 <a className="flex title-font font-medium items-center mb-4 md:mb-0" href="/site">
                     <img src="/resources/images/VbT_Logo.svg" alt="siteLogo" className="h-32"/>

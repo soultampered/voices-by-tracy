@@ -1,8 +1,22 @@
 "use client"
-import React from "react";
-import {videoSample} from "@public/demoData";
+import React, { useState } from "react";
+import { videoSample } from "@public/demoData";
+import PopoutVideoPlayer from "@components/PopoutVideoPlayer";
 
 const DemoVideo = () => {
+    const [selectedVideo, setSelectedVideo] = useState(null);
+    const [isPlayerOpen, setPlayerOpen] = useState(false);
+
+    const handleVideoClick = (videoPath) => {
+        setSelectedVideo(videoPath);
+        setPlayerOpen(true);
+    }
+
+    const closePlayer = () => {
+        setSelectedVideo(null);
+        setPlayerOpen(false);
+    }
+
     return (
         <div className="lg:w-2/3 lg:py-16 px-4 lg:px-16 py-10">
             <div className="container mx-auto px-4 md:px-8 xl:px-6 max-w-[1300px]">
@@ -10,20 +24,24 @@ const DemoVideo = () => {
                     {videoSample.map((video) => (
                         <div key={video.id}
                              className="relative group flex flex-col rounded-xl text-gray-700 shadow-md">
-                            <a href="#" className="block">
+                            <button onClick={() => handleVideoClick(video.path)} className="block">
                                 <div className="relative w-full pb-[56.25%]"> {/* 16:9 Aspect Ratio */}
                                     <iframe
                                         className="absolute top-0 left-0 w-full h-full"
                                         src={video.path}
-                                        allowFullScreen=""
-                                        id="240632615">
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        title="Video Preview">
                                     </iframe>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     ))}
                 </div>
             </div>
+            {isPlayerOpen && (
+                <PopoutVideoPlayer videoSrc={selectedVideo} onClose={closePlayer} />
+            )}
         </div>
     );
 }

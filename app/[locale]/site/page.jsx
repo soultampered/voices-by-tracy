@@ -19,7 +19,7 @@ export default async function Home({ params: { locale }}){
 
     return (
         <TranslationsProvider resources={resources} locale={locale} namespaces={i18nNamespaces}>
-            <div>
+            <div className='bg-gradient'>
                 <Header/>
                 <Portfolio/>
                 <div className="bodyContainer">
