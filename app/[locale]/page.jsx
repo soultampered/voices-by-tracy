@@ -8,10 +8,10 @@ export default async function LandingPage({ params: { locale }}) {
 
     return (
         <TranslationsProvider resources={resources} locale={locale} namespaces={i18nNamespaces}>
-            <div className="bg-white h-screen flex items-center justify-center">
+            <div className="bg-whiteWash h-screen flex items-center justify-center">
                 <div className="m-auto">
                     <div>
-                        <div className="relative inline-block">
+                        <div className="bg-gradient rounded-3xl relative inline-block shadow-2xl p-4 border-2">
                             <img src="/resources/images/VbT_Logo.svg" alt="landing page"
                                  className="w-full h-auto"
                                  style={{

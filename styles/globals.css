@@ -84,17 +84,6 @@ ul {
     list-style-type: none;
 }
 
-.auroraBackground {
-    background-image: url("../public/resources/images/aurora4.jpg");
-    background-size: 100% 100%
-}
-
-.aboutBackground {
-    width: 1520px;
-    height: 1059px;
-    position: relative;
-}
-
 .container > img {
     height: 100%;
     width: 100%;
@@ -142,6 +131,16 @@ ul {
         border
         border-blue-700
         rounded
+    }
+
+    .background {
+        @apply
+        bg-gradient-to-b
+        from-transparent
+        to-zinc-900
+        bg-gradient-to-r
+        from-green-500
+        to-blue-500
     }
 
     .bodyContainer {

@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: [
       "./app/**/*.{js,jsx,tsx,mdx}",
@@ -8,7 +11,7 @@ module.exports = {
       fontFamily: {
         Poppins: ['"Poppins"', "sans-serif"]
       },
-    extend: {
+  extend: {
         width: {
             '700':'700px',
             '75':'75px',
@@ -64,20 +67,46 @@ module.exports = {
         },
         backgroundImage: {
             'gradient': 'linear-gradient(to right, ' +
-                '#22c55e 6%, ' + //green
-                '#3b82f6 16%, ' + //blue
-                '#6366f1 26%, ' + //indigo
-                '#8b5cf6 36%, ' + //violet
-                '#d946ef 46%, ' + //fuchsia
-                '#ec4899 56%, ' + // pink
-                '#8b5cf6 76%, ' + //violet
-                '#3b82f6 86% ' + //blue
+                '#22c55e 6%, ' +  // green
+                '#3b82f6 16%, ' + // blue
+                '#6366f1 26%, ' + // indigo
+                '#8b5cf6 36%, ' + // violet
+                '#d946ef 46%, ' + // fuchsia
+                '#f472b6 56%, ' + // pink
+                '#8b5cf6 76%, ' + // violet
+                '#3b82f6 86% ' +  // blue
+                ')',
+
+            'whiteWash': 'linear-gradient(to right, ' +
+                // '#d1fae5 6%, ' + // green
+                // '#bfdbfe 16%, ' + // blue
+                // '#e0e7ff 26%, ' + // indigo
+                // '#e9d5ff 36%, ' + // violet
+                // '#f0abfc 46%, ' + // fuchsia
+                // '#fbcfe8 56%, ' + // pink
+                // '#e9d5ff 76%, ' + // violet
+                // '#bfdbfe 86% ' + // blue
+
+
+                '#a78bfa 6%, ' + // violet
+                '#e879f9 56%, ' + // fuchsia
+                '#a78bfa 76% ' + // violet
                 ')',
         },
+
         boxShadow: {
             'bottom': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
         },
-        plugins: [],
-    }
+
+        backdropFilter: {
+            lg: '10px',
+        },
+    },
+  variants: {
+      backdropFilter: ['responsive', 'hover', 'focus'],
+  },
+  plugins: [
+      require('tailwindcss-filters'),
+  ],
   }
     }
