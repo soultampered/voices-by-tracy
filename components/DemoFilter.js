@@ -6,7 +6,7 @@ import styles from "../styles/DemoFilter.module.css";
 
 const DemoFilter = () => {
 
-    //State
+    //Filter State
     const [selectedFilters, setSelectedFilters] = useState([]);
     const [filteredItems, setFilteredItems] = useState(audioSample);
     const [filterState, setFilterState] = useState(false);
