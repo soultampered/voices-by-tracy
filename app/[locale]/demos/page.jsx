@@ -1,6 +1,5 @@
 'use client'
 import React from "react";
-import DemoFilter from '@components/DemoFilter.js';
 import DemoVideo from '@components/DemoVideo.js';
 import styles from "@styles/DemoFilter.module.css";
 import {clientList} from "@public/demoData";
@@ -26,7 +25,6 @@ const Demos = ({auditionBtn}) => {
                     </div>
 
                     <div className='lg:flex lg:pb-4'>
-                        <DemoFilter />
                         <DemoVideo />
                     </div>
                     <div className='rounded box-border flex p-2 mt-2 w-full lg:w-auto'>
