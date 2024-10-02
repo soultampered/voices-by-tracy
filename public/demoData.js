@@ -46,32 +46,68 @@ export const audioSample = [
 export const videoSample = [
     {
         id: '1',
-        path: 'https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com&fs=1',
-        title: 'demo data 1',
+        path: 'https://www.youtube.com/embed/o9DoQDZc60c?si=utGBf9ZNn7MBSi6Z',
+        title: 'A Vision for Quality Mental Health Care for All',
         lang: 'En',
         domain: 'Corporate',
     },
     {
         id: '2',
-        path: 'https://www.youtube.com/embed/mY2OCsei3-c?si=OCaZ8u8xi9LbKpG0',
-        title: 'demo data 2',
+        path: 'https://www.youtube.com/embed/nQV0fC7sQjk?si=YMnTrJnmVnZVO-YJ',
+        title: 'UNI Financial Cooperation - Geneviève Lalonde',
         lang: 'En',
         domain: 'Corporate',
     },
     {
         id: '3',
-        path: 'https://www.youtube.com/embed/qPBDdN55SIM?si=fyb3jBsgfF5hB4H1',
-        title: 'demo data 3',
+        path: 'https://www.youtube.com/embed/f3FyT0_rQ_o?si=dl7Vmuvub5vPfVP4',
+        title: 'Duval Clinic, the Canadian reference in private hip and knee replacement',
+        lang: 'En',
+        domain: 'Corporate',
+    },
+    {
+        id: '4',
+        path: 'https://www.youtube.com/embed/9aswEsojo1A?si=8NNbUwC6FiZgR0B0',
+        title: 'SNC-Lavalin - 2017 Annual Highlights',
+        lang: 'En',
+        domain: 'Corporate',
+    },
+    {
+        id: '5',
+        path: 'https://www.youtube.com/embed/q0GQc0M7pEY?si=P3JzgQrDoBMWenjQ',
+        title: '23 Keyforge Ad v04',
         lang: 'En',
         domain: 'Commercial',
     },
     {
-        id: '4',
-        path: 'https://www.youtube.com/embed/-BSBtFikidA?si=zCqJ4RZ3_Z94Fhrj',
-        title: 'demo data 4',
-        lang: 'En',
+        id: '6',
+        path: 'https://www.youtube.com/embed/Htjgeuvnjo0?si=Zs8dQCPasWnbh6zy',
+        title: 'Vous pourriez avoir l\'hépatite C sans même le savoir.',
+        lang: 'Fr',
+        domain: 'Corporate',
+    },
+    {
+        id: '7',
+        path: "https://www.youtube.com/embed/xY1AwLD6U9Y?si=9ULKeoLfwu3wUr_A",
+        title: 'Visitez notre tout nouveau Centre de santé situé à YUL Aéroport international Montréal-Trudeau',
+        lang: 'Fr',
         domain: 'Commercial',
     },
+    {
+        id: '8',
+        path: 'https://www.youtube.com/embed/DExb1xhZOI8?si=f8dCcV6TMtrnRi3O',
+        title: 'Centre de collections de l’Université McGill v.f.',
+        lang: 'Fr',
+        domain: 'Commercial',
+    },
+    {
+        id: '9',
+        path: 'https://www.youtube.com/embed/v2CVvmfQUKo?si=qlyKKoKIPiNQ_uQI',
+        title: 'Gestion des données de recherche',
+        lang: 'Fr',
+        domain: 'Commercial',
+    },
+
 ]
 
 export const carouselData = [
