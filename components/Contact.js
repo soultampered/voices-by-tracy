@@ -68,7 +68,7 @@ const Contact = () => {
 
     return (
         <div className="dark:bg-gray-900 font-Poppins">
-            <div className="rounded-3xl overflow-auto overflow-y-scroll bg-gray-800">
+            <div className="rounded-t-3xl overflow-auto overflow-y-scroll bg-gray-800 pt-3">
                 <Container className='text-white'>
                     <Heading className='mb-5'>{t('contact:contact-Header')}</Heading>
                     {error && (
