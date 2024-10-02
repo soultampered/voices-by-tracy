@@ -1,6 +1,5 @@
 'use client'
 import React, {useEffect, useState} from "react";
-import DemoFilter from '@components/DemoFilter.js';
 import DemoVideo from '@components/DemoVideo.js';
 import styles from "@styles/DemoFilter.module.css";
 import {audioSample, clientList} from "@public/demoData";
@@ -85,7 +84,7 @@ const Demos = ({auditionBtn}) => {
                             <div className='items-container'>
                                 {filteredItems.map((audioSample, id) => (
                                     <div key={`lang-${id}`} className={styles.playerCard}>
-                                        <div className='box-border h-full background rounded'>
+                                        <div className='box-border h-full rounded'>
                                             <p className='ml-1 font-bold'>{audioSample.title}</p>
                                             <DemoPlayer key={audioSample.id} audioSample={audioSample.path}
                                                         filterState={filterState} setFilterState={setFilterState}/>
