@@ -151,7 +151,7 @@ export const clientList = [
     {
         id: '5',
         name: 'Jack Daniels',
-        source: '/resources/images/clients/JackDaniels_logo.png',
+        source: '/resources/images/clients/JackDaniels_Logo.png',
         alt: 'Jack Daniels Logo'
     },
     {
@@ -187,7 +187,7 @@ export const clientList = [
     {
         id: '11',
         name: 'Audi Lauzon',
-        source: '/resources/images/clients/audi.png',
+        source: '/resources/images/clients/Audi.png',
         alt: 'Audi Lauzon Logo'
     },
     {
@@ -220,13 +220,13 @@ export const clientList = [
     {
         id: '16',
         name: 'Vetoquinol',
-        source: '/resources/images/clients/vetoquinol.png',
+        source: '/resources/images/clients/Vetoquinol.png',
         alt: 'Vetroquinol Logo'
     },
     {
         id: '17',
         name: 'Bio-K-Plus',
-        source: '/resources/images/clients/Bio-k.png',
+        source: '/resources/images/clients/Bio-K.png',
         alt: 'Bio-K-Plus Logo'
     },
     {
