@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "i18nexus pull && next dev",
+    "dev": "cross-env PORT=3000 i18nexus pull && next dev",
     "build": "i18nexus pull && next build",
     "start": "i18nexus pull && NODE_ENV=production node server.js",
     "lint": "i18nexus pull && next lint"
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
     "i18nexus-cli": "^3.5.0",
     "postcss": "^8.4.45",
     "tailwindcss": "^3.4.11"
