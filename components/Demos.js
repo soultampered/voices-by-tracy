@@ -21,10 +21,9 @@ const Demos = ({auditionBtn}) => {
 
     const handleFilterButtonClick = (selectedLang) => {
         if (selectedFilters.includes(selectedLang)) {
-            let filters = selectedFilters.filter((el) => el !== selectedLang);
-            setSelectedFilters(filters)
+            setSelectedFilters([]);
         } else {
-            setSelectedFilters([...selectedFilters, selectedLang]);
+            setSelectedFilters([selectedLang]);
         }
     };
 
