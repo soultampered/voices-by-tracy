@@ -70,15 +70,9 @@ const Testimonials = () => {
                                     </p>
                                 </blockquote>
                                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                                    <img className="w-6 h-6 rounded-full"
-                                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-                                         alt="profile picture"/>
                                     <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                        <div className="pr-3 font-medium text-gray-900 dark:text-white">
-                                            {carouselData[currentIndex].name}
-                                        </div>
                                         <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
-                                            {carouselData[currentIndex].title}
+                                            {"- " + carouselData[currentIndex].title}
                                         </div>
                                     </div>
                                 </figcaption>
