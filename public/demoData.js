@@ -114,13 +114,11 @@ export const carouselData = [
     {
         id: '1',
         comment: 'Tracy is the best! Her voice talent is top-notch and she\'s an absolute pleasure to work with. Hiring her is a slam dunk - amazing skills paired with an awesome, down-to-earth personality. Can\'t recommend her enough!',
-        name: 'Mike Hachey',
-        title: 'Executive Producer, InsidersContent'
+        title: 'Insiders Content'
     },
     {
         id: '2',
         comment: 'Tracy is a skilled and talented voice over professional who makes content come to life.',
-        name: 'Merika Ramundo',
         title: 'McGill University Library'
     },
 ]
