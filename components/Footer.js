@@ -48,7 +48,7 @@ const Footer = ({auditionBtn}) => {
                     <div className="p-5 sm:w-3/12">
                         <div className="text-sm uppercase text-white font-bold">{t('buttons:button-Contact')}</div>
                         <ul>
-                            <li className="my-2"><p>voicesbytracy@gmail.com</p></li>
+                            <li className="my-2"><p>info@voicebytracy.com</p></li>
                             <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="/contact">
                                 {t('buttons:button-Audition')}
                             </a>
