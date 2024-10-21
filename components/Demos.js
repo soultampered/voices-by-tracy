@@ -54,11 +54,9 @@ const Demos = ({auditionBtn}) => {
         <section id="demosSection" className="flex flex-col lg:flex-row relative block bg-gray-900">
             <div className='flex flex-col lg:flex-row h-full w-full px-4 md:px-5'>
                 <div className="w-full">
-                    {auditionBtn && (
-                        <button key={auditionBtn.id} className='blueBtn'>
-                            {t(`buttons:${auditionBtn.text}`)}
-                        </button>
-                    )}
+                    <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="/contact">
+                        {t('buttons:button-Audition')}
+                    </a>
 
                     <div className="relative max-w-2xl md:max-w-3xl lg:max-w-5xl flex flex-col lg:flex-row items-center titleContainer">
                         <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl">
