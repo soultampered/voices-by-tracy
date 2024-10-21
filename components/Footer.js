@@ -17,8 +17,8 @@ const Footer = ({auditionBtn}) => {
     return (
         <footer>
             <div className='bg-zinc-900'>
-                <div className="max-w-screen-lg py-10 px-4 sm:px-6 text-white sm:flex justify-between mx-auto">
-                    <div className="p-5 sm:w-3/12 border-r">
+                <div className="max-w-screen-xl py-10 px-4 sm:px-6 text-white sm:flex justify-between mx-auto">
+                    <div className="p-5 sm:w-3/12 border-r text-right">
                         <div className="text-sm uppercase text-white font-bold">Menu</div>
                         <ul>
                             <li className="my-2">
@@ -49,9 +49,13 @@ const Footer = ({auditionBtn}) => {
                         <div className="text-sm uppercase text-white font-bold">{t('buttons:button-Contact')}</div>
                         <ul>
                             <li className="my-2"><p>info@voicebytracy.com</p></li>
-                            <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="/contact">
-                                {t('buttons:button-Audition')}
-                            </a>
+                            <li className="my-2">
+                                <p>Source Connect: <i>voices_by_tracy</i></p>
+                            </li>
+                            <li>
+                                <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="/contact">
+                                    {t('buttons:button-Audition')}</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
