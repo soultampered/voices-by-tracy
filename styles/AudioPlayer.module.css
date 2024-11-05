@@ -118,6 +118,15 @@
         z-30
         box-border
     }
+    .downloadButton {
+        @apply
+        ml-2
+        text-black
+        no-underline
+        flex
+        items-center
+        hover:text-blue-500
+    }
 }
 
 /*knobby while dragging - chrome and safari*/

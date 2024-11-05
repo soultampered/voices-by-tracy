@@ -1,7 +1,7 @@
 'use client'
-import React, {useState, useRef, useEffect} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from "../styles/AudioPlayer.module.css";
-import {FaPlay,FaPause} from "react-icons/fa";
+import { FaPlay, FaPause, FaDownload } from "react-icons/fa";
 
 const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
 
@@ -9,9 +9,10 @@ const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [duration, setDuration] = useState(0);
     const [currentTime, setCurrentTime] = useState(0);
+    const [isDownloadDisabled, setIsDownloadDisabled] = useState(false);
 
     //references
-    const audioPlayer = useRef(); //reference for our audio component
+    const audioPlayer = useRef(); //reference for audio component
     const progressBar = useRef(); //reference to progress bar
     const animationRef = useRef(); //reference for animations
 
@@ -60,6 +61,13 @@ const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
         setCurrentTime(progressBar.current.value);
     }
 
+    const handleDownloadClick = () => {
+        setIsDownloadDisabled(true);
+        setTimeout(()=> {
+            setIsDownloadDisabled(false);
+        }, 5000);
+    }
+
     return (
         <div className={styles.audioPlayer}>
             <audio ref={audioPlayer} src={audioSample} preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
@@ -67,6 +75,7 @@ const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
                 {isPlaying ? <FaPause /> : <FaPlay/>}
             </button>
             <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar} onChange={changeRange}/>
+            <a href={audioSample} download className={styles.downloadButton} onClick={handleDownloadClick}></a>
         </div>
         )
 }
