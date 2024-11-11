@@ -121,7 +121,8 @@
     .downloadButton {
         @apply
         ml-2
-        text-black
+        text-base
+        text-secondary
         no-underline
         flex
         items-center
