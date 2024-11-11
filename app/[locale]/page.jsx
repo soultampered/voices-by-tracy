@@ -1,5 +1,7 @@
 import initTranslations from "../i18n";
 import TranslationsProvider from "@components/TranslationsProvider";
+import LanguageChanger from "@components/LanguageChanger";
+import React from "react";
 
 const i18nNamespaces = ['buttons']
 
@@ -8,11 +10,11 @@ export default async function LandingPage({ params: { locale }}) {
 
     return (
         <TranslationsProvider resources={resources} locale={locale} namespaces={i18nNamespaces}>
-            <div className="bg-whiteWash h-screen flex items-center justify-center">
+            <div className="bg-whiteWash h-screen flex items-center justify-center relative">
+                <div className="absolute top-2 right-4 lg:top-4"><LanguageChanger /></div>
                 <div className="m-auto">
                     <div>
-                        <div
-                            className="bg-gradient rounded-3xl relative inline-block shadow-2xl p-4 border-2 w-[90vw] h-[90vh] max-w-[1080px] max-h-[720px] flex flex-col items-center justify-center">
+                        <div className="bg-gradient rounded-3xl relative shadow-2xl p-4 border-2 w-[90vw] h-[90vh] max-w-[1080px] max-h-[720px] flex flex-col items-center justify-center">
                             <img src="/resources/images/VbT_Logo.svg"
                                  alt="landing page"
                                  className="w-full h-auto"
