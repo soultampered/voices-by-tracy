@@ -72,10 +72,15 @@ const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
         <div className={styles.audioPlayer}>
             <audio ref={audioPlayer} src={audioSample} preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
             <button onClick={togglePlayPause} className={styles.playPause}>
-                {isPlaying ? <FaPause /> : <FaPlay/>}
+                {isPlaying ? <FaPause/> : <FaPlay/>}
             </button>
-            <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar} onChange={changeRange}/>
-            <a href={audioSample} download className={styles.downloadButton} onClick={handleDownloadClick}></a>
+            <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar}
+                   onChange={changeRange}/>
+            <button onClick={handleDownloadClick} className={styles.downloadButton}>
+                <a href={audioSample} download>
+                    { <FaDownload/> }
+                </a>
+            </button>
         </div>
         )
 }
