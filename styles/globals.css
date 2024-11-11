@@ -95,6 +95,12 @@ ul {
     animation: spin 1s linear infinite;
 }
 
+@media (orientation: landscape) {
+    .landscape-width {
+        width: 70vw;
+    }
+}
+
 
 @layer components {
     /*Header Styles*/
