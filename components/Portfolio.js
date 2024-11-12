@@ -74,7 +74,7 @@ const Portfolio = () => {
 
                     <div className="flex flex-col lg:items-end xs:items-center">
                         <div className="inline-flex gap-1 items-center">
-                        <h2 className="text-3xl sm:text-6xl md:text-7xl xl:text-8xl font-semibold">20</h2>
+                        <h2 className="text-3xl sm:text-6xl md:text-7xl xl:text-8xl font-semibold">200</h2>
                             <h2 className="text-3xl sm:text-6xl md:text-7xl xl:text-8xl font-extrabold">+</h2>
                         </div>
                         <h4 className="text-sm sm:text-lg md:text-xl xl:text-xl lg:text-start">
