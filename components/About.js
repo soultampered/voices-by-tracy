@@ -51,17 +51,14 @@ const About = ({auditionBtn}) => {
 
                             <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-2">
                                 {whyChooseData[0].feature.map((feature) => (
-                                    <div key={feature.id}
-                                         className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-                                        <div
-                                            className="button-text mx-auto flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-mdv border background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240);">
+                                    <div key={feature.id} className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+                                        <div className="button-text mx-auto flex h-10 w-10 md:h-12 md:w-12 items-center justify-center text-violet-600 bg-violet-500/10 p-3 rounded-full">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                  className="icon icon-tabler icon-tabler-tools" width="24"
                                                  height="24" viewBox="0 0 24 24" strokeWidth="2"
                                                  stroke="currentColor"
                                                  fill="none"
                                                  strokeLinecap="round" strokeLinejoin="round">
-
 
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                                 <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
