@@ -1,5 +1,6 @@
 import '@styles/globals.css';
 import React from "react";
+import CookiePopup from "@components/CookiePopup";
 // import { ModalProvider } from "@app/context/ModalContext";
 
 export const metadata = {
@@ -21,6 +22,7 @@ const RootLayout = ({ children }) => {
                 </main>
             </div>
             {/*</ModalProvider>*/}
+            <CookiePopup />
             </body>
             </html>
     )
