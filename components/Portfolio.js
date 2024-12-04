@@ -5,7 +5,7 @@ import {useTranslation} from "react-i18next";
 const Portfolio = () => {
     const { t } = useTranslation();
     return (
-        <div className="z-10 rounded-3xl shadow-bottom pb-2 bg-gradient flex justify-center w-screen overflow-hidden relative before:block before:absolute before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
+        <div className="z-10 shadow-bottom pb-2 flex justify-center w-screen overflow-hidden relative before:block before:absolute before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
             <div className="relative z-20 flex lg:flex-row flex-col px-5 h-full items-center justify-center min-w-1059 max-w-1520">
                 <div className="w-full max-w-xs mx-auto 2sm:max-w-sm md:max-w-md xl:w-2/3 lg:max-w-none lg:mx-0 xs:mb-10 xs:relative xs:z-10 order-2 lg:order-1">
                     <h1 className="hidden">Tracy-Ann Leith</h1>
