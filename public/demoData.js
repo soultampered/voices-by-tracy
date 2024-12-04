@@ -121,6 +121,11 @@ export const carouselData = [
         comment: 'Tracy is a skilled and talented voice over professional who makes content come to life.',
         title: 'McGill University Library'
     },
+    {
+        id: '3',
+        comment: 'Tracy-Ann is a true professional on top of being a pleasure to work with.',
+        title: 'IND Films, Montreal, Qc'
+    },
 ]
 
 export const clientList = [
