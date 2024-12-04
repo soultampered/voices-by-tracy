@@ -14,7 +14,7 @@ export default async function LandingPage({ params: { locale }}) {
                 <div className="absolute top-2 right-4 lg:top-4"><LanguageChanger /></div>
                 <div className="m-auto">
                     <div>
-                        <div className="landing-page-background enter-card-background rounded-3xl relative shadow-2xl p-4 border-2 landscape-width w-[90vw] h-[90vh] max-w-[1080px] max-h-[720px] flex flex-col items-center justify-center">
+                        <div className="landing-page-background rounded-3xl relative shadow-2xl p-4 border-2 landscape-width w-[90vw] h-[90vh] max-w-[1080px] max-h-[720px] flex flex-col items-center justify-center">
                             <img src="/resources/images/VbT_Logo.svg"
                                  alt="landing page"
                                  className="w-full max-w-[80%] max-h-[80%] object-contain"/>

@@ -17,7 +17,7 @@ export default async function ContactPage({ params: { locale }}){
     return (
         <TranslationsProvider resources={resources} locale={locale} namespaces={i18nNamespaces}>
             <ChakraProvider>
-                <div className='bg-gradient'>
+                <div className='enter-card-background'>
                     <Header/>
                     <div className="bodyContainer">
                         <NoSSRContact/>
