@@ -13,7 +13,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
     return (
             <html lang="en">
-            <body className="background">
+            <body className="enter-card-background">
             {/*<ModalProvider>*/}
             <div className="main">
                 <main className="app overflow-hidden">
