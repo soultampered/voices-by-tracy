@@ -1,3 +1,8 @@
+export const metadata = {
+    title: "Contact page",
+    description: "Contact form to get in touch with Tracy",
+};
+
 import React from "react";
 import Header from '@components/Header.js';
 import dynamic from "next/dynamic";
