@@ -1,8 +1,10 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import { useTranslation } from "react-i18next";
 
 const CookiePopup = () => {
+	const { t } = useTranslation();
 	const [showPopup, setShowPopup] = useState(false);
 
 	useEffect(() => {
@@ -21,8 +23,8 @@ const CookiePopup = () => {
 		showPopup && (
 			<div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white text-center p-4 z-50">
 				<p className="inline">
-					This website uses cookies to enhance your experieince.  By continuing, you agree to our {''}
-					<a href="/cookie-policy" className="text-blue-400 underline">cookie policy</a>.
+					{t('common:cookie-banner')} {''}
+					<a href="/cookie-policy" className="text-blue-400 underline">{t('common:cookie-policy')}</a>.
 				</p>
 				<button onClick={handleAccept}
 						className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 ml-4 rounded">

@@ -82,6 +82,8 @@ p {
 
 ul {
     list-style-type: none;
+    color: white;
+    line-height: 1.6;
 }
 
 .container > img {

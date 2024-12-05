@@ -5,7 +5,7 @@ import CookiePopup from "@components/CookiePopup";
 
 export const metadata = {
     title: "Voices by Tracy",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "The portfolio site of Tracy-Ann Leith to showcase her work and connect with people",
     icons: {
         icon: '/favicon.ico',
     }
