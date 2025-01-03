@@ -6,7 +6,8 @@
     "dev": "cross-env PORT=3000 i18nexus pull && next dev",
     "build": "i18nexus pull && next build",
     "start": "i18nexus pull && NODE_ENV=production node server.js",
-    "lint": "i18nexus pull && next lint"
+    "lint": "i18nexus pull && next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
@@ -16,6 +17,7 @@
     "i18next-resources-to-backend": "^1.2.1",
     "next": "^14.2.10",
     "next-i18n-router": "^5.5.1",
+    "next-sitemap": "^4.2.3",
     "nodemailer": "^6.9.15",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

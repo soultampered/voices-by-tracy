@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+Disallow: /register/
+Disallow: /logout/
+Disallow: /profile/
+
+# Host
+Host: https://www.voicesbytracy.com
+
+# Sitemaps
+Sitemap: https://www.voicesbytracy.com/sitemap.xml
