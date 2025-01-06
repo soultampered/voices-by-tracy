@@ -3,7 +3,7 @@ import TranslationsProvider from "@components/TranslationsProvider";
 import LanguageChanger from "@components/LanguageChanger";
 import React from "react";
 
-const i18nNamespaces = ['buttons']
+const i18nNamespaces = ['common','buttons']
 
 export default async function LandingPage({ params: { locale }}) {
     const { t, resources } = await initTranslations(locale, i18nNamespaces);
@@ -20,7 +20,7 @@ export default async function LandingPage({ params: { locale }}) {
                                  className="w-full max-w-[80%] max-h-[80%] object-contain"/>
                             <a href="/site"
                                className="blueBtn mt-52 sm:mt-0 inline-flex items-center justify-center px-4 py-2 text-xl sm:text-3xl">
-                                {t("enterButton")}
+                                {t("buttons:enterButton")}
                             </a>
                         </div>
                     </div>

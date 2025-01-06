@@ -23,7 +23,7 @@ export default async function CookiePolicyPage({ params: { locale }}) {
 				<div className="bodyContainer">
 					<div className="dark:bg-gray-900 font-Poppins">
 						<div className="rounded-t-3xl overflow-auto overflow-y-scroll bg-gray-800 p-20">
-							<h1 className="text-3xl font-bold mb-4 capitalize">C{t('common:cookie-policy')}</h1>
+							<h1 className="text-3xl font-bold mb-4 capitalize">{t('common:cookie-policy')}</h1>
 							<h2 className="text-2xl font-bold mb-2 capitalize">{t('common:what-cookies-title')}</h2>
 							<p className="mb-4 border-b border-gray-300 pb-2">{t('common:what-cookies-info')}</p>
 
