@@ -37,9 +37,12 @@ export default function LanguageChanger() {
     };
 
     return (
-        <select className='frenchBtn' onChange={handleChange} value={currentLocale}>
-            <option value="en">English</option>
-            <option value="fr">Français</option>
-        </select>
+        <label>
+            <span className="sr-only">Language Selection</span>
+            <select id="language" className='frenchBtn' onChange={handleChange} value={currentLocale}>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+            </select>
+        </label>
     );
 }
