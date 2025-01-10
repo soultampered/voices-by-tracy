@@ -27,7 +27,7 @@ const CookiePopup = () => {
 					<a href="/cookie-policy" className="text-blue-400 underline">{t('common:cookie-policy')}</a>.
 				</p>
 				<button onClick={handleAccept}
-						className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 ml-4 rounded">
+						className="bg-customBlue hover:bg-blue-600 text-white px-4 py-2 ml-4 rounded">
 					Accept
 				</button>
 			</div>

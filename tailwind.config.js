@@ -44,6 +44,7 @@ module.exports = {
             knobby: '#3452a5',
             selectedKnobby: '#26c9c3',
             cream: '#c0c0c0',
+            customBlue: '#004ecc'
         },
         margin: {
             '25': '25px',
