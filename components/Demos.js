@@ -82,7 +82,7 @@ const Demos = ({auditionBtn}) => {
                                 {filteredItems.map((audioSample, id) => (
                                     <div key={`lang-${id}`} className={styles.playerCard}>
                                         <div className='box-border h-full rounded'>
-                                            <p className='ml-1 font-bold'>{audioSample.title}</p>
+                                            <p className='ml-1 mb-2 font-bold'>{audioSample.title}</p>
                                             <DemoPlayer key={audioSample.id} audioSample={audioSample.path}
                                                         filterState={filterState} setFilterState={setFilterState} title={audioSample.title}/>
                                             </div>

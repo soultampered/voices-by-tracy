@@ -12,31 +12,6 @@ const Portfolio = () => {
                     <h2 className="text-sm text-white font-extrabold my-4 sm:text-2xl md:text-3xl lg:text-5xl lg:mb-8 lg:mx-4 whitespace-nowrap">
                         {t('common:catchPhrase')}
                     </h2>
-
-                    <div className=" lg:hidden">
-                        <div className="flex mb-2 lg:items-end xs:items-center">
-                        <div className="inline-flex gap-1 items-center border-b">
-                                <h4>15</h4>
-                                <h4 className="text-blue-500">+</h4>
-                                <h4>{t('common:bio-experience')}</h4>
-                            </div>
-                        </div>
-
-                        <div className="flex mb-2 lg:items-end xs:items-center">
-                            <div className="inline-flex gap-1 items-center border-b">
-                                <h4 className="">20</h4>
-                                <h4 className="text-blue-500">+</h4>
-                                <h4>{t('Projects Launched')}</h4>
-                            </div>
-                        </div>
-
-                        <div className="flex mb-2 lg:items-end xs:items-center">
-                            <div className="inline-flex gap-1 items-center border-b">
-                                <h4>{t('common:bio-language')}</h4>
-                            </div>
-                        </div>
-                    </div>
-
                     <p className="text-stone-100 text-sm my-4 sm:text-base md:text-lg lg:mb-6">
                         {t('common:bio-short')}
                     </p>
@@ -56,9 +31,9 @@ const Portfolio = () => {
                             <h2 className="text-3xl sm:text-6xl md:text-7xl xl:text-8xl font-semibold">15</h2>
                             <h2 className="text-3xl sm:text-6xl md:text-7xl xl:text-8xl font-extrabold">+</h2>
                         </div>
-                        <h4 className="text-sm sm:text-lg md:text-xl xl:text-xl lg:text-start">
+                        <h3 className="text-sm sm:text-lg md:text-xl xl:text-xl lg:text-start">
                             {t('common:bio-experience')}
-                        </h4>
+                        </h3>
                     </div>
 
                     <div className="flex flex-col lg:items-end xs:items-center">
@@ -67,9 +42,9 @@ const Portfolio = () => {
                                 {t('common:bio-language')}
                             </h2>
                         </div>
-                        <h4 className="pt-1.5 text-sm sm:text-lg md:text-xl xl:text-xl lg:text-start">
+                        <h3 className="pt-1.5 text-sm sm:text-lg md:text-xl xl:text-xl lg:text-start">
                             {t('common:bio-langList')}
-                        </h4>
+                        </h3>
                     </div>
 
                     <div className="flex flex-col lg:items-end xs:items-center">
@@ -77,9 +52,9 @@ const Portfolio = () => {
                         <h2 className="text-3xl sm:text-6xl md:text-7xl xl:text-8xl font-semibold">200</h2>
                             <h2 className="text-3xl sm:text-6xl md:text-7xl xl:text-8xl font-extrabold">+</h2>
                         </div>
-                        <h4 className="text-sm sm:text-lg md:text-xl xl:text-xl lg:text-start">
+                        <h3 className="text-sm sm:text-lg md:text-xl xl:text-xl lg:text-start">
                             {t('common:bio-projects')}
-                        </h4>
+                        </h3>
                     </div>
                 </div>
             </div>

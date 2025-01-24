@@ -76,10 +76,8 @@ const DemoPlayer = ({audioSample, filterState, setFilterState, title}) => {
             </button>
             <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar} aria-label={`${title} DemoProgressBar`}
                    onChange={changeRange}/>
-            <a href={audioSample} download onClick={handleDownloadClick} className={styles.downloadButton} aria-label="DownloadDemo">
-                <button className={styles.downloadButton} aria-label={`${title} download button`}>
+            <a href={audioSample} download onClick={handleDownloadClick} className={styles.downloadButton} aria-label={`${title} download button`}>
                     <FaDownload/>
-                </button>
             </a>
         </div>
     )

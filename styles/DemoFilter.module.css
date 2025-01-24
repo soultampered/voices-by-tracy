@@ -6,8 +6,8 @@
     /*Demo Filter Styles */
     .langToggle {
         @apply
-        bg-blue-500
-        hover:bg-blue-700
+        bg-blue-700
+        hover:bg-blue-900
         text-white
         font-bold
         mx-3
