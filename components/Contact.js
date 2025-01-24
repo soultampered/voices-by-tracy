@@ -105,7 +105,7 @@ const Contact = () => {
                         <FormErrorMessage>Message cannot be empty</FormErrorMessage>
                     </FormControl>
                     <div className='flex justify-center mb-5'>
-                        <Button variant="outline" type='submit' onClick={onSubmit} isLoading={isLoading} className='blueBtn'
+                        <Button sx={{ "&.chakra-button": { color: "white" }}} variant="outline" type='submit' onClick={onSubmit} isLoading={isLoading} className='blueBtn'
                                 disabled={ !values.name || !values.email || !values.subject || !values.message }>
                             {t('buttons:button-Send')}
                         </Button>

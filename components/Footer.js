@@ -37,7 +37,7 @@ const Footer = ({auditionBtn}) => {
                     </div>
                     <div className="p-5 sm:w-7/12 border-r text-center">
                         <h3 className="font-bold text-xl text-white mb-4">Tracy-Ann Leith</h3>
-                        <p className="text-gray-500 text-sm">{t('common:Footer-SEO')}</p>
+                        <p className="text-white text-sm">{t('common:Footer-SEO')}</p>
                         <img src='/resources/images/VBT_Logo_Mark_Inverted.svg' alt="Voices by Tracy logo Mark"
                              style={{
                                  width: 150,
@@ -71,7 +71,7 @@ const Footer = ({auditionBtn}) => {
                             <FaLinkedin size={32} color="#0077B5" />
                         </a>
                     </div>
-                    <div className="my-5">© Copyright {currentYear} Voices by Tracy. All Rights Reserved.</div>
+                    <div className="my-5 text-white">© Copyright {currentYear} Voices by Tracy. All Rights Reserved.</div>
                 </div>
             </div>
 

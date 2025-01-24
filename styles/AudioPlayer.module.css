@@ -120,13 +120,16 @@
     }
     .downloadButton {
         @apply
-        ml-2
+        ml-1
+        -mt-1
         text-base
         text-secondary
         no-underline
         flex
         items-center
         hover:text-blue-500
+        w-6
+        h-6
     }
 }
 

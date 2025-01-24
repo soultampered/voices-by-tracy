@@ -116,12 +116,13 @@ ul {
         @apply
         inline-flex
         items-center
-        bg-blue-500
+        text-white
+        bg-blue-700
         border-0
         py-1
         px-3
         focus:outline-none
-        hover:bg-blue-700
+        hover:bg-blue-900
         rounded
         text-base
         mt-4
@@ -130,8 +131,8 @@ ul {
 
     .blueBtn {
         @apply
-        bg-blue-500
-        hover:bg-blue-700
+        bg-blue-700
+        hover:bg-blue-900
         text-white
         font-Poppins
         py-2
