@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import styles from "../styles/AudioPlayer.module.css";
 import { FaPlay, FaPause, FaDownload } from "react-icons/fa";
 
-const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
+const DemoPlayer = ({audioSample, filterState, setFilterState, title}) => {
 
     // State
     const [isPlaying, setIsPlaying] = useState(false);
@@ -71,18 +71,18 @@ const DemoPlayer = ({audioSample, filterState, setFilterState}) => {
     return (
         <div className={styles.audioPlayer}>
             <audio ref={audioPlayer} src={audioSample} preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
-            <button onClick={togglePlayPause} className={styles.playPause}>
+            <button onClick={togglePlayPause} className={styles.playPause} aria-label={isPlaying ? "PauseButton" : "PlayButton"}>
                 {isPlaying ? <FaPause/> : <FaPlay/>}
             </button>
-            <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar}
+            <input type="range" className={styles.progressBar} defaultValue="0" ref={progressBar} aria-label={`${title} DemoProgressBar`}
                    onChange={changeRange}/>
-            <button onClick={handleDownloadClick} className={styles.downloadButton}>
-                <a href={audioSample} download>
-                    { <FaDownload/> }
-                </a>
-            </button>
+            <a href={audioSample} download onClick={handleDownloadClick} className={styles.downloadButton} aria-label="DownloadDemo">
+                <button className={styles.downloadButton} aria-label={`${title} download button`}>
+                    <FaDownload/>
+                </button>
+            </a>
         </div>
-        )
+    )
 }
 
 export default DemoPlayer;

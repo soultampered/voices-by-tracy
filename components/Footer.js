@@ -61,13 +61,13 @@ const Footer = ({auditionBtn}) => {
                 </div>
                 <div className="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
                     <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-                        <a href="https://www.instagram.com/voices_by_tracy/" className="w-6 mx-1">
+                        <a href="https://www.instagram.com/voices_by_tracy/" className="w-6 mx-1" aria-label="linkToInstagram">
                             <FaInstagram size={32} color="#E4405F" />
                         </a>
-                        <a href="https://www.facebook.com/voicesbytracy" className="w-6 mx-1">
+                        <a href="https://www.facebook.com/voicesbytracy" className="w-6 mx-1" aria-label="linkToFacebook">
                             <FaFacebook size={32} color="#1877F2" />
                         </a>
-                        <a href="https://www.linkedin.com/in/voicesbytracy/" className="w-6 mx-1">
+                        <a href="https://www.linkedin.com/in/voicesbytracy/" className="w-6 mx-1" aria-label="linkToLinkedIn">
                             <FaLinkedin size={32} color="#0077B5" />
                         </a>
                     </div>

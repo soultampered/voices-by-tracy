@@ -84,7 +84,7 @@ const Demos = ({auditionBtn}) => {
                                         <div className='box-border h-full rounded'>
                                             <p className='ml-1 font-bold'>{audioSample.title}</p>
                                             <DemoPlayer key={audioSample.id} audioSample={audioSample.path}
-                                                        filterState={filterState} setFilterState={setFilterState}/>
+                                                        filterState={filterState} setFilterState={setFilterState} title={audioSample.title}/>
                                             </div>
                                         </div>
                                     ))}
