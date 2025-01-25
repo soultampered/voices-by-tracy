@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "@components/LanguageChanger";
+import Image from "next/image";
 
 export default function Header(){
     const { t } = useTranslation();
@@ -37,7 +38,13 @@ export default function Header(){
         <header className="text-white body-font">
             <div className="xs:px-4 px-8 h-full flex xs:flex-col sm:flex-row items-center xs:mt-10 sm:mt-0">
                 <a className="flex title-font font-medium items-center mb-4 md:mb-0" href="/site">
-                    <img src="/resources/images/VbT_Logo.svg" alt="siteLogo" className="h-32"/>
+                    <Image src="/resources/images/VbT_Logo.svg"
+                           alt="siteLogo"
+                           className="h-32"
+                           layout="responsive"
+                           width={300}
+                           height={211}
+                    />
                 </a>
                 <nav className="hidden md:flex md:flex-wrap md:items-center md:text-base md:justify-center md:ml-auto md:mr-4 md:py-1 md:pl-4">
                     <a className="navMenuBtn" href="/site/#aboutSection">{t('buttons:menu-About')}</a>
