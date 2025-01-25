@@ -268,7 +268,7 @@ export const clientList = [
         id: '23',
         name: 'Public health agency of Canada',
         source: '/resources/images/clients/phaclogo.png',
-        alt: 'Ubisoft Logo'
+        alt: 'Public Health Canada'
     },
 
 ]

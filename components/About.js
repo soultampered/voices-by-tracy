@@ -1,7 +1,8 @@
 'use client'
 import React from "react";
-import {aboutInfo, whyChooseData} from "@public/demoData";
+import { whyChooseData } from "@public/demoData";
 import {useTranslation} from "react-i18next";
+import Image from "next/image";
 /*import { useModal } from "@app/context/ModalContext";*/
 
 const About = ({auditionBtn}) => {
@@ -78,10 +79,13 @@ const About = ({auditionBtn}) => {
                     </div>
                 </div>
                 <div className='w-full md:w-2/5 justify-center items-center'>
-                    <img className='rounded-3xl w-full lg:max-w-md object-cover'
-                         src="/resources/images/leithBust.jpg"
-                         alt="Tracy Photo"
-                         style={{maxWidth: '100vw', objectFit: 'cover' }}/>
+                    <Image src="/resources/images/leithBust.jpg"
+                        className='rounded-3xl w-full lg:max-w-md object-cover'
+                        alt="Tracy Photo"
+                        style={{maxWidth: '100vw', objectFit: 'cover' }}
+                        width={640}
+                        height={870}
+                    />
                 </div>
             </div>
         </section>
