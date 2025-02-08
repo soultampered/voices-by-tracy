@@ -1,42 +1,42 @@
 export const audioSample = [
     {
         id: '1',
-        path: '/resources/audio/Commercial_demo_EN_Long.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039362/Commercial_demo_EN_Long_nqiqxu.mp3',
         title: 'Commercial Demo - Long',
         lang: 'En',
         domain: 'Commercial'
     },
     {
         id: '2',
-        path: '/resources/audio/Commercial_demo_EN_Short.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039360/Commercial_demo_EN_Short_aoxtaa.mp3',
         title: 'Commercial Demo - Short',
         lang: 'En',
         domain: 'Commercial'
     },
     {
         id: '3',
-        path: '/resources/audio/Corporate_demo_EN_Long.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039361/Corporate_demo_EN_Long_spziiy.mp3',
         title: 'Corporate Demo - Long',
         lang: 'En',
         domain: 'Corporate'
     },
     {
         id: '4',
-        path: '/resources/audio/Démo_commercial_FR_Court.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039360/D%C3%A9mo_commercial_FR_Court_vsprhm.mp3',
         title: 'Démo commercial - court',
         lang: 'Fr',
         domain: 'Commercial'
     },
     {
         id: '5',
-        path: '/resources/audio/Démo_commercial_FR_Long.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039361/D%C3%A9mo_commercial_FR_Long_zdsukl.mp3',
         title: 'Démo commercial - long',
         lang: 'Fr',
         domain: 'Commercial'
     },
     {
         id: '6',
-        path: '/resources/audio/Démo_corporatif_FR_Long.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039360/D%C3%A9mo_corporatif_FR_Long_pdga44.mp3',
         title: 'Démo corporatif - long',
         lang: 'Fr',
         domain: 'Corporate'
