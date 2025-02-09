@@ -132,142 +132,139 @@ export const clientList = [
     {
         id: '1',
         name: 'Raymond James',
-        source: '/resources/images/clients/Raymond_James.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114454/Raymond_James_frdype.png',
         alt: 'Raymond James Logo'
     },
     {
         id: '2',
         name: 'Intact Insurance',
-        source: '/resources/images/clients/Intact_Insurance.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114456/Intact_Insurance_x7knaa.png',
         alt: 'Intact Insurance Logo'
     },
     {
         id: '3',
         name: 'Splenda',
-        source: '/resources/images/clients/Splenda_Logo.jpg',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114453/Splenda_Logo_u3p5aq.jpg',
         alt: 'Splenda Logo'
     },
     {
         id: '4',
         name: 'Arm & Hammer',
-        source: '/resources/images/clients/arm_hammer_logo.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114451/arm_hammer_logo_ndfnhv.png',
         alt: 'Arm & Hammer Logo'
     },
     {
         id: '5',
         name: 'Jack Daniels',
-        source: '/resources/images/clients/JackDaniels_Logo.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114455/JackDaniels_Logo_eb55j2.png',
         alt: 'Jack Daniels Logo'
     },
     {
         id: '6',
         name: 'ProLite',
-        source: '/resources/images/clients/prolite.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114449/prolite_wps0fs.png',
         alt: 'ProLite Logo'
     },
     {
         id: '7',
         name: 'Canadel Furniture',
-        source: '/resources/images/clients/canadel.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114450/canadel_gtnpaw.png',
         alt: 'Canadel Furniture Logo'
     },
     {
         id: '8',
         name: 'Desjardins',
-        source: '/resources/images/clients/desjardins_logo.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114450/desjardins_logo_ukvhwb.png',
         alt: 'Desjardins Logo'
     },
     {
         id: '9',
         name: 'UNI Financial',
-        source: '/resources/images/clients/UNI_Financial.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114452/UNI_Financial_loa5v1.png',
         alt: 'UNI Financial Logo'
     },
     {
         id: '10',
         name: 'Asmodee',
-        source: '/resources/images/clients/asmodee.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114451/asmodee_wv5juz.png',
         alt: 'Asmodee Logo'
     },
     {
         id: '11',
         name: 'Audi Lauzon',
-        source: '/resources/images/clients/Audi.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114460/Audi_pmtm7i.png',
         alt: 'Audi Lauzon Logo'
     },
     {
         id: '12',
-
         name: 'Air Canada',
-        source: '/resources/images/clients/Air_Canada.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114460/Air_Canada_kqwghb.png',
         alt: 'Air Canada Logo'
     },
     {
         id: '13',
         name: 'CAE',
-        source: '/resources/images/clients/CAE.png',
-
-
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114458/CAE_bf0rmm.png',
         alt: 'CAE Logo'
     },
     {
         id: '14',
         name: 'Historica Canada',
-        source: '/resources/images/clients/HistoricaCanada.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114457/HistoricaCanada_qayubr.png',
         alt: 'Historica Canada Logo'
     },
     {
         id: '15',
         name: 'McGill',
-        source: '/resources/images/clients/McGill.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114455/McGill_km5kls.png',
         alt: 'McGill Logo'
     },
     {
         id: '16',
         name: 'Vetoquinol',
-        source: '/resources/images/clients/Vetoquinol.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114452/Vetoquinol_wcowoc.png',
         alt: 'Vetroquinol Logo'
     },
     {
         id: '17',
         name: 'Bio-K-Plus',
-        source: '/resources/images/clients/Bio-K.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114459/Bio-K_qcgwiw.png',
         alt: 'Bio-K-Plus Logo'
     },
     {
         id: '18',
         name: 'SNC Lavalin',
-        source: '/resources/images/clients/SNC-Lavalin.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114453/SNC-Lavalin_ypmijf.png',
         alt: 'SNC Lavalin Logo'
     },
     {
         id: '19',
         name: 'Radio CINA',
-        source: '/resources/images/clients/RadioCINA.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114454/RadioCINA_sqpgqk.png',
         alt: 'Radio CINA Logo'
     },
     {
         id: '20',
         name: 'General Mills',
-        source: '/resources/images/clients/General_Mills.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114458/General_Mills_olhhie.png',
         alt: 'General Mills Logo'
     },
     {
         id: '21',
         name: 'Hockey Canada',
-        source: '/resources/images/clients/HockeyCanada.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114457/HockeyCanada_l3wrmx.png',
         alt: 'Hockey Canada Logo'
     },
     {
         id: '22',
         name: 'Ubisoft',
-        source: '/resources/images/clients/Ubisoft_logo.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114452/Ubisoft_logo_qsgj19.png',
         alt: 'Ubisoft Logo'
     },
     {
         id: '23',
         name: 'Public health agency of Canada',
-        source: '/resources/images/clients/phaclogo.png',
+        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114450/phaclogo_zhpzen.png',
         alt: 'Public Health Canada'
     },
 
