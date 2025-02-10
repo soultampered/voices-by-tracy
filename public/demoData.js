@@ -1,43 +1,43 @@
 export const audioSample = [
     {
         id: '1',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039362/Commercial_demo_EN_Long_nqiqxu.mp3',
-        title: 'Commercial Demo - Long',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225098/Audi_Lauzon_-_TV_qmqyah.mp3',
+        title: 'Audi Lauzon',
         lang: 'En',
         domain: 'Commercial'
     },
     {
         id: '2',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039360/Commercial_demo_EN_Short_aoxtaa.mp3',
-        title: 'Commercial Demo - Short',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225377/Nutricap_TV_2016_For_healthy_hair__15sec_jxlh08.mp3',
+        title: 'Nutricap',
         lang: 'En',
         domain: 'Commercial'
     },
     {
         id: '3',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039361/Corporate_demo_EN_Long_spziiy.mp3',
-        title: 'Corporate Demo - Long',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225098/Promo_-_Dialog_Insight_dl5r6w.mp3',
+        title: 'Dialog Insight',
         lang: 'En',
         domain: 'Corporate'
     },
     {
         id: '4',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039360/D%C3%A9mo_commercial_FR_Court_vsprhm.mp3',
-        title: 'Démo commercial - court',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225479/Toyo_Radio_-_Durability_Relationship_FR_30_kwr7gk.mp3',
+        title: 'Toyo Radio',
         lang: 'Fr',
         domain: 'Commercial'
     },
     {
         id: '5',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039361/D%C3%A9mo_commercial_FR_Long_zdsukl.mp3',
-        title: 'Démo commercial - long',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225097/Val_Nature_nzlyfr.mp3',
+        title: 'Val Nature',
         lang: 'Fr',
         domain: 'Commercial'
     },
     {
         id: '6',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739039360/D%C3%A9mo_corporatif_FR_Long_pdga44.mp3',
-        title: 'Démo corporatif - long',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225098/Corpo_industrielle_-_Omnia_zrbqsh.mp3',
+        title: 'Omnia',
         lang: 'Fr',
         domain: 'Corporate'
     },
