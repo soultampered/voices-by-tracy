@@ -1,5 +1,5 @@
 import Header from '@components/Header.js';
-import VideoPlayer from '@components/VideoPlayer.js';
+import VideoPlayer from '@components/SmallPlayer.js';
 
 export default async function VideoPage(){
     return (
