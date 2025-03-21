@@ -1,9 +1,10 @@
 import '@styles/globals.css';
 import React from "react";
 import CookiePopup from "@components/CookiePopup";
-// import { ModalProvider } from "@[locale]/context/ModalContext";
+import { ModalProvider } from "app/[locale]/context/ModalContext";
 import { VideoProvider } from "app/[locale]/context/VideoContext.js";
 import LargePlayer from "@components/LargePlayer";
+import Contact from "@components/Contact";
 
 export const metadata = {
     title: "Voices by Tracy",
@@ -17,7 +18,7 @@ const RootLayout = ({ children }) => {
     return (
             <html lang="en">
             <body className="enter-card-background">
-            {/*<ModalProvider>*/}
+            <ModalProvider>
             <VideoProvider>
                 <div className="main">
                     <main className="app overflow-hidden">
@@ -26,7 +27,7 @@ const RootLayout = ({ children }) => {
                 </div>
                 <LargePlayer />
             </VideoProvider>
-            {/*</ModalProvider>*/}
+            </ModalProvider>
             <CookiePopup />
             </body>
             </html>

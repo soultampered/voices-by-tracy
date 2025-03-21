@@ -51,7 +51,7 @@ const Demos = ({auditionBtn}) => {
     };
 
     return (
-        <section id="demosSection" className="flex flex-col lg:flex-row relative block bg-gray-900">
+        <section id="demosSection" className="flex flex-col lg:flex-row relative bg-gray-900">
             <div className='flex flex-col lg:flex-row h-full w-full px-4 md:px-5'>
                 <div className="w-full">
                     <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="/contact">
@@ -63,7 +63,7 @@ const Demos = ({auditionBtn}) => {
                             {t('common:title-demo')}
                         </h2>
 
-                        <div className="buttons-container mt-4 lg:mt-0 flex flex-wrap gap-2">
+                        <div className="mt-4 lg:mt-0 flex flex-wrap gap-2">
                             {filters.map((lang, id) => (
                                 <button
                                     onClick={() => filterStateManager(lang)}
