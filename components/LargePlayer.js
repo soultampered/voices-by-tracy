@@ -23,7 +23,7 @@ export default function LargePlayer() {
 
 	return (
 		<div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
-			<div className="relative w-3/4 max-w-5xl">
+			<div className="video-container relative w-3/4 max-w-5xl">
 				<button className="absolute top-2 right-2 text-white text-2xl z-[100]" onClick={closeLargePlayer}>
 					✖
 				</button>
