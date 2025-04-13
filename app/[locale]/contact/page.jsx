@@ -11,7 +11,6 @@ import Footer from '@components/Footer.js';
 import {buttonList} from "@public/demoData.js";
 import initTranslations from 'app/i18n';
 import TranslationsProvider from "@components/TranslationsProvider";
-import {ChakraProvider} from "@chakra-ui/react";
 
 const i18nNamespaces = ['common','buttons','contact','services']
 
@@ -21,15 +20,13 @@ export default async function ContactPage({ params: { locale }}){
 
     return (
         <TranslationsProvider resources={resources} locale={locale} namespaces={i18nNamespaces}>
-            <ChakraProvider>
-                <div className='enter-card-background'>
-                    <Header/>
-                    <div className="bodyContainer">
-                        <NoSSRContact/>
-                    </div>
-                    <Footer auditionBtn={auditionBtn}/>
+            <div className='enter-card-background'>
+                <Header/>
+                <div className="bodyContainer">
+                    <NoSSRContact/>
                 </div>
-            </ChakraProvider>
+                <Footer auditionBtn={auditionBtn}/>
+            </div>
         </TranslationsProvider>
     );
 }
