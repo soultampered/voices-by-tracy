@@ -56,7 +56,7 @@ const Testimonials = () => {
     }, [carouselData.length]);
     return (
         <section className="relative block border-b min-h-72 bg-gray-900">
-            <div className=" flex justify-center items-center dark:bg-gray-700 group p-4">
+            <div className=" flex justify-center items-center group p-4">
                 <div>
                     <div className="bg-gray-50 dark:bg-gray-800 rounded h-full w-full">
                         <div className=" px-4 py-8 mx-auto text-center">
@@ -90,16 +90,6 @@ const Testimonials = () => {
                             <BsChevronCompactRight onClick={nextSlide} size={30}/>
                         </div>
                     </div>
-                    {/*<div className="flex top-4 justify-center py-2 space-x-2">*/}
-                    {/*    {carouselData.map((slide, slideIndex) => (*/}
-                    {/*        <div*/}
-                    {/*            key={slide.id}*/}
-                    {/*            onClick={() => goToSlide(slideIndex)}*/}
-                    {/*            className="text-xl md:text-2xl cursor-pointer">*/}
-                    {/*            <RxDotFilled/>*/}
-                    {/*        </div>*/}
-                    {/*    ))}*/}
-                    {/*</div>*/}
                 </div>
             </div>
         </section>
