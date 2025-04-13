@@ -3,16 +3,9 @@ import React from "react";
 import { whyChooseData } from "@public/demoData";
 import {useTranslation} from "react-i18next";
 import Image from "next/image";
-/*import { useModal } from "@app/context/ModalContext";*/
 
 const About = ({auditionBtn}) => {
     const { t } = useTranslation();
-    // const { openModal } = useModal();
-    // const handleOpenModal = () => {
-    //     openModal(
-    //         <Contact />
-    //     );
-    // };
 
     return (
         <section id="aboutSection" className="rounded-t-3xl lg:py-6 lg:px-8 bg-gray-900">
@@ -50,7 +43,7 @@ const About = ({auditionBtn}) => {
                                 </div>
                             </div>
 
-                            <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-2">
+                            <div className="relative mx-auto max-w-7xl grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-2">
                                 {whyChooseData[0].feature.map((feature) => (
                                     <div key={feature.id} className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
                                         <div className="button-text mx-auto flex h-10 w-10 md:h-12 md:w-12 items-center justify-center text-violet-600 bg-violet-500/10 p-3 rounded-full">

@@ -1,41 +1,35 @@
-'use client'
+'use client';
 
-import React, {createContext, useState, useContext, useEffect } from 'react';
-import Modal from 'react-modal';
+import { createContext, useContext, useState } from 'react';
 
 const ModalContext = createContext();
 
-export const ModalProvider = ({ children }) => {
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [modalContent, setModalContent] = useState(null);
+export function ModalProvider({ children }) {
+	const [modalIsOpen, setModalIsOpen] = useState(false);
+	const [modalContent, setModalContent] = useState(null);
 
-    useEffect(() => {
-        Modal.setAppElement(document.body);
-    }, []);
+	const openModal = (content) => {
+		setModalContent(content);
+		setModalIsOpen(true);
+	};
 
+	const closeModal = () => {
+		setModalIsOpen(false);
+		setModalContent(null);
+	};
 
-    const openModal = (content) => {
-        setModalContent(content);
-        setModalIsOpen(true);
-    };
+	return (
+		<ModalContext.Provider value={{ modalIsOpen, modalContent, openModal, closeModal }}>
+			{children}
+		</ModalContext.Provider>
+	);
+}
 
-    const closeModal = () => {
-        setModalIsOpen(false);
-        setModalContent(null);
-    };
-
-    return (
-        <ModalContext.Provider value={{ modalIsOpen, openModal, closeModal }}>
-            { children }
-              <Modal
-                  isOpen={ modalIsOpen }
-                  onRequestClose={ closeModal }
-                  contentLabel="Global Modal">
-                  { modalContent }
-                  <button onClick={ closeModal }>Close</button>
-              </Modal>
-        </ModalContext.Provider>
-    )
-};
-
-export const useModal = () => useContext(ModalContext);
+export function useModal() {
+	const context = useContext(ModalContext);
+	if (!context) {
+		console.error('useModal() called outside of ModalProvider!');
+		return null;
+	}
+	return context;
+}

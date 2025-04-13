@@ -5,9 +5,16 @@ import styles from "@styles/DemoFilter.module.css";
 import {audioSample, clientList} from "@public/demoData";
 import {useTranslation} from "react-i18next";
 import DemoPlayer from "@components/DemoPlayer";
+import {useModal} from "../app/[locale]/context/ModalContext";
+import ContactModal from "@components/ContactModal";
 
 const Demos = ({auditionBtn}) => {
     const { t } = useTranslation();
+    const { openModal } = useModal();
+
+    const handleOpenModal = () => {
+        openModal(<ContactModal />);
+    };
 
     //Filter State
     const [selectedFilters, setSelectedFilters] = useState([]);
@@ -54,11 +61,12 @@ const Demos = ({auditionBtn}) => {
         <section id="demosSection" className="flex flex-col lg:flex-row relative bg-gray-900">
             <div className='flex flex-col lg:flex-row h-full w-full px-4 md:px-5'>
                 <div className="w-full">
-                    <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="/contact">
+                    <button className="w-full text-center blueBtn cursor-pointer lg:w-auto" onClick={handleOpenModal}>
                         {t('buttons:button-Audition')}
-                    </a>
+                    </button>
 
-                    <div className="relative max-w-2xl md:max-w-3xl lg:max-w-5xl flex flex-col lg:flex-row items-center titleContainer">
+                    <div
+                        className="relative max-w-2xl md:max-w-3xl lg:max-w-5xl flex flex-col lg:flex-row items-center titleContainer">
                         <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl">
                             {t('common:title-demo')}
                         </h2>
@@ -84,12 +92,13 @@ const Demos = ({auditionBtn}) => {
                                         <div className='box-border h-full rounded'>
                                             <p className='ml-1 mb-2 font-bold'>{audioSample.title}</p>
                                             <DemoPlayer key={audioSample.id} audioSample={audioSample.path}
-                                                        filterState={filterState} setFilterState={setFilterState} title={audioSample.title}/>
-                                            </div>
+                                                        filterState={filterState} setFilterState={setFilterState}
+                                                        title={audioSample.title}/>
                                         </div>
-                                    ))}
-                                </div>
+                                    </div>
+                                ))}
                             </div>
+                        </div>
                         <DemoVideo/>
                     </div>
                     <div className='rounded box-border flex p-2 mt-2 w-full lg:w-auto'>

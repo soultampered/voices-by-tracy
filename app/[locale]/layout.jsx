@@ -1,10 +1,11 @@
 import '@styles/globals.css';
 import React from "react";
 import CookiePopup from "@components/CookiePopup";
-import { ModalProvider } from "app/[locale]/context/ModalContext";
 import { VideoProvider } from "app/[locale]/context/VideoContext.js";
+import { ModalProvider } from "./context/ModalContext";
 import LargePlayer from "@components/LargePlayer";
-import Contact from "@components/Contact";
+import ModalContainer from "@components/ModalContainer";
+import {ChakraProvider} from "@chakra-ui/react";
 
 export const metadata = {
     title: "Voices by Tracy",
@@ -18,17 +19,20 @@ const RootLayout = ({ children }) => {
     return (
             <html lang="en">
             <body className="enter-card-background">
-            <ModalProvider>
-            <VideoProvider>
-                <div className="main">
-                    <main className="app overflow-hidden">
-                            {children}
-                    </main>
-                </div>
-                <LargePlayer />
-            </VideoProvider>
-            </ModalProvider>
-            <CookiePopup />
+            <ChakraProvider>
+                <ModalProvider>
+                    <VideoProvider>
+                        <div className="main">
+                            <main className="app overflow-hidden">
+                                {children}
+                            </main>
+                        </div>
+                        <LargePlayer />
+                        <ModalContainer />
+                    </VideoProvider>
+                </ModalProvider>
+                <CookiePopup />
+            </ChakraProvider>
             </body>
             </html>
     )

@@ -67,7 +67,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className="dark:bg-gray-900 font-Poppins">
+        <div className="font-Poppins">
             <div className="rounded-t-3xl overflow-auto overflow-y-scroll bg-gray-800 pt-3">
                 <Container className='text-white'>
                     <Heading className='mb-5'>{t('contact:contact-Header')}</Heading>
@@ -105,7 +105,7 @@ const Contact = () => {
                         <FormErrorMessage>Message cannot be empty</FormErrorMessage>
                     </FormControl>
                     <div className='flex justify-center mb-5'>
-                        <Button sx={{ "&.chakra-button": { color: "white" }}} variant="outline" type='submit' onClick={onSubmit} isLoading={isLoading} className='blueBtn'
+                        <Button color="white" className='blueBtn' _hover={{ bg: "#1E3A8A" }} variant="outline" type='submit' onClick={onSubmit} isLoading={isLoading}
                                 disabled={ !values.name || !values.email || !values.subject || !values.message }>
                             {t('buttons:button-Send')}
                         </Button>

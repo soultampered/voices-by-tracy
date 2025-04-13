@@ -1,18 +1,18 @@
 'use client'
 import React from "react";
 import {FaLinkedin, FaFacebook, FaInstagram} from 'react-icons/fa';
-// import { useModal } from '/app/context/ModalContext.js';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
+import {useModal} from "../app/[locale]/context/ModalContext";
+import ContactModal from "@components/ContactModal";
 
-const Footer = ({auditionBtn}) => {
+const Footer = ({ auditionBtn }) => {
     const { t } = useTranslation();
+    const { openModal } = useModal();
+
+    const handleOpenModal = () => {
+        openModal(<ContactModal />);
+    };
     const currentYear = new Date().getFullYear();
-    // const { openModal } = useModal();
-    // const handleOpenModal = () => {
-    //     openModal(
-    //         <Contact />
-    //     );
-    // };
 
     return (
         <footer>
@@ -53,8 +53,10 @@ const Footer = ({auditionBtn}) => {
                                 <p>Source Connect: <i>voices_by_tracy</i></p>
                             </li>
                             <li>
-                                <a className="w-full text-center blueBtn cursor-pointer lg:w-auto" href="/contact">
-                                    {t('buttons:button-Audition')}</a>
+                                <button className="w-full text-center blueBtn cursor-pointer lg:w-auto"
+                                        onClick={handleOpenModal}>
+                                    {t('buttons:button-Audition')}
+                                </button>
                             </li>
                         </ul>
                     </div>
