@@ -15,7 +15,7 @@ export default function ModalContainer() {
 	return (
 		<Modal isOpen={modalIsOpen} onClose={closeModal} isCentered closeOnOverlayClick={true}>
 			<ModalOverlay />
-			<ModalContent bg="transparent" maxW="50%" mx="auto" w="full">
+			<ModalContent bg="transparent" maxW={{ base: "100%", md: "70%", lg: "50%" }}  mx="auto" w="full">
 				<ModalBody w="full">{modalContent}</ModalBody>
 			</ModalContent>
 		</Modal>

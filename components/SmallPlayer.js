@@ -31,7 +31,7 @@ export default function SmallPlayer({ src }) {
     }, [src]);
 
     return (
-        <div className="w-64 cursor-pointer relative" onClick={() => openLargePlayer(src)}>
+        <div className="w-full cursor-pointer relative" onClick={() => openLargePlayer(src)}>
             {thumbnail ? (
                 <img src={thumbnail} alt="Video thumbnail" className="w-full h-auto rounded-lg shadow-md"/>
             ) : (
