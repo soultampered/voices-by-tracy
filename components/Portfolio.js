@@ -19,7 +19,7 @@ const Portfolio = () => {
             <div className="relative flex lg:flex-row flex-col px-5 h-full items-center justify-center min-w-1059 max-w-1520">
                 <div className="w-full max-w-xs mx-auto 2sm:max-w-sm md:max-w-md xl:w-2/3 lg:max-w-none lg:mx-0 xs:mb-10 xs:relative order-2 lg:order-1">
                     <h1 className="hidden">Tracy-Ann Leith</h1>
-                    <h2 className="text-sm text-white font-extrabold my-4 sm:text-2xl md:text-3xl lg:text-5xl lg:mb-8 lg:mx-4 whitespace-nowrap">
+                    <h2 className="text-sm text-white font-extrabold my-4 sm:text-2xl md:text-3xl lg:text-5xl lg:mb-8 whitespace-nowrap">
                         {t('common:catchPhrase')}
                     </h2>
                     <p className="text-stone-100 text-sm my-4 sm:text-base md:text-lg lg:mb-6">

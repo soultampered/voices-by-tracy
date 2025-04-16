@@ -18,24 +18,25 @@ const Footer = ({ auditionBtn }) => {
         <footer>
             <div className='bg-zinc-900'>
                 <div className="max-w-screen-xl py-10 px-4 sm:px-6 text-white sm:flex justify-between mx-auto">
-                    <div className="p-5 sm:w-3/12 border-r text-right">
-                        <div className="text-sm uppercase text-white font-bold">Menu</div>
-                        <ul>
-                            <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#aboutSection">{t('buttons:menu-About')}</a>
+                    <div class="p-5 sm:w-3/12 sm:border-r text-center sm:text-right">
+                        <div class="text-sm uppercase text-white font-bold mb-2">Menu</div>
+                        <ul class="flex flex-row justify-center flex-wrap sm:flex-col sm:items-end">
+                            <li class="mr-4 sm:mr-0 sm:mb-2 text-left">
+                                <a class="hover:text-indigo-600" href="#aboutSection">About</a>
                             </li>
-                            <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#serviceSection">{t('buttons:menu-Services')}</a>
+                            <li class="mr-4 sm:mr-0 sm:mb-2 text-left">
+                                <a class="hover:text-indigo-600" href="#serviceSection">Services</a>
                             </li>
-                            <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#demosSection">{t('buttons:menu-Demos')}</a>
+                            <li class="mr-4 sm:mr-0 sm:mb-2 text-left">
+                                <a class="hover:text-indigo-600" href="#demosSection">Demos</a>
                             </li>
-                            <li className="my-2">
-                                <a className="hover:text-indigo-600" href="#clientSection">{t('buttons:menu-Clients')}</a>
+                            <li class="mr-4 sm:mr-0 sm:mb-2 text-left">
+                                <a class="hover:text-indigo-600" href="#clientSection">Clients</a>
                             </li>
                         </ul>
                     </div>
-                    <div className="p-5 sm:w-7/12 border-r text-center">
+
+                    <div className="p-5 sm:w-7/12 sm:border-r text-center">
                         <h3 className="font-bold text-xl text-white mb-4">Tracy-Ann Leith</h3>
                         <p className="text-white text-sm">{t('common:Footer-SEO')}</p>
                         <img src='/resources/images/VBT_Logo_Mark_Inverted.svg' alt="Voices by Tracy logo Mark"
