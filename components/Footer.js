@@ -18,20 +18,20 @@ const Footer = ({ auditionBtn }) => {
         <footer>
             <div className='bg-zinc-900'>
                 <div className="max-w-screen-xl py-10 px-4 sm:px-6 text-white sm:flex justify-between mx-auto">
-                    <div class="p-5 sm:w-3/12 sm:border-r text-center sm:text-right">
-                        <div class="text-sm uppercase text-white font-bold mb-2">Menu</div>
-                        <ul class="flex flex-row justify-center flex-wrap sm:flex-col sm:items-end">
-                            <li class="mr-4 sm:mr-0 sm:mb-2 text-left">
-                                <a class="hover:text-indigo-600" href="#aboutSection">About</a>
+                    <div className="p-5 sm:w-3/12 sm:border-r text-center sm:text-right">
+                        <div className="text-sm uppercase text-white font-bold mb-2">Menu</div>
+                        <ul className="flex flex-row justify-center flex-wrap sm:flex-col sm:items-end">
+                            <li className="mr-4 sm:mr-0 sm:mb-2 text-left">
+                                <a className="hover:text-indigo-600" href="#aboutSection">About</a>
                             </li>
-                            <li class="mr-4 sm:mr-0 sm:mb-2 text-left">
-                                <a class="hover:text-indigo-600" href="#serviceSection">Services</a>
+                            <li className="mr-4 sm:mr-0 sm:mb-2 text-left">
+                                <a className="hover:text-indigo-600" href="#serviceSection">Services</a>
                             </li>
-                            <li class="mr-4 sm:mr-0 sm:mb-2 text-left">
-                                <a class="hover:text-indigo-600" href="#demosSection">Demos</a>
+                            <li className="mr-4 sm:mr-0 sm:mb-2 text-left">
+                                <a className="hover:text-indigo-600" href="#demosSection">Demos</a>
                             </li>
-                            <li class="mr-4 sm:mr-0 sm:mb-2 text-left">
-                                <a class="hover:text-indigo-600" href="#clientSection">Clients</a>
+                            <li className="mr-4 sm:mr-0 sm:mb-2 text-left">
+                                <a className="hover:text-indigo-600" href="#clientSection">Clients</a>
                             </li>
                         </ul>
                     </div>
