@@ -1,8 +1,8 @@
 export const audioSample = [
     {
         id: '1',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225098/Audi_Lauzon_-_TV_qmqyah.mp3',
-        title: 'Audi Lauzon',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746553629/My_Store_Next_Door_wy2xrp.mp3',
+        title: 'My Store Next Door',
         lang: 'En',
         domain: 'Commercial'
     },
