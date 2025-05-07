@@ -1,46 +1,47 @@
 export const audioSample = [
     {
         id: '1',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584408/Commercial_demo_EN_-_Tracy-AnnLeith_qqapw0.mp3',
+        title: 'Commercial Demo',
+        lang: 'En',
+        domain: 'Commercial'
+    },
+    {
+        id: '2',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584408/Commercial_demo_FR_-_Tracy-Ann_Leith_guvjtl.mp3',
+        title: 'Démo Commerciale',
+        lang: 'Fr',
+        domain: 'Commercial'
+    },
+    {
+        id: '3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584410/Corporate_demo_EN_-_Tracy-Ann_Leith_bke9aw.mp3',
+        title: 'Corporate Demo',
+        lang: 'En',
+        domain: 'Corporate'
+    },
+    {
+        id: '4',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584410/Corporate_demo_FR_-_Tracy-Ann_Leith_onattb.mp3',
+        title: 'Démo d\'Entreprise',
+        lang: 'Fr',
+        domain: 'Corporate'
+    },
+    {
+        id: '5',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746553629/My_Store_Next_Door_wy2xrp.mp3',
         title: 'My Store Next Door',
         lang: 'En',
         domain: 'Commercial'
     },
     {
-        id: '2',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225377/Nutricap_TV_2016_For_healthy_hair__15sec_jxlh08.mp3',
-        title: 'Nutricap',
-        lang: 'En',
-        domain: 'Commercial'
-    },
-    {
-        id: '3',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225098/Promo_-_Dialog_Insight_dl5r6w.mp3',
-        title: 'Dialog Insight',
-        lang: 'En',
-        domain: 'Corporate'
-    },
-    {
-        id: '4',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225479/Toyo_Radio_-_Durability_Relationship_FR_30_kwr7gk.mp3',
-        title: 'Toyo Radio',
-        lang: 'Fr',
-        domain: 'Commercial'
-    },
-    {
-        id: '5',
+        id: '6',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225097/Val_Nature_nzlyfr.mp3',
         title: 'Val Nature',
         lang: 'Fr',
         domain: 'Commercial'
     },
-    {
-        id: '6',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225098/Corpo_industrielle_-_Omnia_zrbqsh.mp3',
-        title: 'Omnia',
-        lang: 'Fr',
-        domain: 'Corporate'
-    },
+
 ]
 
 export const videoSample = [
@@ -81,8 +82,8 @@ export const videoSample = [
     },
     {
         id: '6',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1742524912/Canadian_Liver_Foundation_L_h%C3%A9patite_C_sr7tdr.mp4',
-        title: 'Vous pourriez avoir l\'hépatite C sans même le savoir.',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746583666/Audible_gejfqg.mp4',
+        title: 'Audible',
         lang: 'Fr',
         domain: 'Corporate',
     },

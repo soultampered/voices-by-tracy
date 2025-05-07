@@ -31,11 +31,11 @@ export default function SmallPlayer({ src }) {
     }, [src]);
 
     return (
-        <div className="w-full cursor-pointer relative" onClick={() => openLargePlayer(src)}>
+        <div className="w-full h-44 overflow-hidden cursor-pointer relative" onClick={() => openLargePlayer(src)}>
             {thumbnail ? (
-                <img src={thumbnail} alt="Video thumbnail" className="w-full h-auto rounded-lg shadow-md"/>
+                <img src={thumbnail} alt="Video thumbnail" className="w-full h-full rounded-lg shadow-md object-cover"/>
             ) : (
-                <div className="w-full h-36 bg-gray-700 rounded-lg animate-pulse"/>
+                <div className="w-full h-full bg-gray-700 rounded-lg animate-pulse"/>
             )}
             <div
                 className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50 transition">
