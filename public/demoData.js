@@ -1,45 +1,45 @@
 export const audioSample = [
     {
         id: '1',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292558/Tracy-Ann_Leith_Demo__Montage_EN_umpbcb.mp3',
+        title: 'Demo Montage En',
+        lang: 'En',
+        domain: 'Commercial'
+    },
+    {
+        id: '2',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292557/Tracy-Ann_Leith_De%CC%81mo_Montage_FR_lbw7yc.mp3',
+        title: 'Démo de montage Fr',
+        lang: 'Fr',
+        domain: 'Commercial'
+    },
+    {
+        id: '3',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584408/Commercial_demo_EN_-_Tracy-AnnLeith_qqapw0.mp3',
         title: 'Commercial Demo',
         lang: 'En',
         domain: 'Commercial'
     },
     {
-        id: '2',
+        id: '4',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584408/Commercial_demo_FR_-_Tracy-Ann_Leith_guvjtl.mp3',
         title: 'Démo Commerciale',
         lang: 'Fr',
         domain: 'Commercial'
     },
     {
-        id: '3',
+        id: '5',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584410/Corporate_demo_EN_-_Tracy-Ann_Leith_bke9aw.mp3',
         title: 'Corporate Demo',
         lang: 'En',
         domain: 'Corporate'
     },
     {
-        id: '4',
+        id: '6',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584410/Corporate_demo_FR_-_Tracy-Ann_Leith_onattb.mp3',
         title: 'Démo d\'Entreprise',
         lang: 'Fr',
         domain: 'Corporate'
-    },
-    {
-        id: '5',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746553629/My_Store_Next_Door_wy2xrp.mp3',
-        title: 'My Store Next Door',
-        lang: 'En',
-        domain: 'Commercial'
-    },
-    {
-        id: '6',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1739225097/Val_Nature_nzlyfr.mp3',
-        title: 'Val Nature',
-        lang: 'Fr',
-        domain: 'Commercial'
     },
 
 ]
