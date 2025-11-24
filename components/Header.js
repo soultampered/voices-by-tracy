@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "@components/LanguageChanger";
+import SearchBar from "@components/SearchBar";
 import Image from "next/image";
+import {createComponentTree} from "next/dist/server/app-render/create-component-tree";
 
 export default function Header(){
     const { t } = useTranslation();
@@ -35,7 +37,7 @@ export default function Header(){
     }, []);
 
     return (
-        <header className="text-white body-font">
+        <header className="text-white body-font mb-2">
             <div className="xs:px-4 px-8 h-full flex xs:flex-col sm:flex-row items-center xs:mt-10 sm:mt-0">
                 <a className="flex title-font font-medium items-center mb-4 md:mb-0" href="/site">
                     <Image src="/resources/images/VbT_Logo.svg"
@@ -48,7 +50,7 @@ export default function Header(){
                 </a>
                 <nav className="hidden md:flex md:flex-wrap md:items-center md:text-base md:justify-center md:ml-auto md:mr-4 md:py-1 md:pl-4">
                     <a className="navMenuBtn" href="/site/#aboutSection">{t('buttons:menu-About')}</a>
-                    <a className="navMenuBtn" href="/site/#demosSection">{t('buttons:menu-Demos')}</a>
+                    <a className="navMenuBtn" href="/search-results/">{t('buttons:menu-Demos')}</a>
                     <a className="navMenuBtn" href="/site/#serviceSection">{t('buttons:menu-Services')}</a>
                     <a className="navMenuBtn" href="/site/#clientSection">{t('buttons:menu-Clients')}</a>
                     <a className="navMenuBtn" href="/contact/">{t('buttons:menu-Contact')}</a>
@@ -64,7 +66,7 @@ export default function Header(){
                                  right: 0
                              }}>
                             <a className="navMenuBtn" href="#aboutSection">{t('buttons:menu-About')}</a>
-                            <a className="navMenuBtn" href="#demosSection">{t('buttons:menu-Demos')}</a>
+                            <a className="navMenuBtn" href="/site/search-results">{t('buttons:menu-Demos')}</a>
                             <a className="navMenuBtn" href="#serviceSection">{t('buttons:menu-Services')}</a>
                             <a className="navMenuBtn" href="#clientSection">{t('buttons:menu-Clients')}</a>
                             <a className="navMenuBtn" href="/site/contact">{t('buttons:menu-Contact')}</a>
@@ -74,6 +76,7 @@ export default function Header(){
                     )}
                 </div>
             </div>
+            <SearchBar />
         </header>
     );
 };
