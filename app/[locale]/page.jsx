@@ -1,6 +1,7 @@
 import initTranslations from "../i18n";
 import TranslationsProvider from "@components/TranslationsProvider";
 import LanguageChanger from "@components/LanguageChanger";
+import AnnouncementBanner from "@components/AnnouncementBanner";
 import React from "react";
 import Image from "next/image";
 
@@ -13,6 +14,7 @@ export default async function LandingPage({ params: { locale }}) {
         <TranslationsProvider resources={resources} locale={locale} namespaces={i18nNamespaces}>
             <div className="h-screen flex items-center justify-center relative enter-card-background">
                 <div className="absolute top-2 right-4 lg:top-4"><LanguageChanger /></div>
+                <div className="fixed top-16 w-full"><AnnouncementBanner /></div>
                 <div className="m-auto">
                     <div>
                         <div className="h-[50vh] sm:h-auto landing-page-background rounded-3xl relative shadow-2xl p-4 border-2 landscape-width w-[90vw] max-w-[1080px] max-h-[720px] flex flex-col items-center justify-center">
