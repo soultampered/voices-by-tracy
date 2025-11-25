@@ -42,7 +42,7 @@ export default async function SearchBar() {
 							</li>
 						</ul>
 					</div>
-					<input type="search" id="search-dropdown" id="input-group-1"
+					<input type="search" id="search-dropdown"
 						   className="px-3 py-2.5 bg-gray-800 text-heading text-sm focus:ring-brand focus:border-brand block w-full placeholder:text-body"
 						   placeholder="Search for products" required/>
 					<button type="button"
