@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "@components/LanguageChanger";
-import SearchBar from "@components/SearchBar";
+// import SearchBar from "@components/SearchBar";
+import AnnouncementBanner from "@components/AnnouncementBanner";
 import Image from "next/image";
-import {createComponentTree} from "next/dist/server/app-render/create-component-tree";
 
 export default function Header(){
     const { t } = useTranslation();
@@ -76,7 +76,8 @@ export default function Header(){
                     )}
                 </div>
             </div>
-            <SearchBar />
+            {/*<SearchBar />*/}
+            <AnnouncementBanner />
         </header>
     );
 };
