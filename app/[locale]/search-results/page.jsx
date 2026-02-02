@@ -1,33 +1,36 @@
-export const metadata = {
-    title: "Search Results page",
-    description: "Search results page that lists the work Tracy has worked on",
-};
-
-import React from "react";
-import Header from "@components/Header";
-import VideoListSkeleton from "@components/VideoListSkeleton"
-import Footer from "@components/Footer";
-import initTranslations from "../../i18n";
+import { Suspense } from "react";
+import VideoResults from "@/components/VideoResults";
+import VideoListSkeleton from "@/components/VideoListSkeleton";
+import { getVideos } from "@/lib/db/videos";
+import initTranslations from 'app/i18n';
 import TranslationsProvider from "@components/TranslationsProvider";
+import Footer from "@components/Footer";
+import Header from "@components/Header";
 import {buttonList} from "@public/demoData";
 
-const i18nNamespaces = ["common", "buttons", "contact", "services"]
+const i18nNamespaces = ['common','buttons','contact','services']
 
-export default async function SearchResults({ params: { locale }}){
+
+export default async function SearchPage({ params: {searchParams, locale }}) {
     const { t, resources } = await initTranslations(locale, i18nNamespaces);
-    const auditionBtn = buttonList.find(button => button.id === '1');
+    const auditionBtn = buttonList.find((button) => button.id === '1');
+    const videos = await getVideos(searchParams?.q);
 
     return (
         <TranslationsProvider resources={resources} locale={locale} namespaces={i18nNamespaces}>
-            <div className='background'>
+            <div className='bodyContainer'>
                 <Header/>
-                    <div className='flex flex-col lg:flex-row h-full w-full px-4 md:px-5'>
-                        <div className="w-full">
-                            <VideoListSkeleton/>
-                        </div>
-                    </div>
+                <section className="rounded-t-3xl overflow-auto overflow-y-scroll bg-gray-800 p-3">
+                    <Suspense fallback={<VideoListSkeleton/>}>
+                        {videos.length === 0 ? (
+                            <p className="text-neutral-400">No results found</p>
+                        ) : (
+                            <VideoResults videos={videos}/>
+                        )}
+                    </Suspense>
+                </section>
             </div>
-            <Footer/>
+                <Footer auditionBtn={auditionBtn}/>
         </TranslationsProvider>
-    );
+);
 }
