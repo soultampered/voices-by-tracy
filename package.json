@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "mongo": "mongod --dbpath C:\\Users\\unfor\\mongodb\\data --port 27018",
     "dev": "cross-env PORT=3000 i18nexus pull && next dev",
     "build": "i18nexus pull && next build",
     "start": "i18nexus pull && NODE_ENV=production node server.js",
