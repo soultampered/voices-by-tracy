@@ -9,6 +9,7 @@
     "start": "i18nexus pull && NODE_ENV=production node server.js",
     "lint": "i18nexus pull && next lint",
     "seed:media": "node scripts/seedMedia.js",
+    "import:cloudinary": "node --env-file=.env.local scripts/importCloudinaryMedia.js",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
