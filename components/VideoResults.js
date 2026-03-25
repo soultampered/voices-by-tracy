@@ -1,19 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function VideoResults({ videos }) {
 	return (
 		<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 			{videos.map((video) => (
-				<div key={video._id?.toString?.() || video._id} className="flex flex-col cursor-pointer group">
+				<Link
+					key={video._id?.toString?.() || video._id}
+					href={`/search-results/video/${video.slug}`}
+					className="flex flex-col cursor-pointer group">
 					{/* Thumbnail */}
 					<div className="relative w-full pb-[56.25%] rounded-md overflow-hidden bg-neutral-400">
 						{video.thumbnailUrl ? (
-							<Image
-								src={video.thumbnailUrl}
-								alt={video.title}
-								fill
-								className="object-cover group-hover:scale-105 transition-transform"
-							/>
+							<Image src={video.thumbnailUrl} alt={video.title} fill
+								className="object-cover group-hover:scale-105 transition-transform"/>
 						) : (
 							<div className="absolute inset-0 flex items-center justify-center bg-neutral-500 text-white text-sm">
 								No preview available
@@ -37,7 +37,7 @@ export default function VideoResults({ videos }) {
 							{video.description}
 						</p>
 					)}
-				</div>
+				</Link>
 			))}
 		</div>
 	);

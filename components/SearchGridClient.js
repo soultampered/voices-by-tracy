@@ -1,12 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import VideoResults from "./VideoResults";
 import VideoListSkeleton from "./VideoListSkeleton";
 import SearchFilter from "./SearchFilter";
 
 export default function SearchGridClient({ videos }) {
 	const [filteredVideos, setFilteredVideos] = useState(videos);
+	const [isReady, setIsReady] = useState(false);
+
+	useEffect(() => {
+		setFilteredVideos(videos);
+		setIsReady(true);
+	}, [videos]);
+
+	if(!isReady) {
+		return <VideoListSkeleton />;
+	}
 
 	return (
 		<>
