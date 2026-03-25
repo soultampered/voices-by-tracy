@@ -1,5 +1,5 @@
 // components/VideoListSkeleton.jsx
-export default function VideoListSkeleton({ count = 8 }) {
+export default function VideoListSkeleton({ count = 12 }) {
 	return (
 		<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 animate-pulse">
 			{Array.from({ length: count }).map((_, i) => (
