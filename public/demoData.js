@@ -2,46 +2,45 @@ export const audioSample = [
     {
         id: '1',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292558/Tracy-Ann_Leith_Demo__Montage_EN_umpbcb.mp3',
-        title: 'Demo Montage En',
+        title: 'Commercial demo (English)',
         lang: 'En',
         domain: 'Commercial'
     },
     {
         id: '2',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292557/Tracy-Ann_Leith_De%CC%81mo_Montage_FR_lbw7yc.mp3',
-        title: 'Démo de montage Fr',
+        title: 'Démo commercial (français)',
         lang: 'Fr',
         domain: 'Commercial'
     },
     {
         id: '3',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584408/Commercial_demo_EN_-_Tracy-AnnLeith_qqapw0.mp3',
-        title: 'Commercial Demo',
+        title: 'Commercial Demo (English)_2',
         lang: 'En',
         domain: 'Commercial'
     },
     {
         id: '4',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584408/Commercial_demo_FR_-_Tracy-Ann_Leith_guvjtl.mp3',
-        title: 'Démo Commerciale',
-        lang: 'Fr',
-        domain: 'Commercial'
-    },
-    {
-        id: '5',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584410/Corporate_demo_EN_-_Tracy-Ann_Leith_bke9aw.mp3',
-        title: 'Corporate Demo',
+        title: 'Corporate Demo (English)_2',
         lang: 'En',
         domain: 'Corporate'
     },
     {
-        id: '6',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584410/Corporate_demo_FR_-_Tracy-Ann_Leith_onattb.mp3',
-        title: 'Démo d\'Entreprise',
+        id: '5',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913369/D%C3%A9mo_corporatif_fran%C3%A7ais_nipqnz.mp3',
+        title: 'Démo corporatif (français)_1',
         lang: 'Fr',
         domain: 'Corporate'
     },
-
+    {
+        id: '6',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913617/Tracy-Ann_Leith_Corporate_Explainer_demo__EN__2026_dsdcw5.mp3',
+        title: 'Corporate Demo (English)_1',
+        lang: 'En',
+        domain: 'Corporate'
+    }
 ]
 
 export const videoSample = [
