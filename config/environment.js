@@ -2,6 +2,7 @@ const nodeEnv = process.env.NODE_ENV || "development";
 
 const requiredServerEnvVars = [
     "MONGODB_URI",
+    "MONGODB_DB_NAME",
     "EMAIL",
     "EMAIL_PASS",
     "CLOUDINARY_CLOUD_NAME",
@@ -22,6 +23,7 @@ export const environment = {
     isDevelopment: nodeEnv === "development",
     isProduction: nodeEnv === "production",
     mongodbUri: process.env.MONGODB_URI,
+    mongodbDbName: process.env.MONGODB_DB_NAME,
     email: process.env.EMAIL,
     emailPass: process.env.EMAIL_PASS,
     i18nexusApiKey: process.env.I18NEXUS_API_KEY || "",

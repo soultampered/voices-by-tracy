@@ -7,7 +7,7 @@ import { MEDIA_COLLECTION } from "../lib/db/schemas/media.schema.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const dataFilePath = path.join(__dirname, "data", "media.json");
+const dataFilePath = path.join(__dirname, "media.json");
 
 const client = new MongoClient(environment.mongodbUri);
 
@@ -38,7 +38,7 @@ const validateRecord = (record, index) => {
 		errors.push("sourceUrl is required");
 	}
 
-	if (!record.thumbnailUrl || typeof record.thumbnailUrl !== "string") {
+	if (record.type === "video" && (!record.thumbnailUrl || typeof record.thumbnailUrl !== "string")) {
 		errors.push("thumbnailUrl is required");
 	}
 
@@ -97,7 +97,7 @@ async function seed() {
 		const documents = rawRecords.map(mapRecordToDocument);
 
 		await client.connect();
-		const db = client.db();
+		const db = client.db(environment.mongodbDbName);
 		const collection = db.collection(MEDIA_COLLECTION);
 
 		const operations = documents.map((document) => ({
