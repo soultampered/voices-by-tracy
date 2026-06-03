@@ -53,6 +53,17 @@ const Footer = ({ auditionBtn }) => {
                             <li className="my-2">
                                 <p>Source Connect: <i>voices_by_tracy</i></p>
                             </li>
+                            <li className="my-4">
+                                <img
+                                    src="/resources/images/Source_Element_Logo.png"
+                                    alt="Source Element logo"
+                                    className="mx-auto sm:mx-0"
+                                    style={{
+                                        width: 160,
+                                        height: 'auto'
+                                    }}
+                                />
+                            </li>
                             <li>
                                 <button className="w-full text-center blueBtn cursor-pointer lg:w-auto"
                                         onClick={handleOpenModal}>
