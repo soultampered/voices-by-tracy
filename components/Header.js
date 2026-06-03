@@ -2,6 +2,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import ReactDOM from 'react-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaEnvelope, FaPhone } from "react-icons/fa"
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "@components/LanguageChanger";
 // import SearchBar from "@components/SearchBar";
@@ -38,7 +39,7 @@ export default function Header(){
 
     return (
         <header className="text-white body-font mb-2">
-            <div className="xs:px-4 px-8 h-full flex xs:flex-col sm:flex-row items-center xs:mt-10 sm:mt-0">
+            <div className="xs:px-4 px-8 min-h-12 flex xs:flex-col sm:flex-row items-center xs:mt-10 sm:mt-0">
                 <a className="flex title-font font-medium items-center mb-4 md:mb-0" href="/site">
                     <Image src="/resources/images/VbT_Logo.svg"
                            alt="siteLogo"
@@ -75,6 +76,18 @@ export default function Header(){
                         document.body
                     )}
                 </div>
+            </div>
+            <div className="w-full text-white text-right px-12 pb-3">
+                <p className="text-sm flex justify-end items-center gap-4">
+                        <span className="inline-flex items-center gap-1">
+                            <FaEnvelope aria-label="Email" />
+                            voicesbytracy@gmail.com
+                        </span>
+                    <span className="inline-flex items-center gap-1">
+                            <FaPhone aria-label="Phone" />
+                            (514) 995-6985
+                        </span>
+                </p>
             </div>
             {/*<SearchBar />*/}
             <AnnouncementBanner />
