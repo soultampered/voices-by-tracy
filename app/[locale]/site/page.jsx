@@ -10,7 +10,8 @@ import TranslationsProvider from "@components/TranslationsProvider";
 
 const i18nNamespaces = ['common','buttons','contact','services']
 
-export default async function Home({ params: { locale }}){
+export default async function Home({ params }){
+    const { locale } = await params;
     const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
     const auditionBtn = buttonList.find((button) => button.id === '1');

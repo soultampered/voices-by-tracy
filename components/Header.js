@@ -8,6 +8,7 @@ import LanguageChanger from "@components/LanguageChanger";
 import SearchBar from "@components/SearchBar";
 import AnnouncementBanner from "@components/AnnouncementBanner";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header(){
     const { t } = useTranslation();
@@ -40,20 +41,20 @@ export default function Header(){
     return (
         <header className="text-white body-font mb-2">
             <div className="relative xs:px-4 px-8 min-h-12 flex xs:flex-col sm:flex-row items-center xs:mt-10 sm:mt-0">
-                <a className="relative md:absolute md:z-10 md:left-8 md:top-0 title-font font-medium mb-4 md:mb-0" href="/site">
+                <Link className="relative md:absolute md:z-10 md:left-8 md:top-0 title-font font-medium mb-4 md:mb-0" href="/site">
                     <Image src="/resources/images/VbT_Logo.svg"
                            alt="siteLogo"
                            className="h-32 w-auto"
                            width={300}
                            height={211}
                     />
-                </a>
+                </Link>
                 <nav className="hidden md:flex md:flex-wrap md:items-center md:text-base md:justify-center md:ml-auto md:mr-4 md:py-1 md:pl-4">
-                    <a className="navMenuBtn" href="/site/#aboutSection">{t('buttons:menu-About')}</a>
-                    <a className="navMenuBtn" href="/search-results/">{t('buttons:menu-Demos')}</a>
-                    <a className="navMenuBtn" href="/site/#serviceSection">{t('buttons:menu-Services')}</a>
-                    <a className="navMenuBtn" href="/site/#clientSection">{t('buttons:menu-Clients')}</a>
-                    <a className="navMenuBtn" href="/contact/">{t('buttons:menu-Contact')}</a>
+                    <Link className="navMenuBtn" href="/site/#aboutSection">{t('buttons:menu-About')}</Link>
+                    <Link className="navMenuBtn" href="/search-results/">{t('buttons:menu-Demos')}</Link>
+                    <Link className="navMenuBtn" href="/site/#serviceSection">{t('buttons:menu-Services')}</Link>
+                    <Link className="navMenuBtn" href="/site/#clientSection">{t('buttons:menu-Clients')}</Link>
+                    <Link className="navMenuBtn" href="/contact/">{t('buttons:menu-Contact')}</Link>
                     <LanguageChanger />
                 </nav>
                 <div ref={toggleRef} className='md:hidden relative ml-auto'>
@@ -66,10 +67,10 @@ export default function Header(){
                                  right: 0
                              }}>
                             <a className="navMenuBtn" href="#aboutSection">{t('buttons:menu-About')}</a>
-                            <a className="navMenuBtn" href="/search-results/">{t('buttons:menu-Demos')}</a>
+                            <Link className="navMenuBtn" href="/search-results/">{t('buttons:menu-Demos')}</Link>
                             <a className="navMenuBtn" href="#serviceSection">{t('buttons:menu-Services')}</a>
                             <a className="navMenuBtn" href="#clientSection">{t('buttons:menu-Clients')}</a>
-                            <a className="navMenuBtn" href="/site/contact">{t('buttons:menu-Contact')}</a>
+                            <Link className="navMenuBtn" href="/site/contact">{t('buttons:menu-Contact')}</Link>
                             <LanguageChanger/>
                         </div>,
                         document.body

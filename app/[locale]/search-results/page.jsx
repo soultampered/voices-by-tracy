@@ -44,7 +44,9 @@ async function SearchResults({ searchTerm, type, page }) {
     );
 }
 
-export default async function SearchPage({ params: { locale }, searchParams }) {
+export default async function SearchPage({ params, searchParams: searchParamsPromise }) {
+    const { locale } = await params;
+    const searchParams = await searchParamsPromise;
     const { t, resources } = await initTranslations(locale, i18nNamespaces);
     const auditionBtn = buttonList.find((button) => button.id === '1');
 
