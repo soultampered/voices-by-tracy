@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 const CookiePopup = () => {
 	const { t } = useTranslation();
@@ -24,7 +25,7 @@ const CookiePopup = () => {
 			<div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white text-center p-4 z-50">
 				<p className="inline">
 					{t('common:cookie-banner')} {''}
-					<a href="/cookie-policy" className="text-blue-400 underline">{t('common:cookie-policy')}</a>.
+					<Link href="/cookie-policy" className="text-blue-400 underline">{t('common:cookie-policy')}</Link>.
 				</p>
 				<button onClick={handleAccept}
 						className="bg-customBlue hover:bg-blue-600 text-white px-4 py-2 ml-4 rounded">

@@ -12,7 +12,8 @@ export const metadata = {
 	description: "Learn about how we use cookies on our website.",
 };
 
-export default async function CookiePolicyPage({ params: { locale }}) {
+export default async function CookiePolicyPage({ params }) {
+	const { locale } = await params;
 	const { t, resources } = await initTranslations(locale, i18nNamespaces);
 	const auditionBtn = buttonList.find(button => button.id === '1');
 

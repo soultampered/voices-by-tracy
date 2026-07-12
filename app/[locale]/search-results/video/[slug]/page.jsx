@@ -20,7 +20,8 @@ function decodeSlug(slug) {
 }
 
 export async function generateMetadata({ params }) {
-    const media = await getMediaBySlugCached(decodeSlug(params.slug));
+    const { slug } = await params;
+    const media = await getMediaBySlugCached(decodeSlug(slug));
 
     if (!media) {
         return {
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function VideoPage({ params }) {
-    const { locale, slug } = params;
+    const { locale, slug } = await params;
     const { resources } = await initTranslations(locale, i18nNamespaces);
     const auditionBtn = buttonList.find((button) => button.id === '1');
     const media = await getMediaBySlugCached(decodeSlug(slug));

@@ -5,8 +5,7 @@ export const metadata = {
 
 import React from "react";
 import Header from '@components/Header.js';
-import dynamic from "next/dynamic";
-const NoSSRContact = dynamic(() => import('@components/Contact.js'), { ssr: false });
+import NoSSRContact from '@components/NoSSRContact.js';
 import Footer from '@components/Footer.js';
 import {buttonList} from "@public/demoData.js";
 import initTranslations from 'app/i18n';
@@ -14,7 +13,8 @@ import TranslationsProvider from "@components/TranslationsProvider";
 
 const i18nNamespaces = ['common','buttons','contact','services']
 
-export default async function ContactPage({ params: { locale }}){
+export default async function ContactPage({ params }){
+    const { locale } = await params;
     const { t, resources } = await initTranslations(locale, i18nNamespaces);
     const auditionBtn = buttonList.find(button => button.id === '1');
 

@@ -4,10 +4,12 @@ import LanguageChanger from "@components/LanguageChanger";
 import AnnouncementBanner from "@components/AnnouncementBanner";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const i18nNamespaces = ['common','buttons']
 
-export default async function LandingPage({ params: { locale }}) {
+export default async function LandingPage({ params }) {
+    const { locale } = await params;
     const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
     return (
@@ -25,10 +27,10 @@ export default async function LandingPage({ params: { locale }}) {
                                    layout="responsive"
                                    width={750}
                                    height={550}/>
-                                <a href="/site"
+                                <Link href="/site"
                                    className="blueBtn sm:mt-0 px-4 py-2 text-xl sm:text-3xl">
                                    {t("buttons:enterButton")}
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
