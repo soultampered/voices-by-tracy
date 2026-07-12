@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaMusic } from "react-icons/fa";
 
 export default function VideoResults({ videos }) {
 	return (
@@ -14,6 +15,10 @@ export default function VideoResults({ videos }) {
 						{video.thumbnailUrl ? (
 							<Image src={video.thumbnailUrl} alt={video.title} fill
 								className="object-cover group-hover:scale-105 transition-transform"/>
+						) : video.type === "audio" ? (
+							<div className="absolute inset-0 flex items-center justify-center bg-neutral-600 text-white">
+								<FaMusic className="w-10 h-10" aria-label="Audio" />
+							</div>
 						) : (
 							<div className="absolute inset-0 flex items-center justify-center bg-neutral-500 text-white text-sm">
 								No preview available

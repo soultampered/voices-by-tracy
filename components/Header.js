@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaEnvelope, FaPhone } from "react-icons/fa"
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "@components/LanguageChanger";
-// import SearchBar from "@components/SearchBar";
+import SearchBar from "@components/SearchBar";
 import AnnouncementBanner from "@components/AnnouncementBanner";
 import Image from "next/image";
 
@@ -39,12 +39,11 @@ export default function Header(){
 
     return (
         <header className="text-white body-font mb-2">
-            <div className="xs:px-4 px-8 min-h-12 flex xs:flex-col sm:flex-row items-center xs:mt-10 sm:mt-0">
-                <a className="flex title-font font-medium items-center mb-4 md:mb-0" href="/site">
+            <div className="relative xs:px-4 px-8 min-h-12 flex xs:flex-col sm:flex-row items-center xs:mt-10 sm:mt-0">
+                <a className="relative md:absolute md:z-10 md:left-8 md:top-0 title-font font-medium mb-4 md:mb-0" href="/site">
                     <Image src="/resources/images/VbT_Logo.svg"
                            alt="siteLogo"
-                           className="h-32"
-                           layout="responsive"
+                           className="h-32 w-auto"
                            width={300}
                            height={211}
                     />
@@ -67,7 +66,7 @@ export default function Header(){
                                  right: 0
                              }}>
                             <a className="navMenuBtn" href="#aboutSection">{t('buttons:menu-About')}</a>
-                            <a className="navMenuBtn" href="/site/search-results">{t('buttons:menu-Demos')}</a>
+                            <a className="navMenuBtn" href="/search-results/">{t('buttons:menu-Demos')}</a>
                             <a className="navMenuBtn" href="#serviceSection">{t('buttons:menu-Services')}</a>
                             <a className="navMenuBtn" href="#clientSection">{t('buttons:menu-Clients')}</a>
                             <a className="navMenuBtn" href="/site/contact">{t('buttons:menu-Contact')}</a>
@@ -89,7 +88,7 @@ export default function Header(){
                         </span>
                 </p>
             </div>
-            {/*<SearchBar />*/}
+            <SearchBar className="w-full md:w-2/5 ml-auto px-4 md:px-8 pb-3" />
             <AnnouncementBanner />
         </header>
     );

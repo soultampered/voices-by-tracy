@@ -26,6 +26,10 @@ const normalizeArray = (value) => {
 const validateRecord = (record, index) => {
 	const errors = [];
 
+	if (!record.slug || typeof record.slug !== "string") {
+		errors.push("slug is required");
+	}
+
 	if (!record.title || typeof record.title !== "string") {
 		errors.push("title is required");
 	}
@@ -61,6 +65,7 @@ const validateRecord = (record, index) => {
 
 const mapRecordToDocument = (record) => {
 	return {
+		slug: record.slug,
 		type: record.type,
 		title: record.title,
 		description: record.description || "",
