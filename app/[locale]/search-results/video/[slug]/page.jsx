@@ -9,8 +9,18 @@ import { getMediaBySlugCached } from "@/lib/db/queries/media";
 
 const i18nNamespaces = ['common','buttons','contact','services'];
 
+// next-i18n-router's rewrite leaves non-ASCII slugs percent-encoded instead of
+// letting Next.js decode them, so params.slug can arrive as "D%C3%A9mo..." here.
+function decodeSlug(slug) {
+    try {
+        return decodeURIComponent(slug);
+    } catch {
+        return slug;
+    }
+}
+
 export async function generateMetadata({ params }) {
-    const media = await getMediaBySlugCached(params.slug);
+    const media = await getMediaBySlugCached(decodeSlug(params.slug));
 
     if (!media) {
         return {
@@ -29,7 +39,7 @@ export default async function VideoPage({ params }) {
     const { locale, slug } = params;
     const { resources } = await initTranslations(locale, i18nNamespaces);
     const auditionBtn = buttonList.find((button) => button.id === '1');
-    const media = await getMediaBySlugCached(slug);
+    const media = await getMediaBySlugCached(decodeSlug(slug));
 
     if (!media) {
         notFound();

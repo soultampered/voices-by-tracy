@@ -15,14 +15,18 @@ const slugify = (value) => {
 		.replace(/^-+|-+$/g, "");
 };
 
+const cleanupTitle = (value) => {
+	return String(value || "").replace(/[_-]+/g, " ").trim();
+};
+
 const buildTitleFromPublicId = (publicId) => {
 	const lastSegment = String(publicId || "").split("/").pop() || "";
-	return lastSegment.replace(/[_-]+/g, " ").trim();
+	return cleanupTitle(lastSegment);
 };
 
 const buildTitle = (asset) => {
 	if (asset.display_name) {
-		return String(asset.display_name).trim();
+		return cleanupTitle(asset.display_name);
 	}
 
 	return buildTitleFromPublicId(asset.public_id);
