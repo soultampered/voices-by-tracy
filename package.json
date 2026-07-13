@@ -11,6 +11,8 @@
     "lint": "i18nexus pull && next lint",
     "seed:media": "node --env-file=.env.local scripts/seedMedia.js",
     "seed:media:prod": "node --env-file=.env.production.local scripts/seedMedia.js",
+    "db:setup-indexes": "node --env-file=.env.local lib/db/setupIndexes.js",
+    "db:setup-indexes:prod": "node --env-file=.env.production.local lib/db/setupIndexes.js",
     "import:cloudinary": "node --env-file=.env.local scripts/importCloudinaryMedia.js",
     "postbuild": "next-sitemap"
   },
