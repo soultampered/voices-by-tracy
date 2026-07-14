@@ -24,6 +24,7 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
 }
 
 body {
@@ -152,29 +153,19 @@ ul {
     /*    to-blue-500*/
     /*}*/
 
+    /*
+     * Brand-tightened ambient wash — locked design decision (2026-07-13): only the
+     * three in-palette brand hues (blue #2563EB, violet #7C3AED, teal #26C9C3), not
+     * the old 7-stop rainbow mix, dimmed to run behind every page with no exceptions
+     * (the splash gate that used to carry a louder, separate gradient is gone).
+     */
     .enter-card-background {
-        background-color:hsla(285,100%,60%,1);
+        background-color: #0c0c0d;
         background-image:
-                radial-gradient(at 93% 70%, hsla(268,68%,79%,1) 0px, transparent 50%),
-                radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
-                radial-gradient(at 0% 51%, hsla(195,100%,57%,1) 0px, transparent 50%),
-                radial-gradient(at 80% 50%, hsla(128,100%,59%,0.76) 0px, transparent 50%),
-                radial-gradient(at 0% 100%, hsla(268,100%,76%,1) 0px, transparent 50%),
-                radial-gradient(at 80% 100%, hsla(240,100%,70%,0.76) 0px, transparent 50%),
-                radial-gradient(at 0% 0%, hsla(289,82%,78%,1) 0px, transparent 50%);
-    }
-
-    .landing-page-background {
-        background-color:#99ebff;
-        background-image:
-                radial-gradient(at 93% 21%, hsla(161,73%,79%,1) 0px, transparent 50%),
-                radial-gradient(at 26% 92%, hsla(88,76%,73%,1) 0px, transparent 50%),
-                radial-gradient(at 44% 85%, hsla(337,93%,74%,1) 0px, transparent 50%),
-                radial-gradient(at 12% 60%, hsla(275,89%,75%,1) 0px, transparent 50%),
-                radial-gradient(at 71% 82%, hsla(289,79%,71%,1) 0px, transparent 50%),
-                radial-gradient(at 36% 38%, hsla(139,86%,78%,1) 0px, transparent 50%),
-                radial-gradient(at 19% 38%, hsla(90,76%,69%,1) 0px, transparent 50%),
-                radial-gradient(at 26% 60%, hsla(292,95%,62%,1) 0px, transparent 50%);
+                radial-gradient(at 90% 10%, hsla(217,91%,55%,0.55) 0px, transparent 65%),
+                radial-gradient(at 10% 20%, hsla(258,90%,58%,0.5) 0px, transparent 65%),
+                radial-gradient(at 85% 90%, hsla(174,64%,45%,0.5) 0px, transparent 65%),
+                radial-gradient(at 15% 95%, hsla(217,91%,45%,0.4) 0px, transparent 65%);
     }
 
 
@@ -226,10 +217,12 @@ ul {
     .navMenuBtn {
         @apply
         mr-5
-        font-bold
+        text-sm
         font-Poppins
-        hover:text-gray-400
+        text-neutral-400
+        hover:text-white
         cursor-pointer
+        transition-colors
     }
 
     /*Contact Form*/

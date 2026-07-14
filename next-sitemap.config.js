@@ -22,7 +22,6 @@ module.exports = {
 		return [
 			{ loc: '/', lastmod: new Date().toISOString() },
 			{ loc: '/contact', lastmod: new Date().toISOString() },
-			{ loc: '/site', lastmod: new Date().toISOString() },
 		];
 	},
 };

@@ -1,12 +1,18 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter, useParams } from "next/navigation";
+import { useState, useEffect } from "react";
+import { useRouter, useParams, useSearchParams } from "next/navigation";
+import { FaSearch } from "react-icons/fa";
 
 export default function SearchBar({ className = "" }) {
 	const router = useRouter();
 	const { locale } = useParams();
-	const [value, setValue] = useState("");
+	const searchParams = useSearchParams();
+	const [value, setValue] = useState(searchParams.get("search") || "");
+
+	useEffect(() => {
+		setValue(searchParams.get("search") || "");
+	}, [searchParams]);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -20,18 +26,22 @@ export default function SearchBar({ className = "" }) {
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className={`flex ${className}`}>
+		<form
+			onSubmit={handleSubmit}
+			className={`flex items-center gap-2 rounded-lg border border-neutral-700 bg-neutral-900 pl-3 pr-1.5 py-1.5 focus-within:border-blue-500 transition-colors ${className}`}>
+			<FaSearch className="text-neutral-500 text-xs flex-shrink-0" aria-hidden="true" />
 			<input
 				type="text"
 				value={value}
 				onChange={(e) => setValue(e.target.value)}
 				placeholder="Search videos..."
-				className="w-full px-4 py-2 rounded-l-md border border-neutral-700 bg-neutral-900 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+				className="w-full bg-transparent text-white placeholder-neutral-500 text-sm focus:outline-none"
 			/>
 			<button
 				type="submit"
-				className="px-4 py-2 rounded-r-md bg-blue-600 text-white text-sm font-semibold hover:bg-blue-500">
-				Search
+				aria-label="Search"
+				className="flex-shrink-0 w-6 h-6 rounded-md bg-blue-600 hover:bg-blue-500 text-white text-xs flex items-center justify-center transition-colors">
+				→
 			</button>
 		</form>
 	);

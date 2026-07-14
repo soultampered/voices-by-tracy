@@ -11,8 +11,8 @@ export default function LanguageChanger() {
     const router = useRouter();
     const currentPathname = usePathname();
 
-    const handleChange = e => {
-        const newLocale = e.target.value;
+    const setLocale = newLocale => {
+        if (newLocale === currentLocale) return;
 
         // set cookie for next-i18n-router
         const days = 30;
@@ -37,12 +37,25 @@ export default function LanguageChanger() {
     };
 
     return (
-        <label>
-            <span className="sr-only">Language Selection</span>
-            <select id="language" className='frenchBtn' onChange={handleChange} value={currentLocale}>
-                <option value="en">English</option>
-                <option value="fr">Français</option>
-            </select>
-        </label>
+        <div className="flex items-center gap-1 rounded-full border border-neutral-700 p-0.5" role="group" aria-label="Language selection">
+            <button
+                type="button"
+                onClick={() => setLocale('en')}
+                aria-pressed={currentLocale === 'en'}
+                className={`px-2.5 py-1 rounded-full text-xs font-mono font-semibold transition-colors ${
+                    currentLocale === 'en' ? 'bg-white text-black' : 'text-neutral-400 hover:text-white'
+                }`}>
+                EN
+            </button>
+            <button
+                type="button"
+                onClick={() => setLocale('fr')}
+                aria-pressed={currentLocale === 'fr'}
+                className={`px-2.5 py-1 rounded-full text-xs font-mono font-semibold transition-colors ${
+                    currentLocale === 'fr' ? 'bg-white text-black' : 'text-neutral-400 hover:text-white'
+                }`}>
+                FR
+            </button>
+        </div>
     );
 }

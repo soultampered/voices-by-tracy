@@ -1,41 +1,35 @@
-import initTranslations from "../i18n";
+import Header from '@components/Header.js';
+import About from '@components/About.js';
+import Demos from '@components/Demos.js';
+import Testimonials from "@components/Testimonials";
+import HeroReel from "@components/HeroReel";
+import Footer from '@components/Footer.js';
+import {buttonList} from "@public/demoData.js";
+import initTranslations from 'app/i18n';
 import TranslationsProvider from "@components/TranslationsProvider";
-import LanguageChanger from "@components/LanguageChanger";
-import AnnouncementBanner from "@components/AnnouncementBanner";
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 
-const i18nNamespaces = ['common','buttons']
+const i18nNamespaces = ['common','buttons','contact','services']
 
-export default async function LandingPage({ params }) {
+export default async function Home({ params }){
     const { locale } = await params;
     const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
+    const auditionBtn = buttonList.find((button) => button.id === '1');
+    const submitBtn = buttonList.find((button) => button.id === '3');
+    const closeBtn = buttonList.find((button) => button.id === '4');
+
     return (
         <TranslationsProvider resources={resources} locale={locale} namespaces={i18nNamespaces}>
-            <div className="h-screen flex items-center justify-center relative enter-card-background">
-                <div className="absolute top-2 right-4 lg:top-4"><LanguageChanger /></div>
-                <div className="fixed top-16 w-full"><AnnouncementBanner /></div>
-                <div className="m-auto">
-                    <div>
-                        <div className="h-[50vh] sm:h-auto landing-page-background rounded-3xl relative shadow-2xl p-4 border-2 landscape-width w-[90vw] max-w-[1080px] max-h-[720px] flex flex-col items-center justify-center">
-                            <div className="w-full max-w-[80%] max-h-[80%] flex flex-col items-center">
-                                <Image src="/resources/images/VbT_Logo.svg"
-                                   alt="landing page"
-                                   className="object-contain"
-                                   layout="responsive"
-                                   width={750}
-                                   height={550}/>
-                                <Link href="/site"
-                                   className="blueBtn sm:mt-0 px-4 py-2 text-xl sm:text-3xl">
-                                   {t("buttons:enterButton")}
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
+            <div className='background'>
+                <Header/>
+                <HeroReel/>
+                <div className="bodyContainer">
+                    <About auditionBtn={auditionBtn} closeBtn={closeBtn} submitBtn={submitBtn}/>
+                    <Demos auditionBtn={auditionBtn}/>
+                    <Testimonials/>
                 </div>
             </div>
+            <Footer auditionBtn={auditionBtn}/>
         </TranslationsProvider>
     );
 }

@@ -39,24 +39,27 @@ export default function Header(){
     }, []);
 
     return (
-        <header className="text-white body-font mb-2">
-            <div className="relative xs:px-4 px-8 min-h-12 flex xs:flex-col sm:flex-row items-center xs:mt-10 sm:mt-0">
-                <Link className="relative md:absolute md:z-10 md:left-8 md:top-0 title-font font-medium mb-4 md:mb-0" href="/site">
-                    <Image src="/resources/images/VbT_Logo.svg"
+        <header className="text-white body-font mb-2 border-b border-neutral-800">
+            <div className="relative xs:px-4 px-8 min-h-12 flex flex-wrap xs:flex-col sm:flex-row sm:items-center xs:mt-10 sm:mt-0 gap-y-3">
+                <Link className="relative title-font font-medium mb-4 md:mb-0 flex-shrink-0" href="/">
+                    <Image src="/resources/images/VBT_Logo_Inverted.svg"
                            alt="siteLogo"
-                           className="h-32 w-auto"
+                           className="h-16 md:h-20 w-auto"
                            width={300}
                            height={211}
                     />
                 </Link>
-                <nav className="hidden md:flex md:flex-wrap md:items-center md:text-base md:justify-center md:ml-auto md:mr-4 md:py-1 md:pl-4">
-                    <Link className="navMenuBtn" href="/site/#aboutSection">{t('buttons:menu-About')}</Link>
-                    <Link className="navMenuBtn" href="/search-results/">{t('buttons:menu-Demos')}</Link>
-                    <Link className="navMenuBtn" href="/site/#serviceSection">{t('buttons:menu-Services')}</Link>
-                    <Link className="navMenuBtn" href="/site/#clientSection">{t('buttons:menu-Clients')}</Link>
+                <nav className="hidden md:flex md:flex-wrap md:items-center md:text-base md:py-1 md:ml-6 md:min-w-0">
+                    <Link className="navMenuBtn" href="/#aboutSection">{t('buttons:menu-About')}</Link>
+                    <Link className="navMenuBtn" href="/search-results/">{t('buttons:menu-MyWork', 'My Work')}</Link>
+                    <Link className="navMenuBtn" href="/#serviceSection">{t('buttons:menu-Services')}</Link>
+                    <Link className="navMenuBtn" href="/#clientSection">{t('buttons:menu-Clients')}</Link>
                     <Link className="navMenuBtn" href="/contact/">{t('buttons:menu-Contact')}</Link>
-                    <LanguageChanger />
                 </nav>
+                <div className="hidden md:flex md:items-center md:gap-3 md:ml-auto md:flex-shrink-0">
+                    <SearchBar className="w-[350px] lg:w-[440px] flex-shrink-0" />
+                    <LanguageChanger />
+                </div>
                 <div ref={toggleRef} className='md:hidden relative ml-auto'>
                     <GiHamburgerMenu className='h-8 w-8 cursor-pointer' onClick={toggleDropdown}/>
 
@@ -66,18 +69,19 @@ export default function Header(){
                                  top: toggleRef.current ? `${toggleRef.current.offsetHeight + 50}px` : '100%',
                                  right: 0
                              }}>
+                            <SearchBar className="w-full mb-2" />
                             <a className="navMenuBtn" href="#aboutSection">{t('buttons:menu-About')}</a>
-                            <Link className="navMenuBtn" href="/search-results/">{t('buttons:menu-Demos')}</Link>
+                            <Link className="navMenuBtn" href="/search-results/">{t('buttons:menu-MyWork', 'My Work')}</Link>
                             <a className="navMenuBtn" href="#serviceSection">{t('buttons:menu-Services')}</a>
                             <a className="navMenuBtn" href="#clientSection">{t('buttons:menu-Clients')}</a>
-                            <Link className="navMenuBtn" href="/site/contact">{t('buttons:menu-Contact')}</Link>
+                            <Link className="navMenuBtn" href="/contact/">{t('buttons:menu-Contact')}</Link>
                             <LanguageChanger/>
                         </div>,
                         document.body
                     )}
                 </div>
             </div>
-            <div className="w-full text-white text-right px-12 pb-3">
+            <div className="w-full text-white text-right px-8 pb-3">
                 <p className="text-sm flex justify-end items-center gap-4">
                         <span className="inline-flex items-center gap-1">
                             <FaEnvelope aria-label="Email" />
@@ -89,7 +93,6 @@ export default function Header(){
                         </span>
                 </p>
             </div>
-            <SearchBar className="w-full md:w-2/5 ml-auto px-4 md:px-8 pb-3" />
             <AnnouncementBanner />
         </header>
     );
