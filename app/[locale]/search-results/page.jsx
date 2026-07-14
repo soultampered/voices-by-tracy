@@ -56,9 +56,14 @@ export default async function SearchPage({ params, searchParams: searchParamsPro
 
     return (
         <TranslationsProvider resources={resources} locale={locale} namespaces={i18nNamespaces}>
+            <Header/>
             <div className='bodyContainer'>
-                <Header/>
-                <div className="rounded-t-3xl overflow-auto overflow-y-scroll bg-gray-800 p-3">
+                <div className="max-w-6xl mx-auto w-full px-4 md:px-8 py-6">
+                    {searchTerm && (
+                        <p className="text-sm text-neutral-400 mb-4">
+                            Showing results for <span className="text-white font-semibold">&quot;{searchTerm}&quot;</span>
+                        </p>
+                    )}
                     <section>
                         <Suspense key={`${searchTerm}::${type}::${page}`} fallback={<VideoListSkeleton/>}>
                             <SearchResults searchTerm={searchTerm} type={type} page={page} />

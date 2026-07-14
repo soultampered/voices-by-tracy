@@ -51,10 +51,10 @@ export default async function VideoPage({ params }) {
             <div className="enter-card-background">
                 <Header />
                 <div className="bodyContainer">
-                    <div className="dark:bg-gray-900 font-Poppins">
-                        <div className="rounded-t-3xl overflow-auto overflow-y-scroll bg-gray-800 p-6 md:p-10">
+                    <div className="font-Poppins">
+                        <div className="max-w-5xl mx-auto px-4 md:px-8 py-10">
                             <div className="max-w-5xl mx-auto">
-                                <div className="aspect-video w-full overflow-hidden rounded-xl bg-black mb-6">
+                                <div className="aspect-video w-full overflow-hidden rounded-xl bg-black border border-neutral-700 mb-6">
                                     <video className="h-full w-full"
                                         controls
                                         playsInline
@@ -88,7 +88,7 @@ export default async function VideoPage({ params }) {
                                     ))}
                                 </div>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-neutral-300">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-neutral-300 rounded-md border border-neutral-800 bg-neutral-900/50 p-4">
                                     <div>
                                         <p className="font-semibold text-white mb-1">Duration</p>
                                         <p>{media.duration ? `${media.duration} seconds` : "Unknown"}</p>

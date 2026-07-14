@@ -9,14 +9,21 @@
 
     .playPause {
         @apply
-        /*bg-primary*/
+        bg-blue-600
+        hover:bg-blue-500
         border-none
         rounded-full
-        w-75
+        w-11
+        h-11
+        min-w-[44px]
+        min-h-[44px]
+        flex-shrink-0
         text-base
         text-secondary
         flex
+        items-center
         justify-center
+        transition-colors
         z-10
     }
 

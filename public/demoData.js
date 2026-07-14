@@ -1,43 +1,55 @@
 export const audioSample = [
     {
         id: '1',
+        slug: 'commercial-demo-en',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292558/Tracy-Ann_Leith_Demo__Montage_EN_umpbcb.mp3',
         title: 'Commercial demo (English)',
+        description: 'A montage of commercial voice-over reads in English, showcasing range across tone and pacing.',
         lang: 'En',
         domain: 'Commercial'
     },
     {
         id: '2',
+        slug: 'demo-commercial-fr',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292557/Tracy-Ann_Leith_De%CC%81mo_Montage_FR_lbw7yc.mp3',
         title: 'Démo commercial (français)',
+        description: 'Un montage de lectures publicitaires en français, illustrant la polyvalence de ton et de rythme.',
         lang: 'Fr',
         domain: 'Commercial'
     },
     {
         id: '3',
+        slug: 'commercial-demo-en-2',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584408/Commercial_demo_EN_-_Tracy-AnnLeith_qqapw0.mp3',
         title: 'Commercial Demo (English)_2',
+        description: 'A second commercial reel in English, featuring additional brand reads.',
         lang: 'En',
         domain: 'Commercial'
     },
     {
         id: '4',
+        slug: 'corporate-demo-en-2',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584410/Corporate_demo_EN_-_Tracy-Ann_Leith_bke9aw.mp3',
         title: 'Corporate Demo (English)_2',
+        description: 'Corporate narration in English for internal and promotional content.',
         lang: 'En',
         domain: 'Corporate'
     },
     {
         id: '5',
+        slug: 'demo-corporatif-fr-1',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913369/D%C3%A9mo_corporatif_fran%C3%A7ais_nipqnz.mp3',
         title: 'Démo corporatif (français)_1',
+        description: 'Narration corporative en français pour contenu interne et promotionnel.',
         lang: 'Fr',
         domain: 'Corporate'
     },
     {
         id: '6',
+        slug: 'corporate-demo-en-1',
         path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913617/Tracy-Ann_Leith_Corporate_Explainer_demo__EN__2026_dsdcw5.mp3',
         title: 'Corporate Demo (English)_1',
+        description: 'A corporate explainer narration reel in English.',
         lang: 'En',
         domain: 'Corporate'
     }

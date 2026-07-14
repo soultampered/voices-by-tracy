@@ -1,8 +1,7 @@
 'use client'
 import React, {useEffect, useState} from "react";
-import DemoVideo from '@components/DemoVideo.js';
 import styles from "@styles/DemoFilter.module.css";
-import {audioSample, clientList} from "@public/demoData";
+import {audioSample} from "@public/demoData";
 import {useTranslation} from "react-i18next";
 import DemoPlayer from "@components/DemoPlayer";
 import {useModal} from "../app/[locale]/context/ModalContext";
@@ -58,7 +57,7 @@ const Demos = ({auditionBtn}) => {
     };
 
     return (
-        <section id="demosSection" className="flex flex-col lg:flex-row relative bg-gray-900">
+        <section id="demosSection" className="flex flex-col lg:flex-row relative border-t border-neutral-800 pt-8">
             <div className='flex flex-col lg:flex-row h-full w-full px-4 md:px-5'>
                 <div className="w-full">
                     <button className="w-full text-center blueBtn cursor-pointer lg:w-auto" onClick={handleOpenModal}>
@@ -66,62 +65,42 @@ const Demos = ({auditionBtn}) => {
                     </button>
 
                     <div
-                        className="relative max-w-2xl md:max-w-3xl lg:max-w-5xl flex flex-col lg:flex-row items-center titleContainer">
+                        className="relative w-full max-w-none my-6 flex flex-col md:flex-row md:items-baseline md:justify-between">
                         <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl">
                             {t('common:title-demo')}
                         </h2>
 
-                        <div className="mt-4 lg:mt-0 flex flex-wrap gap-2">
-                            {filters.map((lang, id) => (
-                                <button
-                                    onClick={() => filterStateManager(lang)}
-                                    className={`button ${selectedFilters?.includes(lang) ? 'active' : ''} ${styles.langToggle}`}
-                                    key={`filters-${id}`}>
-                                    {lang}
-                                </button>
+                        <div className="mt-4 md:mt-0 flex flex-wrap gap-2">
+                            {filters.map((lang, id) => {
+                                const isActive = selectedFilters?.includes(lang);
+                                return (
+                                    <button
+                                        onClick={() => filterStateManager(lang)}
+                                        className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors ${
+                                            isActive
+                                                ? 'bg-white text-black border-white'
+                                                : 'border-neutral-700 text-neutral-300 hover:border-neutral-500'
+                                        }`}
+                                        key={`filters-${id}`}>
+                                        {lang}
+                                    </button>
+                                );
+                            })}
+                        </div>
+                    </div>
+
+                    <div className='w-full pb-4'>
+                        <div className='items-container'>
+                            {filteredItems.map((audioSample, id) => (
+                                <div key={`lang-${id}`} className={styles.playerCard}>
+                                    <div className='box-border h-full rounded'>
+                                        <p className='ml-1 mb-2 font-bold'>{audioSample.title}</p>
+                                        <DemoPlayer key={audioSample.id} audioSample={audioSample.path}
+                                                    filterState={filterState} setFilterState={setFilterState}
+                                                    title={audioSample.title}/>
+                                    </div>
+                                </div>
                             ))}
-                        </div>
-                    </div>
-
-
-                    <div className='lg:flex lg:pb-4'>
-                        <div className='lg:w-1/3 rounded h-auto'>
-                            <div className='items-container'>
-                                {filteredItems.map((audioSample, id) => (
-                                    <div key={`lang-${id}`} className={styles.playerCard}>
-                                        <div className='box-border h-full rounded'>
-                                            <p className='ml-1 mb-2 font-bold'>{audioSample.title}</p>
-                                            <DemoPlayer key={audioSample.id} audioSample={audioSample.path}
-                                                        filterState={filterState} setFilterState={setFilterState}
-                                                        title={audioSample.title}/>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                        <DemoVideo/>
-                    </div>
-                    <div className='rounded box-border flex p-2 mt-2 w-full lg:w-auto'>
-                        <h3 className='hidden'>Clients</h3>
-                        <div
-                            className={`max-w-full border-lime-400 border-4 ${styles.scroller}`}
-                            id="clientSection"
-                            data-animated='true'
-                            data-direction='right'
-                            data-speed='fast'>
-
-                            <div className={`animate-loop-scroll h-32 ${styles.scroller__inner}`}>
-                                {clientList.map((client) => (
-                                    <div key={client.id}
-                                         className="m-2 max-w-s rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform hover:scale-105 transition-transform duration-100">
-                                        <div className="flex justify-center w-16 h-16 md:w-20 md:h-20 m-3">
-                                            <img className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-lg"
-                                                 src={client.source}
-                                                 alt={client.alt}/>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
                         </div>
                     </div>
                 </div>

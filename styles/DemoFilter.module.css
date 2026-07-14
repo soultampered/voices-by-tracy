@@ -3,36 +3,16 @@
 
 @layer components {
 
-    /*Demo Filter Styles */
-    .langToggle {
-        @apply
-        bg-blue-700
-        hover:bg-blue-900
-        text-white
-        font-bold
-        mx-3
-        py-2
-        px-4
-        border
-        border-blue-700
-        rounded
-        font-Poppins
-    }
-
     .playerCard {
         @apply
-        shadow
-        border-2
-        border-neutral-600
-        bg-neutral-900/50
-        rounded
-        mx-3
-        mb-4
-        p-2
-        h-20
+        border
+        border-neutral-800
+        bg-neutral-900
+        rounded-lg
+        mb-3
+        px-4
+        py-3
         box-border
-        transform hover:scale-105
-        transition-transform duration-100
     }
 }
 
