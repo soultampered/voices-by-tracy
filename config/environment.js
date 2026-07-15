@@ -27,6 +27,8 @@ export const environment = {
     email: process.env.EMAIL,
     emailPass: process.env.EMAIL_PASS,
     i18nexusApiKey: process.env.I18NEXUS_API_KEY || "",
+    proxyUrl: process.env.PROXY_URL || "",
+    proxyApiKey: process.env.PROXY_API_KEY || "",
     cloudinaryCloudName: process.env.CLOUDINARY_CLOUD_NAME,
     cloudinaryApiKey: process.env.CLOUDINARY_API_KEY,
     cloudinaryApiSecret: process.env.CLOUDINARY_API_SECRET,
