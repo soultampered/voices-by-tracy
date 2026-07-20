@@ -14,6 +14,7 @@
     "db:setup-indexes": "node --env-file=.env.local lib/db/setupIndexes.js",
     "db:setup-indexes:prod": "node --env-file=.env.production.local lib/db/setupIndexes.js",
     "import:cloudinary": "node --env-file=.env.local scripts/importCloudinaryMedia.js",
+    "import:cloudinary:prod": "node --env-file=.env.production.local scripts/importCloudinaryMedia.js",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
