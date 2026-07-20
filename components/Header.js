@@ -1,8 +1,8 @@
 'use client'
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import ReactDOM from 'react-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaEnvelope, FaPhone } from "react-icons/fa"
+import { FaTimes, FaEnvelope, FaPhone } from "react-icons/fa"
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "@components/LanguageChanger";
 import SearchBar from "@components/SearchBar";
@@ -13,30 +13,19 @@ import Link from "next/link";
 export default function Header(){
     const { t } = useTranslation();
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const dropdownRef = useRef(null);
-    const toggleRef = useRef(null);
 
     const toggleDropdown = () => {
-        event.preventDefault();
-        event.stopPropagation();
         setIsDropdownOpen(prev => !prev);
     };
 
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target) && !toggleRef.current.contains(event.target)) {
-          setIsDropdownOpen(false);
-      }
-    };
+    const closeDropdown = () => setIsDropdownOpen(false);
 
     useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside);
-        document.addEventListener('touchstart', handleClickOutside);
-
+        document.body.style.overflow = isDropdownOpen ? 'hidden' : '';
         return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-            document.removeEventListener('touchstart', handleClickOutside);
+            document.body.style.overflow = '';
         };
-    }, []);
+    }, [isDropdownOpen]);
 
     return (
         <header className="text-white body-font mb-2 border-b border-neutral-800">
@@ -60,26 +49,41 @@ export default function Header(){
                     <SearchBar className="w-[350px] lg:w-[440px] flex-shrink-0" />
                     <LanguageChanger />
                 </div>
-                <div ref={toggleRef} className='md:hidden relative ml-auto'>
+                <div className='md:hidden relative ml-auto mt-3'>
                     <GiHamburgerMenu className='h-8 w-8 cursor-pointer' onClick={toggleDropdown}/>
 
-                    {isDropdownOpen && ReactDOM.createPortal(
-                        <div ref={dropdownRef} className="absolute text-bold text-black bg-white items-end p-1 flex flex-col space-y-2 z-50"
-                             style={{
-                                 top: toggleRef.current ? `${toggleRef.current.offsetHeight + 50}px` : '100%',
-                                 right: 0
-                             }}>
-                            <SearchBar className="w-full mb-2" />
-                            <a className="navMenuBtn" href="#aboutSection">{t('buttons:menu-About')}</a>
-                            <Link className="navMenuBtn" href="/search-results/">{t('buttons:menu-MyWork', 'My Work')}</Link>
-                            <a className="navMenuBtn" href="#serviceSection">{t('buttons:menu-Services')}</a>
-                            <a className="navMenuBtn" href="#clientSection">{t('buttons:menu-Clients')}</a>
-                            <Link className="navMenuBtn" href="/contact/">{t('buttons:menu-Contact')}</Link>
-                            <LanguageChanger/>
-                        </div>,
+                    {ReactDOM.createPortal(
+                        <>
+                            <div
+                                onClick={closeDropdown}
+                                aria-hidden="true"
+                                className={`fixed inset-0 bg-black/60 z-40 transition-opacity duration-300 ${
+                                    isDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                                }`}
+                            />
+                            <div
+                                className={`fixed inset-y-0 right-0 z-50 w-3/4 max-w-xs bg-neutral-900 border-l border-neutral-800 shadow-xl flex flex-col p-6 gap-2 transition-transform duration-300 ${
+                                    isDropdownOpen ? 'translate-x-0' : 'translate-x-full'
+                                }`}>
+                                <button type="button" onClick={closeDropdown} aria-label="Close menu" className="self-end mb-4 text-white">
+                                    <FaTimes className="h-6 w-6" />
+                                </button>
+                                <a className="navMenuBtn text-lg" href="#aboutSection" onClick={closeDropdown}>{t('buttons:menu-About')}</a>
+                                <Link className="navMenuBtn text-lg" href="/search-results/" onClick={closeDropdown}>{t('buttons:menu-MyWork', 'My Work')}</Link>
+                                <a className="navMenuBtn text-lg" href="#serviceSection" onClick={closeDropdown}>{t('buttons:menu-Services')}</a>
+                                <a className="navMenuBtn text-lg" href="#clientSection" onClick={closeDropdown}>{t('buttons:menu-Clients')}</a>
+                                <Link className="navMenuBtn text-lg" href="/contact/" onClick={closeDropdown}>{t('buttons:menu-Contact')}</Link>
+                                <div className="mt-4">
+                                    <LanguageChanger/>
+                                </div>
+                            </div>
+                        </>,
                         document.body
                     )}
                 </div>
+            </div>
+            <div className="md:hidden px-8 pb-3">
+                <SearchBar className="w-full" />
             </div>
             <div className="w-full text-white text-right px-8 pb-3">
                 <p className="text-sm flex justify-end items-center gap-4">

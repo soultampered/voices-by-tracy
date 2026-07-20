@@ -37,6 +37,15 @@ export default function SearchBar({ className = "" }) {
 				placeholder="Search videos..."
 				className="w-full bg-transparent text-white placeholder-neutral-500 text-sm focus:outline-none"
 			/>
+			{value && (
+				<button
+					type="button"
+					aria-label="Clear search"
+					onClick={() => setValue("")}
+					className="flex-shrink-0 px-2 py-1 rounded-md text-xs font-semibold bg-neutral-700 text-neutral-200 hover:bg-neutral-600 transition-colors">
+					Clear
+				</button>
+			)}
 			<button
 				type="submit"
 				aria-label="Search"

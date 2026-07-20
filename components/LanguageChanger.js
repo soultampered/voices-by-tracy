@@ -37,7 +37,7 @@ export default function LanguageChanger() {
     };
 
     return (
-        <div className="flex items-center gap-1 rounded-full border border-neutral-700 p-0.5" role="group" aria-label="Language selection">
+        <div className="inline-flex items-center gap-1 rounded-full border border-neutral-700 p-0.5" role="group" aria-label="Language selection">
             <button
                 type="button"
                 onClick={() => setLocale('en')}

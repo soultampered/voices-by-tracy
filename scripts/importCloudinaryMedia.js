@@ -160,7 +160,7 @@ async function importCloudinaryMedia() {
 		const documents = assets.map(mapAssetToDocument);
 
 		await client.connect();
-		const db = client.db();
+		const db = client.db(environment.mongodbDbName);
 		const collection = db.collection(MEDIA_COLLECTION);
 
 		const operations = documents.map((document) => ({
