@@ -33,7 +33,7 @@ export default function Header(){
                 <Link className="relative title-font font-medium mb-4 md:mb-0 flex-shrink-0" href="/">
                     <Image src="/resources/images/VBT_Logo_Inverted.svg"
                            alt="siteLogo"
-                           className="h-16 md:h-20 w-auto"
+                           className="h-[74px] md:h-[92px] w-auto"
                            width={300}
                            height={211}
                     />
@@ -52,7 +52,7 @@ export default function Header(){
                 <div className='md:hidden relative ml-auto mt-3'>
                     <GiHamburgerMenu className='h-8 w-8 cursor-pointer' onClick={toggleDropdown}/>
 
-                    {ReactDOM.createPortal(
+                    {typeof document !== 'undefined' && ReactDOM.createPortal(
                         <>
                             <div
                                 onClick={closeDropdown}
