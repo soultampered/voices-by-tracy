@@ -2,7 +2,7 @@ export const audioSample = [
     {
         id: '1',
         slug: 'commercial-demo-en',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292558/Tracy-Ann_Leith_Demo__Montage_EN_umpbcb.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292558/dev/homepage-demos/commercial-demo-en.mp3',
         title: 'Commercial demo (English)',
         description: 'A montage of commercial voice-over reads in English, showcasing range across tone and pacing.',
         lang: 'En',
@@ -11,7 +11,7 @@ export const audioSample = [
     {
         id: '2',
         slug: 'demo-commercial-fr',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292557/Tracy-Ann_Leith_De%CC%81mo_Montage_FR_lbw7yc.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292557/dev/homepage-demos/demo-commercial-fr.mp3',
         title: 'Démo commercial (français)',
         description: 'Un montage de lectures publicitaires en français, illustrant la polyvalence de ton et de rythme.',
         lang: 'Fr',
@@ -20,7 +20,7 @@ export const audioSample = [
     {
         id: '3',
         slug: 'commercial-demo-en-2',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584408/Commercial_demo_EN_-_Tracy-AnnLeith_qqapw0.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584408/dev/homepage-demos/commercial-demo-en-2.mp3',
         title: 'Commercial Demo (English)_2',
         description: 'A second commercial reel in English, featuring additional brand reads.',
         lang: 'En',
@@ -29,7 +29,7 @@ export const audioSample = [
     {
         id: '4',
         slug: 'corporate-demo-en-2',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584410/Corporate_demo_EN_-_Tracy-Ann_Leith_bke9aw.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584410/dev/homepage-demos/corporate-demo-en-2.mp3',
         title: 'Corporate Demo (English)_2',
         description: 'Corporate narration in English for internal and promotional content.',
         lang: 'En',
@@ -38,7 +38,7 @@ export const audioSample = [
     {
         id: '5',
         slug: 'demo-corporatif-fr-1',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913369/D%C3%A9mo_corporatif_fran%C3%A7ais_nipqnz.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913369/dev/homepage-demos/demo-corporatif-fr-1.mp3',
         title: 'Démo corporatif (français)_1',
         description: 'Narration corporative en français pour contenu interne et promotionnel.',
         lang: 'Fr',
@@ -47,79 +47,12 @@ export const audioSample = [
     {
         id: '6',
         slug: 'corporate-demo-en-1',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913617/Tracy-Ann_Leith_Corporate_Explainer_demo__EN__2026_dsdcw5.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913617/dev/homepage-demos/corporate-demo-en-1.mp3',
         title: 'Corporate Demo (English)_1',
         description: 'A corporate explainer narration reel in English.',
         lang: 'En',
         domain: 'Corporate'
     }
-]
-
-export const videoSample = [
-    {
-        id: '1',
-        path: "https://res.cloudinary.com/dhm3fyxid/video/upload/v1742523618/Quality_Mental_Health_Care_Network_ocjsif.mp4",
-        title: 'A Vision for Quality Mental Health Care for All',
-        lang: 'En',
-        domain: 'Corporate',
-    },
-    {
-        id: '2',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1742524287/UNI_Financial_Cooperation_-_Genevi%C3%A8ve_Lalonde_enitld.mp4',
-        title: 'UNI Financial Cooperation - Geneviève Lalonde',
-        lang: 'En',
-        domain: 'Corporate',
-    },
-    {
-        id: '3',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1742524283/Promo_-_Duval_Medical_Clinic_EN_unn9bo.mp4',
-        title: 'Duval Clinic, the Canadian reference in private hip and knee replacement',
-        lang: 'En',
-        domain: 'Corporate',
-    },
-    {
-        id: '4',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1742524286/Corporate_Industrial_-_SNC-Lavalin_-_2017_ct8dqk.mp4',
-        title: 'SNC-Lavalin - 2017 Annual Highlights',
-        lang: 'En',
-        domain: 'Corporate',
-    },
-    {
-        id: '5',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1742524913/Videogame_EN_-_Keyforge_Ad_npwgxl.mp4',
-        title: '23 Keyforge Ad v04',
-        lang: 'En',
-        domain: 'Commercial',
-    },
-    {
-        id: '6',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746583666/Audible_gejfqg.mp4',
-        title: 'Audible',
-        lang: 'Fr',
-        domain: 'Corporate',
-    },
-    {
-        id: '7',
-        path: "https://res.cloudinary.com/dhm3fyxid/video/upload/v1742524914/Commercial_FR_-_Biron_Groupe_Sant%C3%A9_2023_YUL_d0qq7n.mp4",
-        title: 'Visitez notre tout nouveau Centre de santé situé à YUL Aéroport international Montréal-Trudeau',
-        lang: 'Fr',
-        domain: 'Commercial',
-    },
-    {
-        id: '8',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1742524914/Calvaseptin_Vetoquinol_FR_rsywfk.mp4',
-        title: 'Calvaseptin Vetoquinol',
-        lang: 'Fr',
-        domain: 'Commercial',
-    },
-    {
-        id: '9',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1742524908/Inforoute_Sant%C3%A9_zt4njb.mp4',
-        title: 'Inforoute Santé',
-        lang: 'Fr',
-        domain: 'Commercial',
-    },
-
 ]
 
 export const carouselData = [
