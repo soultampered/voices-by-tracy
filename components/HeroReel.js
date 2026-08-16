@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, useMemo } from 'react';
+import { useMemo } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import DemoPlayer from '@components/DemoPlayer';
@@ -8,25 +8,10 @@ import { useModal } from '../app/[locale]/context/ModalContext';
 import { audioSample, clientList } from '@public/demoData';
 
 const TRUST_STRIP_COUNT = 6;
-const ROTATION_STORAGE_KEY = 'heroReelIndex';
 
 const HeroReel = () => {
     const { t } = useTranslation();
     const { openModal } = useModal();
-    const [index, setIndex] = useState(0);
-
-    // Advances through the real audioSample list from demoData.js once per visit
-    // — not on a timer, so it never interrupts audio someone's listening to.
-    // Persisted in localStorage so it keeps moving through the list across visits
-    // instead of always opening on the same track.
-    useEffect(() => {
-        const stored = parseInt(window.localStorage.getItem(ROTATION_STORAGE_KEY), 10);
-        const next = (Number.isFinite(stored) ? stored + 1 : 0) % audioSample.length;
-        setIndex(next);
-        window.localStorage.setItem(ROTATION_STORAGE_KEY, String(next));
-    }, []);
-
-    const current = audioSample[index];
     const trustBrands = useMemo(() => clientList.slice(0, TRUST_STRIP_COUNT), []);
 
     const handleOpenModal = () => {
@@ -50,7 +35,7 @@ const HeroReel = () => {
                         <Link
                             href="/search-results"
                             className="w-full text-center rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-5 py-3 transition-colors sm:w-auto">
-                            {t('buttons:button-HearMoreDemos', 'Hear More Demos')}
+                            {t('buttons:button-HearMoreDemos', 'Demos')}
                         </Link>
                         <button
                             onClick={handleOpenModal}
@@ -79,30 +64,23 @@ const HeroReel = () => {
                     </div>
                 </div>
 
-                <div className="rounded-xl border border-neutral-800 bg-neutral-900/70 p-6">
+                <div id="demosSection" className="rounded-xl p-6">
                     <p className="text-xs uppercase tracking-wide text-neutral-400 mb-3">
-                        {t('buttons:label-Preview', 'Preview')} — {current.title}
+                        {t('buttons:label-Preview', 'Preview')}
                     </p>
-                    <DemoPlayer
-                        key={current.id}
-                        audioSample={current.path}
-                        title={current.title}
-                        hideDownload
-                        showTime
-                        waveformHeight={48}
-                    />
-                    <div className="flex gap-3 mt-4">
-                        <a
-                            href={current.path}
-                            download
-                            className="flex-1 text-center rounded-lg border border-neutral-700 text-white text-sm font-semibold px-4 py-2.5 hover:border-neutral-500 transition-colors">
-                            {t('buttons:button-Download', 'Download')}
-                        </a>
-                        <Link
-                            href={`/demos/${current.slug}`}
-                            className="flex-1 text-center rounded-lg border border-neutral-700 text-white text-sm font-semibold px-4 py-2.5 hover:border-neutral-500 transition-colors">
-                            {t('buttons:button-FullReel', 'Full Reel')} →
-                        </Link>
+                    <div className="flex flex-col gap-3">
+                        {audioSample.map((demo) => (
+                            <div key={demo.id} className="rounded-lg border border-neutral-800 bg-neutral-900/70 p-3">
+                                <p className="text-sm text-white mb-1.5">{demo.title}</p>
+                                <DemoPlayer
+                                    audioSample={demo.path}
+                                    title={demo.title}
+                                    hideDownload
+                                    showTime
+                                    waveformHeight={32}
+                                />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

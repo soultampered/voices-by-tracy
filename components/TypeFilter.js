@@ -5,7 +5,6 @@ import { useRouter, usePathname, useSearchParams } from "next/navigation";
 const TYPES = [
 	{ value: "", label: "All" },
 	{ value: "video", label: "Video" },
-	{ value: "audio", label: "Audio" },
 ];
 
 export default function TypeFilter({ type }) {

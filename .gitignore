@@ -42,3 +42,8 @@ next-env.d.ts
 
 # editor / IDE
 .idea/
+
+# local notes / generated data
+REDESIGN_NOTES.md
+scripts/localMediaImportLog.json
+scripts/prodMigrationData.json
