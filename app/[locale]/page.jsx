@@ -1,6 +1,5 @@
 import Header from '@components/Header.js';
 import About from '@components/About.js';
-import Demos from '@components/Demos.js';
 import Testimonials from "@components/Testimonials";
 import HeroReel from "@components/HeroReel";
 import Footer from '@components/Footer.js';
@@ -25,7 +24,6 @@ export default async function Home({ params }){
                 <HeroReel/>
                 <div className="bodyContainer">
                     <About auditionBtn={auditionBtn} closeBtn={closeBtn} submitBtn={submitBtn}/>
-                    <Demos auditionBtn={auditionBtn}/>
                     <Testimonials/>
                 </div>
             </div>
