@@ -2,7 +2,7 @@ export const audioSample = [
     {
         id: '1',
         slug: 'commercial-demo-en',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292558/dev/homepage-demos/commercial-demo-en.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292558/prod/homepage-demos/commercial-demo-en.mp3',
         title: 'Commercial demo (English)',
         description: 'A montage of commercial voice-over reads in English, showcasing range across tone and pacing.',
         lang: 'En',
@@ -11,7 +11,7 @@ export const audioSample = [
     {
         id: '2',
         slug: 'demo-commercial-fr',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292557/dev/homepage-demos/demo-commercial-fr.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292557/prod/homepage-demos/demo-commercial-fr.mp3',
         title: 'Démo commercial (français)',
         description: 'Un montage de lectures publicitaires en français, illustrant la polyvalence de ton et de rythme.',
         lang: 'Fr',
@@ -20,7 +20,7 @@ export const audioSample = [
     {
         id: '3',
         slug: 'commercial-demo-en-2',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584408/dev/homepage-demos/commercial-demo-en-2.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584408/prod/homepage-demos/commercial-demo-en-2.mp3',
         title: 'Commercial Demo (English)_2',
         description: 'A second commercial reel in English, featuring additional brand reads.',
         lang: 'En',
@@ -29,7 +29,7 @@ export const audioSample = [
     {
         id: '4',
         slug: 'corporate-demo-en-2',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584410/dev/homepage-demos/corporate-demo-en-2.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1746584410/prod/homepage-demos/corporate-demo-en-2.mp3',
         title: 'Corporate Demo (English)_2',
         description: 'Corporate narration in English for internal and promotional content.',
         lang: 'En',
@@ -38,7 +38,7 @@ export const audioSample = [
     {
         id: '5',
         slug: 'demo-corporatif-fr-1',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913369/dev/homepage-demos/demo-corporatif-fr-1.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913369/prod/homepage-demos/demo-corporatif-fr-1.mp3',
         title: 'Démo corporatif (français)_1',
         description: 'Narration corporative en français pour contenu interne et promotionnel.',
         lang: 'Fr',
@@ -47,7 +47,7 @@ export const audioSample = [
     {
         id: '6',
         slug: 'corporate-demo-en-1',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913617/dev/homepage-demos/corporate-demo-en-1.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1777913617/prod/homepage-demos/corporate-demo-en-1.mp3',
         title: 'Corporate Demo (English)_1',
         description: 'A corporate explainer narration reel in English.',
         lang: 'En',
@@ -77,139 +77,116 @@ export const clientList = [
     {
         id: '1',
         name: 'Raymond James',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114454/Raymond_James_frdype.png',
         alt: 'Raymond James Logo'
     },
     {
         id: '2',
         name: 'Intact Insurance',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114456/Intact_Insurance_x7knaa.png',
         alt: 'Intact Insurance Logo'
     },
     {
         id: '3',
         name: 'Splenda',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114453/Splenda_Logo_u3p5aq.jpg',
         alt: 'Splenda Logo'
     },
     {
         id: '4',
         name: 'Arm & Hammer',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114451/arm_hammer_logo_ndfnhv.png',
         alt: 'Arm & Hammer Logo'
     },
     {
         id: '5',
         name: 'Jack Daniels',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114455/JackDaniels_Logo_eb55j2.png',
         alt: 'Jack Daniels Logo'
     },
     {
         id: '6',
         name: 'ProLite',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114449/prolite_wps0fs.png',
         alt: 'ProLite Logo'
     },
     {
         id: '7',
         name: 'Canadel Furniture',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114450/canadel_gtnpaw.png',
         alt: 'Canadel Furniture Logo'
     },
     {
         id: '8',
         name: 'Desjardins',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114450/desjardins_logo_ukvhwb.png',
         alt: 'Desjardins Logo'
     },
     {
         id: '9',
         name: 'UNI Financial',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114452/UNI_Financial_loa5v1.png',
         alt: 'UNI Financial Logo'
     },
     {
         id: '10',
         name: 'Asmodee',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114451/asmodee_wv5juz.png',
         alt: 'Asmodee Logo'
     },
     {
         id: '11',
         name: 'Audi Lauzon',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114460/Audi_pmtm7i.png',
         alt: 'Audi Lauzon Logo'
     },
     {
         id: '12',
         name: 'Air Canada',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114460/Air_Canada_kqwghb.png',
         alt: 'Air Canada Logo'
     },
     {
         id: '13',
         name: 'CAE',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114458/CAE_bf0rmm.png',
         alt: 'CAE Logo'
     },
     {
         id: '14',
         name: 'Historica Canada',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114457/HistoricaCanada_qayubr.png',
         alt: 'Historica Canada Logo'
     },
     {
         id: '15',
         name: 'McGill',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114455/McGill_km5kls.png',
         alt: 'McGill Logo'
     },
     {
         id: '16',
         name: 'Vetoquinol',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114452/Vetoquinol_wcowoc.png',
         alt: 'Vetroquinol Logo'
     },
     {
         id: '17',
         name: 'Bio-K-Plus',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114459/Bio-K_qcgwiw.png',
         alt: 'Bio-K-Plus Logo'
     },
     {
         id: '18',
         name: 'SNC Lavalin',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114453/SNC-Lavalin_ypmijf.png',
         alt: 'SNC Lavalin Logo'
     },
     {
         id: '19',
         name: 'Radio CINA',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114454/RadioCINA_sqpgqk.png',
         alt: 'Radio CINA Logo'
     },
     {
         id: '20',
         name: 'General Mills',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114458/General_Mills_olhhie.png',
         alt: 'General Mills Logo'
     },
     {
         id: '21',
         name: 'Hockey Canada',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114457/HockeyCanada_l3wrmx.png',
         alt: 'Hockey Canada Logo'
     },
     {
         id: '22',
         name: 'Ubisoft',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114452/Ubisoft_logo_qsgj19.png',
         alt: 'Ubisoft Logo'
     },
     {
         id: '23',
         name: 'Public health agency of Canada',
-        source: 'https://res.cloudinary.com/dhm3fyxid/image/upload/v1739114450/phaclogo_zhpzen.png',
         alt: 'Public Health Canada'
     },
 

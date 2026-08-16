@@ -16,6 +16,8 @@
     "import:cloudinary": "node --env-file=.env.local scripts/importCloudinaryMedia.js",
     "import:cloudinary:prod": "node --env-file=.env.production.local scripts/importCloudinaryMedia.js",
     "import:local-media": "node --env-file=.env.dev.local scripts/importLocalMedia.js",
+    "migrate:prod-media": "node --env-file=.env.production.local scripts/migrateProdMedia.js",
+    "migrate:prod-media:confirm": "node --env-file=.env.production.local scripts/migrateProdMedia.js --confirm",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
