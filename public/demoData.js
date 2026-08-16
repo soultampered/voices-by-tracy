@@ -2,7 +2,7 @@ export const audioSample = [
     {
         id: '1',
         slug: 'commercial-demo-en',
-        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1758292558/prod/homepage-demos/commercial-demo-en.mp3',
+        path: 'https://res.cloudinary.com/dhm3fyxid/video/upload/v1786844650/prod/homepage-demos/commercial-demo-en.mp3',
         title: 'Commercial demo (English)',
         description: 'A montage of commercial voice-over reads in English, showcasing range across tone and pacing.',
         lang: 'En',
