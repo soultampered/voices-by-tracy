@@ -75,7 +75,6 @@ const HeroReel = () => {
                                 <DemoPlayer
                                     audioSample={demo.path}
                                     title={demo.title}
-                                    hideDownload
                                     showTime
                                     waveformHeight={32}
                                 />

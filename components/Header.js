@@ -13,12 +13,17 @@ import Link from "next/link";
 export default function Header(){
     const { t } = useTranslation();
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
 
     const toggleDropdown = () => {
         setIsDropdownOpen(prev => !prev);
     };
 
     const closeDropdown = () => setIsDropdownOpen(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     useEffect(() => {
         document.body.style.overflow = isDropdownOpen ? 'hidden' : '';
@@ -52,7 +57,7 @@ export default function Header(){
                 <div className='md:hidden relative ml-auto mt-3'>
                     <GiHamburgerMenu className='h-8 w-8 cursor-pointer' onClick={toggleDropdown}/>
 
-                    {typeof document !== 'undefined' && ReactDOM.createPortal(
+                    {mounted && ReactDOM.createPortal(
                         <>
                             <div
                                 onClick={closeDropdown}

@@ -64,11 +64,26 @@ const DemoPlayer = ({audioSample, filterState = false, setFilterState = () => {}
         setCurrentTime(seekTime);
     }
 
-    const handleDownloadClick = () => {
+    const handleDownloadClick = async () => {
         setIsDownloadDisabled(true);
-        setTimeout(()=> {
-            setIsDownloadDisabled(false);
-        }, 5000);
+        try {
+            const response = await fetch(audioSample);
+            const blob = await response.blob();
+            const blobUrl = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = blobUrl;
+            link.download = audioSample.split('/').pop().split('?')[0] || 'demo.mp3';
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+            URL.revokeObjectURL(blobUrl);
+        } catch (error) {
+            window.open(audioSample, '_blank');
+        } finally {
+            setTimeout(() => {
+                setIsDownloadDisabled(false);
+            }, 5000);
+        }
     }
 
     const progress = duration ? currentTime / duration : 0;
@@ -82,9 +97,9 @@ const DemoPlayer = ({audioSample, filterState = false, setFilterState = () => {}
                 </button>
                 <Waveform src={audioSample} progress={progress} onSeek={handleSeek} height={waveformHeight} className="flex-1 mx-2" />
                 {!hideDownload && (
-                    <a href={audioSample} download onClick={handleDownloadClick} className={styles.downloadButton} aria-label={`${title} download button`}>
+                    <button type="button" onClick={handleDownloadClick} disabled={isDownloadDisabled} className={styles.downloadButton} aria-label={`${title} download button`}>
                             <FaDownload/>
-                    </a>
+                    </button>
                 )}
             </div>
             {showTime && (
