@@ -33,7 +33,7 @@ export default function Header(){
                 <Link className="relative title-font font-medium mb-4 md:mb-0 flex-shrink-0" href="/">
                     <Image src="/resources/images/VBT_Logo_Inverted.svg"
                            alt="siteLogo"
-                           className="h-[74px] md:h-[92px] w-auto"
+                           className="h-[93px] md:h-[115px] w-auto"
                            width={300}
                            height={211}
                     />

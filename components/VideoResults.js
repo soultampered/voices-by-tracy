@@ -8,6 +8,13 @@ import { FaMusic, FaPlay } from "react-icons/fa";
 // in a 12-item grid just for a browse-time preview isn't worth the bandwidth).
 const STATIC_BAR_HEIGHTS = [40, 70, 45, 90, 55, 30, 65, 50, 80, 40, 60, 35];
 
+function formatDuration(seconds) {
+	if (!Number.isFinite(seconds) || seconds <= 0) return null;
+	const mins = Math.floor(seconds / 60);
+	const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
+	return `${mins}:${secs}`;
+}
+
 export default function VideoResults({ videos }) {
 	return (
 		<div className="divide-y divide-neutral-800">
@@ -30,9 +37,9 @@ export default function VideoResults({ videos }) {
 								No preview
 							</div>
 						)}
-						{video.duration && (
+						{formatDuration(video.duration) && (
 							<span className="absolute bottom-1 right-1 bg-black/70 text-white text-xs px-1 rounded">
-								{video.duration}
+								{formatDuration(video.duration)}
 							</span>
 						)}
 						<span className="absolute inset-0 flex items-center justify-center">
