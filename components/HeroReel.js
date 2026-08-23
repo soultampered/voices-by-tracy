@@ -35,7 +35,7 @@ const HeroReel = () => {
                         <Link
                             href="/search-results"
                             className="w-full text-center rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-5 py-3 transition-colors sm:w-auto">
-                            {t('buttons:button-HearMoreDemos', 'Demos')}
+                            {t('buttons:button-HearMoreDemos', 'My Work')}
                         </Link>
                         <button
                             onClick={handleOpenModal}
@@ -66,7 +66,7 @@ const HeroReel = () => {
 
                 <div id="demosSection" className="rounded-xl p-6">
                     <p className="text-xs uppercase tracking-wide text-neutral-400 mb-3">
-                        {t('buttons:label-Preview', 'Preview')}
+                        {t('common:label-Preview', 'Demos')}
                     </p>
                     <div className="flex flex-col gap-3">
                         {audioSample.map((demo) => (
